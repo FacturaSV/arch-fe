@@ -166,24 +166,25 @@ services:
       - "./config/certs:/certs:ro"
     #   - "traefik_logs:/var/log/traefik"  # Volumen para logs
 
-  # portainer:
-    # image: portainer/portainer-ce:alpine
-    # container_name: portainer
-    # restart: always
-    # labels:
-    #   - "traefik.enable=true"
-    #   - "traefik.http.routers.portainer.rule=Host(`portainer.facturasv.online`)"
-    #   - "traefik.http.routers.portainer.entrypoints=websecure"
-    #   - "traefik.http.routers.portainer.tls.certresolver=myresolver"
-    #   - "traefik.http.services.portainer.loadbalancer.server.port=9000"
-    # networks:
-    #   - internal_network
+  portainer:
+    image: portainer/portainer-ce:alpine
+    container_name: portainer
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`portainer.facturasv.online`)"
+      - "traefik.http.routers.portainer.entrypoints=websecure"
+      - "traefik.http.routers.portainer.tls.certresolver=myresolver"
+      - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    networks:
+      - internal_network
+      - FacturaSvNetwork
     # ports:
     # - "9000:9000"       # Interfaz web
-    # #   - "9443:9443"       # Interfaz web segura (HTTPS)
-    # volumes:
-    #   - /var/run/docker.sock:/var/run/docker.sock # Para administrar el host Docker
-    #   - portainer_data:/data # Datos persistentes de Portainer
+    #   - "9443:9443"       # Interfaz web segura (HTTPS)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Para administrar el host Docker
+      - portainer_data:/data # Datos persistentes de Portainer
 
 
 
