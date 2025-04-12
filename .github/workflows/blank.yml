@@ -40,9 +40,8 @@ jobs:
             set -e
 
             PROJECT_DIR="/root/app/facturasvAFE"
-            REPO_URL="https://${{ secrets.GH_USER }}:${{ secrets.GH_TOKEN }}@github.com/FacturaSV/arch-fe.git"
+            REPO_URL="https://<GH_USER>:<GH_TOKEN>@github.com/FacturaSV/arch-fe.git"
 
-            # Si no existe el repo o no es válido, lo clona desde cero
             if [ ! -d "$PROJECT_DIR/.git" ]; then
               echo "Repositorio no válido o inexistente. Clonando de nuevo..."
               rm -rf "$PROJECT_DIR"
@@ -50,15 +49,6 @@ jobs:
             fi
 
             cd "$PROJECT_DIR"
-
-            REQUIRED_FILES=("docker-compose.yml" "config/postgres/init.sql")
-            for file in "${REQUIRED_FILES[@]}"; do
-              if [ ! -e "$file" ]; then
-                echo "Falta el archivo requerido: $file"
-                ls -al
-                exit 1
-              fi
-            done
 
             git pull origin main
             docker compose pull
