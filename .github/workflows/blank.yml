@@ -36,19 +36,19 @@ jobs:
 
       - name: Deploy and Run
         run: |
-          ssh -i ~/.ssh/github_deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          ssh -i ~/.ssh/github_deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << EOF
             set -e
 
-            echo "===> Variables iniciales"
-            PROJECT_DIR="/root/app/facturasvAFE"
+            echo "===> Exportando variables desde GitHub Actions"
             GH_USER="${{ secrets.GH_USER }}"
             GH_TOKEN="${{ secrets.GH_TOKEN }}"
+            REPO_URL="https://\$GH_USER:\$GH_TOKEN@github.com/FacturaSV/arch-fe.git"
+
+            echo "===> Variables:"
             echo "GH_USER: \$GH_USER"
-            echo "GH_TOKEN: \$GH_TOKEN (oculto)"
-            REPO_URL="https://$GH_USER:$GH_TOKEN@github.com/FacturaSV/arch-fe.git"
             echo "REPO_URL: \$REPO_URL"
 
-            echo "===> Preparando directorio"
+            PROJECT_DIR="/root/app/facturasvAFE"
             if [ ! -d "\$PROJECT_DIR/.git" ]; then
               echo "Repositorio no válido o inexistente. Clonando de nuevo..."
               rm -rf "\$PROJECT_DIR"
@@ -59,14 +59,11 @@ jobs:
             fi
 
             cd "\$PROJECT_DIR"
-
-            echo "===> Haciendo pull"
             git pull origin main || {
               echo "Error al hacer git pull"
               exit 1
             }
 
-            echo "===> Desplegando con docker compose"
             docker compose pull
             docker compose up -d --build
 
