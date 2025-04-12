@@ -40,7 +40,9 @@ jobs:
             set -e
 
             PROJECT_DIR="/root/app/facturasvAFE"
-            REPO_URL="https://<GH_USER>:<GH_TOKEN>@github.com/FacturaSV/arch-fe.git"
+            GH_USER="${{ secrets.GH_USER }}"
+            GH_TOKEN="${{ secrets.GH_TOKEN }}"
+            REPO_URL="https://$GH_USER:$GH_TOKEN@github.com/FacturaSV/arch-fe.git"
 
             if [ ! -d "$PROJECT_DIR/.git" ]; then
               echo "Repositorio no válido o inexistente. Clonando de nuevo..."
