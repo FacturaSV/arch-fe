@@ -36,13 +36,13 @@ jobs:
 
       - name: Deploy and Run
         run: |
-          ssh -i ~/.ssh/github_deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          ssh -i ~/.ssh/github_deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << EOF
             set -e
 
-            PROJECT_DIR="/root/app"
-            REPO_URL="git@github.com:FacturaSV/arch-fe.git"
+            PROJECT_DIR="/root/app/facturasvAFE"
+            REPO_URL="https://${{ secrets.GH_USER }}:${{ secrets.GH_TOKEN }}@github.com/FacturaSV/arch-fe.git"
 
-            # Si no es un repo git, lo borramos y clonamos
+            # Si no existe el repo o no es válido, lo clona desde cero
             if [ ! -d "$PROJECT_DIR/.git" ]; then
               echo "Repositorio no válido o inexistente. Clonando de nuevo..."
               rm -rf "$PROJECT_DIR"
