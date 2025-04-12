@@ -18,7 +18,7 @@ jobs:
           REQUIRED_FILES=(
             "docker-compose.yml"
             "config/postgres/init.sql"
-            "config/postgres/backups"
+            "config/traefik/dynamic/auth.yml"
           )
           for file in "${REQUIRED_FILES[@]}"; do
             if [ ! -e "$file" ]; then
@@ -30,14 +30,35 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/github_deploy_key
+          chmod 600 ~/.ssh/github_deploy_key
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to VPS
+      - name: Deploy and Run
         run: |
-          ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-            cd /ruta/a/tu/proyecto
+          ssh -i ~/.ssh/github_deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+            set -e
+
+            PROJECT_DIR="/root/app"
+            REPO_URL="git@github.com:FacturaSV/arch-fe.git"
+
+            # Crear ruta si no existe
+            if [ ! -d "$PROJECT_DIR" ]; then
+              mkdir -p "$PROJECT_DIR"
+              git clone "$REPO_URL" "$PROJECT_DIR"
+            fi
+
+            cd "$PROJECT_DIR"
+
+            # Verificar archivos requeridos
+            REQUIRED_FILES=("docker-compose.yml" "config/postgres/init.sql" "config/traefik/dynamic/auth.yml")
+            for file in "${REQUIRED_FILES[@]}"; do
+              if [ ! -e "$file" ]; then
+                echo "Falta el archivo requerido: $file"
+                exit 1
+              fi
+            done
+
             git pull origin main
             docker compose pull
             docker compose up -d --build
