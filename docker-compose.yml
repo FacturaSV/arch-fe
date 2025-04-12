@@ -33,7 +33,7 @@ services:
     image: postgres:15
     container_name: postgres-backup
     depends_on:
-      - postgres-db
+      - database
     environment:
       TZ: America/El_Salvador
       POSTGRES_USER: facturaSvYWYf
@@ -44,7 +44,7 @@ services:
     volumes:
       - ./config/backups:/backups
     command: >
-      sh -c "until pg_isready -h postgres-db -U $$POSTGRES_USER; do sleep 2; done &&
+      sh -c "until pg_isready -h database -U $$POSTGRES_USER; do sleep 2; done &&
             export PGPASSWORD=$$POSTGRES_PASSWORD &&
             pg_dump -U $$POSTGRES_USER -h postgres-db -d $$POSTGRES_DB > /backups/backup_$(date +%Y%m%d%H%M%S).sql &&
             echo 'Backup completed successfully!'"
