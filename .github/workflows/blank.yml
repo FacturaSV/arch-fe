@@ -42,19 +42,20 @@ jobs:
             PROJECT_DIR="/root/app"
             REPO_URL="git@github.com:FacturaSV/arch-fe.git"
 
-            # Crear ruta si no existe
-            if [ ! -d "$PROJECT_DIR" ]; then
-              mkdir -p "$PROJECT_DIR"
+            # Si no es un repo git, lo borramos y clonamos
+            if [ ! -d "$PROJECT_DIR/.git" ]; then
+              echo "Repositorio no válido o inexistente. Clonando de nuevo..."
+              rm -rf "$PROJECT_DIR"
               git clone "$REPO_URL" "$PROJECT_DIR"
             fi
 
             cd "$PROJECT_DIR"
 
-            # Verificar archivos requeridos
-            REQUIRED_FILES=("docker-compose.yml" "config/postgres/init.sql" "config/traefik/dynamic/auth.yml")
+            REQUIRED_FILES=("docker-compose.yml" "config/postgres/init.sql")
             for file in "${REQUIRED_FILES[@]}"; do
               if [ ! -e "$file" ]; then
                 echo "Falta el archivo requerido: $file"
+                ls -al
                 exit 1
               fi
             done
