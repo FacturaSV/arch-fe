@@ -189,6 +189,8 @@ services:
 
 
 volumes:
+  portainer_data:
+    name: portainer_pdata
   postgres_data:
     name: postgres_pdata
     external: true

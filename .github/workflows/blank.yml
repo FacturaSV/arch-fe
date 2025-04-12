@@ -65,7 +65,7 @@ jobs:
             }
 
             docker compose pull
-            docker compose up -d --build
+            docker compose up -d --force-recreate --build
 
             echo "===> Despliegue completado"
           EOF
