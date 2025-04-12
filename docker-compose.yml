@@ -1,0 +1,202 @@
+services:
+  database:
+    image: postgres:15
+    container_name: database
+    labels:
+      - "traefik.enable=false"
+      - "traefik.tcp.routers.pg.rule=HostSNI(`database.facturasv.online`)"
+      - "traefik.tcp.routers.pg.entrypoints=pg"
+      - "traefik.tcp.routers.pg.service=pg-svc"
+      - "traefik.tcp.services.pg-svc.loadbalancer.server.port=5432"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
+      POSTGRES_USER: facturaSvYWYf
+      POSTGRES_PASSWORD: 0d3lypwvHvY8ZA£2BG48
+      POSTGRES_DB: main_database
+    volumes:
+      - ./config/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/postgresql/data
+      - ./config/postgres/backups:/backups
+    # ports:
+      # - "5432:5432"
+    networks:
+      - internal_network
+      - FacturaSvNetwork
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      retries: 5
+    restart: always
+
+  postgres-backup:
+    image: postgres:15
+    container_name: postgres-backup
+    depends_on:
+      - postgres-db
+    environment:
+      TZ: America/El_Salvador
+      POSTGRES_USER: facturaSvYWYf
+      POSTGRES_PASSWORD: 0d3lypwvHvY8ZA£2BG48
+      POSTGRES_DB: main_database
+    networks:
+      - FacturaSvNetwork
+    volumes:
+      - ./config/backups:/backups
+    command: >
+      sh -c "until pg_isready -h postgres-db -U $$POSTGRES_USER; do sleep 2; done &&
+            export PGPASSWORD=$$POSTGRES_PASSWORD &&
+            pg_dump -U $$POSTGRES_USER -h postgres-db -d $$POSTGRES_DB > /backups/backup_$(date +%Y%m%d%H%M%S).sql &&
+            echo 'Backup completed successfully!'"
+    restart: "no"
+
+  firmador:
+    image: svfe/svfe-api-firmador:v20250306
+    container_name: firmador
+    platform: linux/amd64
+    labels:
+      - "traefik.enable=false"
+      - "traefik.http.routers.firmador.rule=Host(`firmador.facturasv.online`)"
+      - "traefik.http.routers.firmador.entrypoints=websecure"
+      - "traefik.http.routers.firmador.tls.certresolver=myresolver"
+      - "traefik.http.services.firmador.loadbalancer.server.port=8113"
+    environment:
+      JAVA_OPTS_APPEND: "-XX:UseSVE=0"
+    networks:
+      - FacturaSvNetwork
+    # ports:
+    #   - "8113:8113"
+    volumes:
+      - "./temp:/uploads"
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.1
+    platform: linux/arm64
+    container_name: keycloak
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.keycloak.rule=Host(`keycloak.facturasv.online`)"
+      - "traefik.http.routers.keycloak.entrypoints=websecure"
+      - "traefik.http.routers.keycloak.tls.certresolver=myresolver"
+      - "traefik.http.services.keycloak.loadbalancer.server.port=8080"
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
+      KC_DB: postgres
+      KC_DB_URL_HOST: database
+      KC_DB_URL_PORT: 5432
+      KC_DB_URL_DATABASE: main_database
+      KC_DB_SCHEMA: keycloak_schema
+      KC_DB_USERNAME: keycloak_userL4RT
+      KC_DB_PASSWORD: S6ZWqBr2eE4J64MtNOnwYb
+      KC_BOOTSTRAP_ADMIN_USERNAME: daamarroquin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: tpgZ9Q9yWVb52F8d6Nyc
+      KC_HOSTNAME: keycloak.facturasv.online
+      KC_HOSTNAME_URL: https://keycloak.facturasv.online
+      KC_HOSTNAME_ADMIN_URL: https://keycloak.facturasv.online
+      KC_PROXY_HEADERS: xforwarded
+      KC_HTTP_ENABLED: "true"
+      KC_PROXY: edge
+      KC_HOSTNAME_STRICT: "true"
+      KC_HOSTNAME_STRICT_HTTPS: "true"
+      KC_LOG_LEVEL: INFO
+      JAVA_OPTS_APPEND: "-XX:UseSVE=0"
+      # JAVA_OPTS_APPEND: "-Dkeycloak.profile.feature.docker=enabled"
+      # KC_HTTPS_PORT: 8443
+      # KC_HTTPS_CERTIFICATE_FILE: ""
+      # KC_HTTPS_CERTIFICATE_KEY_FILE: ""
+      # KC_HTTPS_CERTIFICATE_FILE: /opt/keycloak/certs/cert.pem
+      # KC_HTTPS_CERTIFICATE_KEY_FILE: /opt/keycloak/certs/cert.key
+      # QUARKUS_LOG_CATEGORY__org.keycloak__LEVEL: DEBUG
+      # QUARKUS_LOG_CATEGORY__org.keycloak.keys__LEVEL: DEBUG
+      # QUARKUS_LOG_CATEGORY__org.keycloak.authz__LEVEL: DEBUG
+      # QUARKUS_LOG_CATEGORY__org.keycloak.authentication__LEVEL: DEBUG
+      # QUARKUS_LOG_CATEGORY__org.keycloak.authorization__LEVEL: DEBUG
+      # QUARKUS_LOG_CATEGORY__org.keycloak.events__LEVEL: DEBUG
+    command: [ "start-dev" ]
+    # ports:
+    #   - "8080:8080"
+    #   - "8443:8443"
+    networks:
+      - FacturaSvNetwork
+    restart: always
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+      - ./config/certs:/opt/keycloak/certs:ro
+
+  traefik:
+    image: traefik:v3.0
+    container_name: traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.facturasv.online`)"
+      - "traefik.http.routers.traefik.entrypoints=websecure"
+      - "traefik.http.routers.traefik.tls.certresolver=myresolver"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+    restart: always
+    command:
+      - "--api.dashboard=true"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.websecure.http.tls=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.file.directory=/etc/traefik/dynamic"
+      - "--providers.file.watch=true"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.email=notificaciones@facturasv.online"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      - "--log.level=INFO" 
+    ports:
+      - "80:80"
+      - "443:443"
+      # - "9090:8080" # Dashboard de Traefik
+    networks:
+      - internal_network
+      - FacturaSvNetwork
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - ./config/traefik/dynamic:/etc/traefik/dynamic
+      - "./config/letsencrypt:/letsencrypt"
+      - "./config/certs:/certs:ro"
+    #   - "traefik_logs:/var/log/traefik"  # Volumen para logs
+
+  # portainer:
+    # image: portainer/portainer-ce:alpine
+    # container_name: portainer
+    # restart: always
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.portainer.rule=Host(`portainer.facturasv.online`)"
+    #   - "traefik.http.routers.portainer.entrypoints=websecure"
+    #   - "traefik.http.routers.portainer.tls.certresolver=myresolver"
+    #   - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    # networks:
+    #   - internal_network
+    # ports:
+    # - "9000:9000"       # Interfaz web
+    # #   - "9443:9443"       # Interfaz web segura (HTTPS)
+    # volumes:
+    #   - /var/run/docker.sock:/var/run/docker.sock # Para administrar el host Docker
+    #   - portainer_data:/data # Datos persistentes de Portainer
+
+
+
+volumes:
+  postgres_data:
+    name: postgres_pdata
+    external: true
+  keycloak_data:
+    name: keycloak_pdata
+    external: true
+
+networks:
+  internal_network:
+    driver: bridge
+  FacturaSvNetwork:
+    external: true

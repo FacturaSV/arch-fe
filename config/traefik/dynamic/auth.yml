@@ -1,0 +1,15 @@
+http:
+  middlewares:
+
+    jwt-auth:
+      forwardAuth:
+        address: "http://keycloak:8080/realms/facturacion-electronica/protocol/openid-connect/userinfo"
+        trustForwardHeader: true
+        authResponseHeaders:
+          - "X-Auth-Token"
+
+
+    inject-token:
+      headers:
+        customRequestHeaders:
+          X-Auth-Token: "[[ .Request.Header.Authorization ]]"
