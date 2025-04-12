@@ -16,7 +16,7 @@ services:
       POSTGRES_DB: main_database
     volumes:
       - ./config/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - db_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
       - ./config/postgres/backups:/backups
     # ports:
       # - "5432:5432"
@@ -67,7 +67,7 @@ services:
     # ports:
     #   - "8113:8113"
     volumes:
-      - "./temp:/uploads"
+      - "./config/certs:/uploads"
 
   keycloak:
     image: quay.io/keycloak/keycloak:26.1
