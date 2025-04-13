@@ -265,6 +265,7 @@ services:
     volumes:
       - ../pdfmaker-fe/logos:/app/logos # Para almacenar logos
       - ../pdfmaker-fe/output:/app/output # Para almacenar PDFs generados
+      - ../pdfmaker-fe/templates:/app/templates # Para almacenar hmlt de planillas
 
 volumes:
   portainer_data:
