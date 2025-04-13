@@ -1,998 +1,1416 @@
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (1, '01111', 'Cultivo de cereales excepto arroz y para forrajes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (2, '01112', 'Cultivo de legumbres', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (3, '01113', 'Cultivo de semillas oleaginosas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (4, '01114', 'Cultivo de plantas para la preparación de semillas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (5, '01119', 'Cultivo de otros cereales excepto arroz y forrajeros n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (6, '01120', 'Cultivo de arroz', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (7, '01131', 'Cultivo de raíces y tubérculos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (8, '01132', 'Cultivo de brotes, bulbos, vegetales tubérculos y cultivos similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (9, '01133', 'Cultivo horticola de fruto', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (10, '01134', 'Cultivo de hortalizas de hoja y otras hortalizas ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (11, '01140', 'Cultivo de caña de azucar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (12, '01150', 'Cultivo de tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (13, '01161', 'Cultivo de algodón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (14, '01162', 'Cultivo de fibras vegetales excepto algodón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (15, '01191', 'Cultivo de plantas no perennes para la producción de semillas y flores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (16, '01192', 'Cultivo de cereales y pastos para la alimentación animal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (17, '01199', 'Producción de cultivos no estacionales ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (18, '01220', 'Cultivo de frutas tropicales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (19, '01230', 'Cultivo de cítricos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (20, '01240', 'Cultivo de frutas de pepita y hueso', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (21, '01251', 'Cultivo de frutas ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (22, '01252', 'Cultivo de otros frutos y nueces de árboles y arbustos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (23, '01260', 'Cultivo de frutos oleaginosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (24, '01271', 'Cultivo de café', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (25, '01272', 'Cultivo de plantas para la elaboración de bebidas excepto café', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (26, '01281', 'Cultivo de especias y aromáticas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (27, '01282', 'Cultivo de plantas para la obtención de productos medicinales y farmacéuticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (28, '01291', 'Cultivo de árboles de hule (caucho) para la obtención de látex', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (29, '01292', 'Cultivo de plantas para la obtención de productos químicos y colorantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (30, '01299', 'Producción de cultivos perennes ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (31, '01300', 'Propagación de plantas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (32, '01301', 'Cultivo de plantas y flores ornamentales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (33, '01410', 'Cría y engorde de ganado bovino', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (34, '01420', 'Cría de caballos y otros equinos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (35, '01440', 'Cría de ovejas y cabras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (36, '01450', 'Cría de cerdos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (37, '01460', 'Cría de aves de corral y producción de huevos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (38, '01491', 'Cría de abejas apicultura para la obtención de miel y otros productos apícolas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (39, '01492', 'Cría de conejos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (40, '01493', 'Cría de iguanas y garrobos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (41, '01494', 'Cría de mariposas y otros insectos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (42, '01499', 'Cría y obtención de productos animales n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (43, '01500', 'Cultivo de productos agrícolas en combinación con la cría de animales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (44, '01611', 'Servicios de maquinaria agrícola', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (45, '01612', 'Control de plagas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (46, '01613', 'Servicios de riego', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (47, '01614', 'Servicios de contratación de mano de obra para la agricultura', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (48, '01619', 'Servicios agrícolas ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (49, '01621', 'Actividades para mejorar la reproducción, el crecimiento y el rendimiento de los animales y sus productos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (50, '01622', 'Servicios de mano de obra pecuaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (51, '01629', 'Servicios pecuarios ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (52, '01631', 'Labores post cosecha de preparación de los productos agrícolas para su comercialización o para la industria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (53, '01632', 'Servicio de beneficio de café', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (54, '01633', 'Servicio de beneficiado de plantas textiles (incluye el beneficiado cuando este es realizado en la misma explotación agropecuaria)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (55, '01640', 'Tratamiento de semillas para la propagación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (56, '01700', 'Caza ordinaria y mediante trampas, repoblación de animales de caza y servicios conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (57, '02100', 'Silvicultura y otras actividades forestales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (58, '02200', 'Extracción de madera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (59, '02300', 'Recolección de productos diferentes a la madera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (60, '02400', 'Servicios de apoyo a la silvicultura', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (61, '03110', 'Pesca marítima de altura y costera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (62, '03120', 'Pesca de agua dulce', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (63, '03210', 'Acuicultura marítima', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (64, '03220', 'Acuicultura de agua dulce', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (65, '03300', 'Servicios de apoyo a la pesca y acuicultura', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (66, '05100', 'Extracción de hulla', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (67, '05200', 'Extracción y aglomeración de lignito', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (68, '06100', 'Extracción de petróleo crudo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (69, '06200', 'Extracción de gas natural', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (70, '07100', 'Extracción de minerales de hierro', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (71, '07210', 'Extracción de minerales de uranio y torio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (72, '07290', 'Extracción de minerales metalíferos no ferrosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (73, '08100', 'Extracción de piedra, arena y arcilla', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (74, '08910', 'Extracción de minerales para la fabricación de abonos y productos químicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (75, '08920', 'Extracción y aglomeración de turba', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (76, '08930', 'Extracción de sal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (77, '08990', 'Explotación de otras minas y canteras ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (78, '09100', 'Actividades de apoyo a la extracción de petróleo y gas natural', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (79, '09900', 'Actividades de apoyo a la explotación de minas y canteras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (80, '10101', 'Servicio de rastros y mataderos de bovinos y porcinos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (81, '10102', 'Matanza y procesamiento de bovinos y porcinos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (82, '10103', 'Matanza y procesamientos de aves de corral', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (83, '10104', 'Elaboración y conservación de embutidos y tripas naturales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (84, '10105', 'Servicios de conservación y empaque de carnes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (85, '10106', 'Elaboración y conservación de grasas y aceites animales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (86, '10107', 'Servicios de molienda de carne', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (87, '10108', 'Elaboración de productos de carne ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (88, '10201', 'Procesamiento y conservación de pescado, crustáceos y moluscos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (89, '10209', 'Fabricación de productos de pescado ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (90, '10301', 'Elaboración de jugos de frutas y hortalizas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (91, '10302', 'Elaboración y envase de jaleas, mermeladas y frutas deshidratadas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (92, '10309', 'Elaboración de productos de frutas y hortalizas n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (93, '10401', 'Fabricación de aceites y grasas vegetales y animales comestibles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (94, '10402', 'Fabricación de aceites y grasas vegetales y animales no comestibles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (95, '10409', 'Servicio de maquilado de aceites', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (96, '10501', 'Fabricación de productos lácteos excepto sorbetes y quesos sustitutos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (97, '10502', 'Fabricación de sorbetes y helados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (98, '10503', 'Fabricación de quesos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (99, '10611', 'Molienda de cereales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (100, '10612', 'Elaboración de cereales para el desayuno y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (101, '10613', 'Servicios de beneficiado de productos agrícolas ncp (excluye Beneficio de azúcar rama 1072 y beneficio de café rama 0163)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (102, '10621', 'Fabricación de almidón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (103, '10628', 'Servicio de molienda de maíz húmedo molino para nixtamal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (104, '10711', 'Elaboración de tortillas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (105, '10712', 'Fabricación de pan, galletas y barquillos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (106, '10713', 'Fabricación de repostería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (107, '10721', 'Ingenios azucareros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (108, '10722', 'Molienda de caña de azúcar para la elaboración de dulces', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (109, '10723', 'Elaboración de jarabes de azúcar y otros similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (110, '10724', 'Maquilado de azúcar de caña', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (111, '10730', 'Fabricación de cacao, chocolates y productos de confitería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (112, '10740', 'Elaboración de macarrones, fideos, y productos farináceos similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (113, '10750', 'Elaboración de comidas y platos preparados para la reventa en', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (114, '10791', 'Elaboración de productos de café', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (115, '10792', 'Elaboración de especies, sazonadores y condimentos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (116, '10793', 'Elaboración de sopas, cremas y consomé', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (117, '10794', 'Fabricación de bocadillos tostados y/o fritos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (118, '10799', 'Elaboración de productos alimenticios ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (119, '10800', 'Elaboración de alimentos preparados para animales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (120, '11012', 'Fabricación de aguardiente y licores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (121, '11020', 'Elaboración de vinos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (122, '11030', 'Fabricacion de cerveza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (123, '11041', 'Fabricación de aguas gaseosas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (124, '11042', 'Fabricación y envasado de agua', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (125, '11043', 'Elaboración de refrescos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (126, '11048', 'Maquilado de aguas gaseosas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (127, '11049', 'Elaboración de bebidas no alcohólicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (128, '12000', 'Elaboración de productos de tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (129, '13111', 'Preparación de fibras textiles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (130, '13112', 'Fabricación de hilados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (131, '13120', 'Fabricación de telas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (132, '13130', 'Acabado de productos textiles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (133, '13910', 'Fabricación de tejidos de punto y ganchillo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (134, '13921', 'Fabricación de productos textiles para el hogar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (135, '13922', 'Sacos, bolsas y otros artículos textiles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (136, '13929', 'Fabricación de artículos confeccionados con materiales textiles, excepto prendas de vestir n.c.p', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (137, '13930', 'Fabricación de tapices y alfombras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (138, '13941', 'Fabricación de cuerdas de henequén y otras fibras naturales (lazos, pitas)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (139, '13942', 'Fabricación de redes de diversos materiales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (140, '13948', 'Maquilado de productos trenzables de cualquier material (petates, sillas, etc.)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (141, '13991', 'Fabricación de adornos, etiquetas y otros artículos para prendas de vestir', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (142, '13992', 'Servicio de bordados en artículos y prendas de tela', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (143, '13999', 'Fabricación de productos textiles ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (144, '14101', 'Fabricación de ropa interior, para dormir y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (145, '14102', 'Fabricación de ropa para niños', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (146, '14103', 'Fabricación de prendas de vestir para ambos sexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (147, '14104', 'Confección de prendas a medida', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (148, '14105', 'Fabricación de prendas de vestir para deportes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (149, '14106', 'Elaboración de artesanías de uso personal confeccionadas especialmente de materiales textiles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (150, '14108', 'Maquilado de prendas de vestir, accesorios y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (151, '14109', 'Fabricación de prendas y accesorios de vestir n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (152, '14200', 'Fabricación de artículos de piel', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (153, '14301', 'Fabricación de calcetines, calcetas, medias (panty house) y otros similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (154, '14302', 'Fabricación de ropa interior de tejido de punto', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (155, '14309', 'Fabricación de prendas de vestir de tejido de punto ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (156, '15110', 'Curtido y adobo de cueros; adobo y teñido de pieles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (157, '15121', 'Fabricación de maletas, bolsos de mano y otros artículos de marroquinería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (158, '15122', 'Fabricación de monturas, accesorios y vainas talabartería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (159, '15123', 'Fabricación de artesanías principalmente de cuero natural y sintético', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (160, '15128', 'Maquilado de artículos de cuero natural, sintético y de otros materiales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (161, '15201', 'Fabricación de calzado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (162, '15202', 'Fabricación de partes y accesorios de calzado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (163, '15208', 'Maquilado de partes y accesorios de calzado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (164, '16100', 'Aserradero y acepilladura de madera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (165, '16210', 'Fabricación de madera laminada, terciada, enchapada y contrachapada, paneles para la construcción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (166, '16220', 'Fabricación de partes y piezas de carpintería para edificios y construcciones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (167, '16230', 'Fabricación de envases y recipientes de madera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (168, '16292', 'Fabricación de artesanías de madera, semillas, materiales trenzables', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (169, '16299', 'Fabricación de productos de madera, corcho, paja y materiales trenzables ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (170, '17010', 'Fabricación de pasta de madera, papel y cartón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (171, '17020', 'Fabricación de papel y cartón ondulado y envases de papel y cartón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (172, '17091', 'Fabricación de artículos de papel y cartón de uso personal y doméstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (173, '17092', 'Fabricación de productos de papel ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (174, '18110', 'Impresión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (175, '18120', 'Servicios relacionados con la impresión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (176, '18200', 'Reproducción de grabaciones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (177, '19100', 'Fabricación de productos de hornos de coque', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (178, '19201', 'Fabricación de combustible', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (179, '19202', 'Fabricación de aceites y lubricantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (180, '20111', 'Fabricación de materias primas para la fabricación de colorantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (181, '20112', 'Fabricación de materiales curtientes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (182, '20113', 'Fabricación de gases industriales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (183, '20114', 'Fabricación de alcohol etílico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (184, '20119', 'Fabricación de sustancias químicas básicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (185, '20120', 'Fabricación de abonos y fertilizantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (186, '20130', 'Fabricación de plástico y caucho en formas primarias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (187, '20210', 'Fabricación de plaguicidas y otros productos químicos de uso agropecuario', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (188, '20220', 'Fabricación de pinturas, barnices y productos de revestimiento similares; tintas de imprenta y masillas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (189, '20231', 'Fabricación de jabones, detergentes y similares para limpieza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (190, '20232', 'Fabricación de perfumes, cosméticos y productos de higiene y cuidado personal, incluyendo tintes, champú, etc.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (191, '20291', 'Fabricación de tintas y colores para escribir y pintar; fabricación de cintas para impresoras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (192, '20292', 'Fabricación de productos pirotécnicos, explosivos y municiones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (193, '20299', 'Fabricación de productos químicos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (194, '20300', 'Fabricación de fibras artificiales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (195, '21001', 'Manufactura de productos farmacéuticos, sustancias químicas y productos botánicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (196, '21008', 'Maquilado de medicamentos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (197, '22110', 'Fabricación de cubiertas y cámaras; renovación y recauchutado de cubiertas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (198, '22190', 'Fabricación de otros productos de caucho', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (199, '22201', 'Fabricación de envases plásticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (200, '22202', 'Fabricación de productos plásticos para uso personal o doméstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (201, '22208', 'Maquila de plásticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (202, '22209', 'Fabricación de productos plásticos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (203, '23101', 'Fabricación de vidrio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (204, '23102', 'Fabricación de recipientes y envases de vidrio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (205, '23108', 'Servicio de maquilado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (206, '23109', 'Fabricación de productos de vidrio n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (207, '23910', 'Fabricación de productos refractarios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (208, '23920', 'Fabricación de productos de arcilla para la construcción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (209, '23931', 'Fabricación de productos de cerámica y porcelana no refractaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (210, '23932', 'Fabricación de productos de cerámica y porcelana n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (211, '23940', 'Fabricación de cemento, cal y yeso', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (212, '23950', 'Fabricación de artículos de hormigón, cemento y yeso', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (213, '23960', 'Corte, tallado y acabado de la piedra', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (214, '23990', 'Fabricación de productos minerales no metálicos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (215, '24100', 'Industrias básicas de hierro y acero', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (216, '24200', 'Fabricación de productos primarios de metales preciosos y metales no ferrosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (217, '24310', 'Fundición de hierro y acero', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (218, '24320', 'Fundición de metales no ferrosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (219, '25111', 'Fabricación de productos metálicos para uso estructural', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (220, '25118', 'Servicio de maquila para la fabricación de estructuras metálicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (221, '25120', 'Fabricación de tanques, depósitos y recipientes de metal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (222, '25130', 'Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (223, '25200', 'Fabricación de armas y municiones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (224, '25910', 'Forjado, prensado, estampado y laminado de metales; pulvimetalurgia', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (225, '25920', 'Tratamiento y revestimiento de metales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (226, '25930', 'Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (227, '25991', 'Fabricación de envases y artículos conexos de metal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (228, '25992', 'Fabricación de artículos metálicos de uso personal y/o doméstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (229, '25999', 'Fabricación de productos elaborados de metal ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (230, '26100', 'Fabricación de componentes electrónicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (231, '26200', 'Fabricación de computadoras y equipo conexo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (232, '26300', 'Fabricación de equipo de comunicaciones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (233, '26400', 'Fabricación de aparatos electrónicos de consumo para audio, video, radio y televisión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (234, '26510', 'Fabricación de instrumentos y aparatos para medir, verificar, ensayar, navegar y de control de procesos industriales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (235, '26520', 'Fabricación de relojes y piezas de relojes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (236, '26600', 'Fabricación de equipo médico de irradiación y equipo electrónico de uso médico y terapéutico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (237, '26700', 'Fabricación de instrumentos de óptica y equipo fotográfico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (238, '26800', 'Fabricación de medios magnéticos y ópticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (239, '27100', 'Fabricación de motores, generadores, transformadores eléctricos, aparatos de distribución y control de electricidad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (240, '27200', 'Fabricación de pilas, baterías y acumuladores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (241, '27310', 'Fabricación de cables de fibra óptica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (242, '27320', 'Fabricación de otros hilos y cables eléctricos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (243, '27330', 'Fabricación de dispositivos de cableados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (244, '27400', 'Fabricación de equipo eléctrico de iluminación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (245, '27500', 'Fabricación de aparatos de uso doméstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (246, '27900', 'Fabricación de otros tipos de equipo eléctrico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (247, '28110', 'Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (248, '28120', 'Fabricación de equipo hidráulico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (249, '28130', 'Fabricación de otras bombas, compresores, grifos y válvulas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (250, '28140', 'Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (251, '28150', 'Fabricación de hornos y quemadores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (252, '28160', 'Fabricación de equipo de elevación y manipulación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (253, '28170', 'Fabricación de maquinaria y equipo de oficina', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (254, '28180', 'Fabricación de herramientas manuales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (255, '28190', 'Fabricación de otros tipos de maquinaria de uso general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (256, '28210', 'Fabricación de maquinaria agropecuaria y forestal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (257, '28220', 'Fabricación de máquinas para conformar metales y maquinaria herramienta', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (258, '28230', 'Fabricación de maquinaria metalúrgica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (259, '28240', 'Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (260, '28250', 'Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (261, '28260', 'Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir y cueros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (262, '28291', 'Fabricación de máquinas para imprenta', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (263, '28299', 'Fabricación de maquinaria de uso especial ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (264, '29100', 'Fabricación de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (353, '46211', 'Venta de productos para uso agropecuario', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (265, '29200', 'Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (266, '29300', 'Fabricación de partes, piezas y accesorios para vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (267, '30110', 'Fabricación de buques', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (268, '30120', 'Construcción y reparación de embarcaciones de recreo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (269, '30200', 'Fabricación de locomotoras y de material rodante', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (270, '30300', 'Fabricación de aeronaves y naves espaciales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (271, '30400', 'Fabricación de vehículos militares de combate', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (272, '30910', 'Fabricación de motocicletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (273, '30920', 'Fabricación de bicicletas y sillones de ruedas para inválidos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (274, '30990', 'Fabricación de equipo de transporte ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (275, '31001', 'Fabricación de colchones y somier', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (276, '31002', 'Fabricación de muebles y otros productos de madera a medida', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (277, '31008', 'Servicios de maquilado de muebles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (278, '31009', 'Fabricación de muebles ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (279, '32110', 'Fabricación de joyas platerías y joyerías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (280, '32120', 'Fabricación de joyas de imitación (fantasía) y artículos conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (281, '32200', 'Fabricación de instrumentos musicales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (282, '32301', 'Fabricación de artículos de deporte', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (283, '32308', 'Servicio de maquila de productos deportivos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (284, '32401', 'Fabricación de juegos de mesa y de salón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (285, '32402', 'Servicio de maquilado de juguetes y juegos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (286, '32409', 'Fabricación de juegos y juguetes ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (287, '32500', 'Fabricación de instrumentos y materiales médicos y odontológicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (288, '32901', 'Fabricación de lápices, bolígrafos, sellos y artículos de librería en general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (289, '32902', 'Fabricación de escobas, cepillos, pinceles y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (290, '32903', 'Fabricación de artesanías de materiales diversos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (291, '32904', 'Fabricación de artículos de uso personal y domésticos ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (292, '32905', 'Fabricación de accesorios para las confecciones y la marroquinería n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (293, '32908', 'Servicios de maquila ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (294, '32909', 'Fabricación de productos manufacturados n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (295, '33110', 'Reparación y mantenimiento de productos elaborados de metal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (296, '33120', 'Reparación y mantenimiento de maquinaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (297, '33130', 'Reparación y mantenimiento de equipo electrónico y óptico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (298, '33140', 'Reparación y mantenimiento de equipo eléctrico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (299, '33150', 'Reparación y mantenimiento de equipo de transporte, excepto vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (300, '33190', 'Reparación y mantenimiento de equipos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (301, '33200', 'Instalación de maquinaria y equipo industrial', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (302, '35101', 'Generación de energía eléctrica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (303, '35102', 'Transmisión de energía eléctrica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (304, '35103', 'Distribución de energía eléctrica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (305, '35200', 'Fabricación de gas, distribución de combustibles gaseosos por tuberías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (306, '35300', 'Suministro de vapor y agua caliente', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (307, '36000', 'Captación, tratamiento y suministro de agua', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (308, '37000', 'Evacuación de aguas residuales (alcantarillado)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (309, '38110', 'Recolección y transporte de desechos sólidos proveniente de hogares y sector urbano', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (310, '38120', 'Recolección de desechos peligrosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (311, '38210', 'Tratamiento y eliminación de desechos inicuos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (312, '38220', 'Tratamiento y eliminación de desechos peligrosos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (313, '38301', 'Reciclaje de desperdicios y desechos textiles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (314, '38302', 'Reciclaje de desperdicios y desechos de plástico y caucho', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (315, '38303', 'Reciclaje de desperdicios y desechos de vidrio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (316, '38304', 'Reciclaje de desperdicios y desechos de papel y cartón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (317, '38305', 'Reciclaje de desperdicios y desechos metálicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (318, '38309', 'Reciclaje de desperdicios y desechos no metálicos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (319, '39000', 'Actividades de Saneamiento y otros Servicios de Gestión de Desechos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (320, '41001', 'Construcción de edificios residenciales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (321, '41002', 'Construcción de edificios no residenciales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (322, '42100', 'Construcción de carreteras, calles y caminos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (323, '42200', 'Construcción de proyectos de servicio público', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (324, '42900', 'Construcción de obras de ingeniería civil n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (325, '43110', 'Demolición', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (326, '43120', 'Preparación de terreno', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (327, '43210', 'Instalaciones eléctricas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (328, '43220', 'Instalación de fontanería, calefacción y aire acondicionado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (329, '43290', 'Otras instalaciones para obras de construcción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (330, '43300', 'Terminacion y acabado de edificios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (331, '43900', 'Otras actividades especializadas de construcción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (332, '43901', 'Fabricación de techos y materiales diversos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (333, '45100', 'Venta de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (334, '45201', 'Reparación mecánica de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (335, '45202', 'Reparaciones eléctricas del automotor y recarga de baterías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (336, '45203', 'Enderezado y pintura de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (337, '45204', 'Reparaciones de radiadores, escapes y silenciadores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (338, '45205', 'Reparación y reconstrucción de vías, stop y otros artículos de fibra de vidrio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (339, '45206', 'Reparación de llantas de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (340, '45207', 'Polarizado de vehículos (mediante la adhesión de papel especial a los vidrios)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (341, '45208', 'Lavado y pasteado de vehículos (carwash)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (342, '45209', 'Reparaciones de vehículos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (343, '45211', 'Remolque de vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (344, '45301', 'Venta de partes, piezas y accesorios nuevos para vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (345, '45302', 'Venta de partes, piezas y accesorios usados para vehículos automotores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (346, '45401', 'Venta de motocicletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (347, '45402', 'Venta de repuestos, piezas y accesorios de motocicletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (348, '45403', 'Mantenimiento y reparación de motocicletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (349, '46100', 'Venta al por mayor a cambio de retribución o por contrata', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (350, '46201', 'Venta al por mayor de materias primas agrícolas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (351, '46202', 'Venta al por mayor de productos de la silvicultura', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (352, '46203', 'Venta al por mayor de productos pecuarios y de granja', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (354, '46291', 'Venta al por mayor de granos básicos (cereales, leguminosas)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (355, '46292', 'Venta al por mayor de semillas mejoradas para cultivo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (356, '46293', 'Venta al por mayor de café oro y uva', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (357, '46294', 'Venta al por mayor de caña de azúcar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (358, '46295', 'Venta al por mayor de flores, plantas y otros productos naturales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (359, '46296', 'Venta al por mayor de productos agrícolas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (360, '46297', 'Venta al por mayor de ganado bovino (vivo)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (361, '46298', 'Venta al por mayor de animales porcinos, ovinos, caprino, canículas, apícolas, avícolas vivos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (362, '46299', 'Venta de otras especies vivas del reino animal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (363, '46301', 'Venta al por mayor de alimentos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (364, '46302', 'Venta al por mayor de bebidas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (365, '46303', 'Venta al por mayor de tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (366, '46371', 'Venta al por mayor de frutas, hortalizas (verduras), legumbres y tubérculos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (367, '46372', 'Venta al por mayor de pollos, gallinas destazadas, pavos y otras aves', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (368, '46373', 'Venta al por mayor de carne bovina y porcina, productos de carne y embutidos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (369, '46374', 'Venta al por mayor de huevos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (370, '46375', 'Venta al por mayor de productos lácteos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (371, '46376', 'Venta al por mayor de productos farináceos de panadería (pan dulce, cakes, repostería, etc.)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (372, '46377', 'Venta al por mayor de pastas alimenticias, aceites y grasas comestibles vegetal y animal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (373, '46378', 'Venta al por mayor de sal comestible', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (374, '46379', 'Venta al por mayor de azúcar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (375, '46391', 'Venta al por mayor de abarrotes (vinos, licores, productos alimenticios envasados, etc.)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (376, '46392', 'Venta al por mayor de aguas gaseosas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (377, '46393', 'Venta al por mayor de agua purificada', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (378, '46394', 'Venta al por mayor de refrescos y otras bebidas, líquidas o en polvo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (379, '46395', 'Venta al por mayor de cerveza y licores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (380, '46396', 'Venta al por mayor de hielo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (381, '46411', 'Venta al por mayor de hilados, tejidos y productos textiles de mercería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (382, '46412', 'Venta al por mayor de artículos textiles excepto confecciones para el hogar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (383, '46413', 'Venta al por mayor de confecciones textiles para el hogar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (384, '46414', 'Venta al por mayor de prendas de vestir y accesorios de vestir', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (385, '46415', 'Venta al por mayor de ropa usada', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (386, '46416', 'Venta al por mayor de calzado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (387, '46417', 'Venta al por mayor de artículos de marroquinería y talabartería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (388, '46418', 'Venta al por mayor de artículos de peletería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (389, '46419', 'Venta al por mayor de otros artículos textiles n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (390, '46471', 'Venta al por mayor de instrumentos musicales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (391, '46472', 'Venta al por mayor de colchones, almohadas, cojines, etc.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (392, '46473', 'Venta al por mayor de artículos de aluminio para el hogar y para otros usos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (393, '46474', 'Venta al por mayor de depósitos y otros artículos plásticos para el hogar y otros usos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (394, '46475', 'Venta al por mayor de cámaras fotográficas, accesorios y materiales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (395, '46482', 'Venta al por mayor de medicamentos, artículos y otros productos de uso veterinario', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (396, '46483', 'Venta al por mayor de productos y artículos de belleza y de uso personal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (397, '46484', 'Venta de productos farmacéuticos y medicinales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (398, '46491', 'Venta al por mayor de productos medicinales, cosméticos, perfumería y productos de limpieza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (399, '46492', 'Venta al por mayor de relojes y artículos de joyería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (400, '46493', 'Venta al por mayor de electrodomésticos y artículos del hogar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (401, '46494', 'Venta al por mayor de artículos de bazar y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (402, '46495', 'Venta al por mayor de artículos de óptica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (403, '46496', 'Venta al por mayor de revistas, periódicos, libros, artículos de librería y artículos de papel y cartón en general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (404, '46497', 'Venta de artículos deportivos, juguetes y rodados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (405, '46498', 'Venta al por mayor de productos usados para el hogar o el uso personal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (406, '46499', 'Venta al por mayor de enseres domésticos y de uso personal n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (407, '46500', 'Venta al por mayor de bicicletas, partes, accesorios y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (408, '46510', 'Venta al por mayor de computadoras, equipo periférico y programas informáticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (409, '46520', 'Venta al por mayor de equipos de comunicación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (410, '46530', 'Venta al por mayor de maquinaria y equipo agropecuario, accesorios, partes y suministros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (411, '46590', 'Venta de equipos e instrumentos de uso profesional y científico y aparatos de medida y control', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (412, '46591', 'Venta al por mayor de maquinaria equipo, accesorios y materiales para la industria de la madera y sus productos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (413, '46592', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria gráfica y del papel, cartón y productos de papel y cartón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (414, '46593', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria de productos químicos, plástico y caucho', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (415, '46594', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria metálica y de sus productos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (416, '46595', 'Venta al por mayor de equipamiento para uso médico, odontológico, veterinario y servicios conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (417, '46596', 'Venta al por mayor de maquinaria, equipo, accesorios y partes para la industria de la alimentación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (418, '46597', 'Venta al por mayor de maquinaria, equipo, accesorios y partes para la industria textil, confecciones y cuero', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (419, '46598', 'Venta al por mayor de maquinaria, equipo y accesorios para la construcción y explotación de minas y canteras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (420, '46599', 'Venta al por mayor de otro tipo de maquinaria y equipo con sus accesorios y partes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (421, '46610', 'Venta al por mayor de otros combustibles sólidos, líquidos, gaseosos y de productos conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (422, '46612', 'Venta al por mayor de combustibles para automotores, aviones, barcos, maquinaria y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (423, '46613', 'Venta al por mayor de lubricantes, grasas y otros aceites para automotores, maquinaria industrial, etc.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (424, '46614', 'Venta al por mayor de gas propano', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (425, '46615', 'Venta al por mayor de leña y carbón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (426, '46620', 'Venta al por mayor de metales y minerales metalíferos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (427, '46631', 'Venta al por mayor de puertas, ventanas, vitrinas y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (428, '46632', 'Venta al por mayor de artículos de ferretería y pinturerías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (429, '46633', 'Vidrierías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (430, '46634', 'Venta al por mayor de maderas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (431, '46639', 'Venta al por mayor de materiales para la construcción n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (432, '46691', 'Venta al por mayor de sal industrial sin yodar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (433, '46692', 'Venta al por mayor de productos intermedios y desechos de origen textil', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (434, '46693', 'Venta al por mayor de productos intermedios y desechos de origen metálico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (435, '46694', 'Venta al por mayor de productos intermedios y desechos de papel y cartón', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (436, '46695', 'Venta al por mayor de fertilizantes, abonos, agroquímicos y productos similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (437, '46696', 'Venta al por mayor de productos intermedios y desechos de origen plástico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (438, '46697', 'Venta al por mayor de tintas para imprenta, productos curtientes y materias y productos colorantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (439, '46698', 'Venta de productos intermedios y desechos de origen químico y de caucho', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (440, '46699', 'Venta al por mayor de productos intermedios y desechos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (441, '46701', 'Venta de algodón en oro', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (442, '46900', 'Venta al por mayor de otros productos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (443, '46901', 'Venta al por mayor de cohetes y otros productos pirotécnicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (444, '46902', 'Venta al por mayor de artículos diversos para consumo humano', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (445, '46903', 'Venta al por mayor de armas de fuego, municiones y accesorios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (446, '46904', 'Venta al por mayor de toldos y tiendas de campaña de cualquier material', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (447, '46905', 'Venta al por mayor de exhibidores publicitarios y rótulos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (448, '46906', 'Venta al por mayor de artículos promocionales diversos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (449, '47111', 'Venta en supermercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (450, '47112', 'Venta en tiendas de artículos de primera necesidad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (451, '47119', 'Almacenes (venta de diversos artículos)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (452, '47190', 'Venta al por menor de otros productos en comercios no especializados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (453, '47199', 'Venta de establecimientos no especializados con surtido compuesto principalmente de alimentos, bebidas y tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (454, '47211', 'Venta al por menor de frutas y hortalizas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (455, '47212', 'Venta al por menor de carnes, embutidos y productos de granja', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (456, '47213', 'Venta al por menor de pescado y mariscos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (457, '47214', 'Venta al por menor de productos lácteos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (458, '47215', 'Venta al por menor de productos de panadería, repostería y galletas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (459, '47216', 'Venta al por menor de huevos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (460, '47217', 'Venta al por menor de carnes y productos cárnicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (461, '47218', 'Venta al por menor de granos básicos y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (462, '47219', 'Venta al por menor de alimentos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (463, '47221', 'Venta al por menor de hielo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (464, '47223', 'Venta de bebidas no alcohólicas, para su consumo fuera del establecimiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (465, '47224', 'Venta de bebidas alcohólicas, para su consumo fuera del establecimiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (466, '47225', 'Venta de bebidas alcohólicas para su consumo dentro del establecimiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (467, '47230', 'Venta al por menor de tabaco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (468, '47300', 'Venta de combustibles, lubricantes y otros (gasolineras)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (470, '47411', 'Venta al por menor de computadoras y equipo periférico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (471, '47412', 'Venta de equipo y accesorios de telecomunicación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (472, '47420', 'Venta al por menor de equipo de audio y video', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (473, '47510', 'Venta al por menor de hilados, tejidos y productos textiles de mercería; confecciones para el hogar y textiles n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (474, '47521', 'Venta al por menor de productos de madera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (475, '47522', 'Venta al por menor de artículos de ferretería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (476, '47523', 'Venta al por menor de productos de pinturerías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (477, '47524', 'Venta al por menor en vidrierías', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (478, '47529', 'Venta al por menor de materiales de construcción y artículos conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (479, '47530', 'Venta al por menor de tapices, alfombras y revestimientos de paredes y pisos en comercios especializados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (480, '47591', 'Venta al por menor de muebles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (481, '47592', 'Venta al por menor de artículos de bazar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (482, '47593', 'Venta al por menor de aparatos electrodomésticos, repuestos y accesorios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (483, '47594', 'Venta al por menor de artículos eléctricos y de iluminación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (484, '47598', 'Venta al por menor de instrumentos musicales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (485, '47610', 'Venta al por menor de libros, periódicos y artículos de papelería en comercios especializados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (486, '47620', 'Venta al por menor de discos láser, cassettes, cintas de video y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (487, '47630', 'Venta al por menor de productos y equipos de deporte', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (488, '47631', 'Venta al por menor de bicicletas, accesorios y repuestos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (489, '47640', 'Venta al por menor de juegos y juguetes en comercios especializados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (490, '47711', 'Venta al por menor de prendas de vestir y accesorios de vestir', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (491, '47712', 'Venta al por menor de calzado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (492, '47713', 'Venta al por menor de artículos de peletería, marroquinería y talabartería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (493, '47721', 'Venta al por menor de medicamentos farmacéuticos y otros materiales y artículos de uso médico, odontológico y veterinario', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (494, '47722', 'Venta al por menor de productos cosméticos y de tocador', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (495, '47731', 'Venta al por menor de productos de joyería, bisutería, óptica, relojería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (496, '47732', 'Venta al por menor de plantas, semillas, animales y artículos conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (497, '47733', 'Venta al por menor de combustibles de uso doméstico (gas propano y gas licuado)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (498, '47734', 'Venta al por menor de artesanías, artículos cerámicos y recuerdos en general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (499, '47735', 'Venta al por menor de ataúdes, lápidas y cruces, trofeos, artículos religiosos en general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (500, '47736', 'Venta al por menor de armas de fuego, municiones y accesorios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (501, '47737', 'Venta al por menor de artículos de cohetería y pirotécnicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (502, '47738', 'Venta al por menor de artículos desechables de uso personal y doméstico (servilletas, papel higiénico, pañales, toallas sanitarias, etc.)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (503, '47739', 'Venta al por menor de otros productos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (504, '47741', 'Venta al por menor de artículos usados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (505, '47742', 'Venta al por menor de textiles y confecciones usados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (506, '47743', 'Venta al por menor de libros, revistas, papel y cartón usados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (507, '47749', 'Venta al por menor de productos usados n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (508, '47811', 'Venta al por menor de frutas, verduras y hortalizas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (509, '47814', 'Venta al por menor de productos lácteos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (510, '47815', 'Venta al por menor de productos de panadería, galletas y similares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (511, '47816', 'Venta al por menor de bebidas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (512, '47818', 'Venta al por menor en tiendas de mercado y puestos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (513, '47821', 'Venta al por menor de hilados, tejidos y productos textiles de mercería en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (514, '47822', 'Venta al por menor de artículos textiles excepto confecciones para el hogar en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (515, '47823', 'Venta al por menor de confecciones textiles para el hogar en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (516, '47824', 'Venta al por menor de prendas de vestir, accesorios de vestir y similares en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (517, '47825', 'Venta al por menor de ropa usada', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (518, '47826', 'Venta al por menor de calzado, artículos de marroquinería y talabartería en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (519, '47827', 'Venta al por menor de artículos de marroquinería y talabartería en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (520, '47829', 'Venta al por menor de artículos textiles ncp en puestos de mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (521, '47891', 'Venta al por menor de animales, flores y productos conexos en puestos de feria y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (522, '47892', 'Venta al por menor de productos medicinales, cosméticos, de tocador y de limpieza en puestos de ferias y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (523, '47893', 'Venta al por menor de artículos de bazar en puestos de ferias y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (524, '47894', 'Venta al por menor de artículos de papel, envases, libros, revistas y conexos en puestos de feria y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (525, '47895', 'Venta al por menor de materiales de construcción, electrodomésticos, accesorios para autos y similares en puestos de feria y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (526, '47896', 'Venta al por menor de equipos accesorios para las comunicaciones en puestos de feria y mercados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (527, '47899', 'Venta al por menor en puestos de ferias y mercados n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (528, '47910', 'Venta al por menor por correo o Internet', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (529, '47990', 'Otros tipos de venta al por menor no realizada, en almacenes, puestos de venta o mercado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (530, '49110', 'Transporte interurbano de pasajeros por ferrocarril', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (531, '49120', 'Transporte de carga por ferrocarril', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (532, '49211', 'Transporte de pasajeros urbanos e interurbano mediante buses', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (533, '49212', 'Transporte de pasajeros interdepartamental mediante microbuses', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (534, '49213', 'Transporte de pasajeros urbanos e interurbano mediante microbuses', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (535, '49214', 'Transporte de pasajeros interdepartamental mediante buses', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (536, '49221', 'Transporte internacional de pasajeros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (537, '49222', 'Transporte de pasajeros mediante taxis y autos con chofer', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (538, '49223', 'Transporte escolar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (539, '49225', 'Transporte de pasajeros para excursiones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (540, '49226', 'Servicios de transporte de personal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (541, '49229', 'Transporte de pasajeros por vía terrestre ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (542, '49231', 'Transporte de carga urbano', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (543, '49232', 'Transporte nacional de carga', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (544, '49233', 'Transporte de carga internacional', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (545, '49234', 'Servicios de mudanza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (546, '49235', 'Alquiler de vehículos de carga con conductor', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (547, '49300', 'Transporte por oleoducto o gasoducto', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (548, '50110', 'Transporte de pasajeros marítimo y de cabotaje', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (549, '50120', 'Transporte de carga marítimo y de cabotaje', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (550, '50211', 'Transporte de pasajeros por vías de navegación interiores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (551, '50212', 'Alquiler de equipo de transporte de pasajeros por vías de navegación interior con conductor', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (552, '50220', 'Transporte de carga por vías de navegación interiores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (553, '51100', 'Transporte aéreo de pasajeros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (554, '51201', 'Transporte de carga por vía aérea', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (555, '51202', 'Alquiler de equipo de aerotransporte con operadores para el propósito de transportar carga', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (556, '52101', 'Alquiler de instalaciones de almacenamiento en zonas francas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (557, '52102', 'Alquiler de silos para conservación y almacenamiento de granos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (558, '52103', 'Alquiler de instalaciones con refrigeración para almacenamiento y conservación de alimentos y otros productos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (559, '52109', 'Alquiler de bodegas para almacenamiento y depósito ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (560, '52211', 'Servicio de garaje y estacionamiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (561, '52212', 'Servicios de terminales para el transporte por vía terrestre', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (562, '52219', 'Servicios para el transporte por vía terrestre ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (563, '52220', 'Servicios para el transporte acuático', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (564, '52230', 'Servicios para el transporte aéreo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (565, '52240', 'Manipulación de carga', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (566, '52290', 'Servicios para el transporte ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (567, '52291', 'Agencias de tramitaciones aduanales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (568, '53100', 'Servicios de correo nacional', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (569, '53200', 'Actividades de correo distintas a las actividades postales nacionales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (570, '53201', 'Agencia privada de correo y encomiendas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (571, '55101', 'Actividades de alojamiento para estancias cortas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (572, '55102', 'Hoteles', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (573, '55200', 'Actividades de campamentos, parques de vehículos de recreo y parques de caravanas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (574, '55900', 'Alojamiento ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (575, '56101', 'Restaurantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (576, '56106', 'Pupusería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (577, '56107', 'Actividades varias de restaurantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (578, '56108', 'Comedores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (579, '56109', 'Merenderos ambulantes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (580, '56210', 'Preparación de comida para eventos especiales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (581, '56291', 'Servicios de provisión de comidas por contrato', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (582, '56292', 'Servicios de concesión de cafetines y chalet en empresas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (583, '56299', 'Servicios de preparación de comidas ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (584, '56301', 'Servicio de expendio de bebidas en salones y bares', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (585, '56302', 'Servicio de expendio de bebidas en puestos callejeros, mercados y ferias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (586, '58110', 'Edición de libros, folletos, partituras y otras ediciones distintas a estas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (587, '58120', 'Edición de directorios y listas de correos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (588, '58130', 'Edición de periódicos, revistas y otras publicaciones periódicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (589, '58190', 'Otras actividades de edición', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (769, '10002', 'Pensionado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (590, '58200', 'Edición de programas informáticos (software)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (591, '59110', 'Actividades de producción cinematográfica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (592, '59120', 'Actividades de post producción de películas, videos y programas de televisión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (593, '59130', 'Actividades de distribución de películas cinematográficas, videos y programas de televisión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (594, '59140', 'Actividades de exhibición de películas cinematográficas y cintas de vídeo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (595, '59200', 'Actividades de edición y grabación de música', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (596, '60100', 'Servicios de difusiones de radio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (597, '60201', 'Actividades de programación y difusión de televisión abierta', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (598, '60202', 'Actividades de suscripción y difusión de televisión por cable y/o suscripción', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (599, '60299', 'Servicios de televisión, incluye televisión por cable', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (600, '60900', 'Programación y transmisión de radio y televisión', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (601, '61101', 'Servicio de telefonía', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (602, '61102', 'Servicio de Internet', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (603, '61103', 'Servicio de telefonía fija', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (604, '61109', 'Servicio de Internet n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (605, '61201', 'Servicios de telefonía celular', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (606, '61202', 'Servicios de Internet inalámbrico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (607, '61209', 'Servicios de telecomunicaciones inalámbrico n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (608, '61301', 'Telecomunicaciones satelitales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (609, '61309', 'Comunicación vía satélite n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (610, '61900', 'Actividades de telecomunicación n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (611, '62010', 'Programación Informática', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (612, '62020', 'Consultorías y gestión de servicios informáticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (613, '62090', 'Otras actividades de tecnología de información y servicios de computadora', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (614, '63110', 'Procesamiento de datos y actividades relacionadas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (615, '63120', 'Portales WEB', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (616, '63910', 'Servicios de Agencias de Noticias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (617, '63990', 'Otros servicios de información n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (618, '64110', 'Servicios provistos por el Banco Central de El Salvador', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (619, '64190', 'Bancos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (620, '64192', 'Entidades dedicadas al envío de remesas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (621, '64199', 'Otras entidades financieras', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (622, '64200', 'Actividades de sociedades de cartera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (623, '64300', 'Fideicomisos, fondos y otras fuentes de financiamiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (624, '64910', 'Arrendamientos financieros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (625, '64920', 'Asociaciones cooperativas de ahorro y crédito dedicadas a la intermediación financiera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (626, '64921', 'Instituciones emisoras de tarjetas de crédito y otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (627, '64922', 'Tipos de crédito n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (628, '64928', 'Prestamistas y casas de empeño', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (629, '64990', 'Actividades de servicios financieros, excepto la financiación de planes de seguros y de pensiones n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (630, '65110', 'Planes de seguros de vida', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (631, '65120', 'Planes de seguro excepto de vida', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (632, '65199', 'Seguros generales de todo tipo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (633, '65200', 'Planes de seguro', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (634, '65300', 'Planes de pensiones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (635, '66110', 'Administración de mercados financieros (Bolsa de Valores)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (636, '66120', 'Actividades bursátiles (Corredores de Bolsa)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (637, '66190', 'Actividades auxiliares de la intermediación financiera n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (638, '66210', 'Evaluación de riesgos y daños', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (639, '66220', 'Actividades de agentes y corredores de seguros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (640, '66290', 'Otras actividades auxiliares de seguros y fondos de pensiones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (641, '68101', 'Servicio de alquiler y venta de lotes en cementerios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (642, '68109', 'Actividades inmobiliarias realizadas con bienes propios o arrendados n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (643, '68200', 'Actividades inmobiliarias realizadas a cambio de una retribución o por contrata', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (644, '69100', 'Actividades jurídicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (645, '69200', 'Actividades de contabilidad, teneduría de libros y auditoría; asesoramiento en materia de impuestos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (646, '70100', 'Actividades de oficinas centrales de sociedades de cartera', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (647, '70200', 'Actividades de consultoría en gestión empresarial', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (648, '71101', 'Servicios de arquitectura y planificación urbana y servicios conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (649, '71102', 'Servicios de ingeniería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (650, '71103', 'Servicios de agrimensura, topografía, cartografía, prospección y geofísica y servicios conexos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (651, '71200', 'Ensayos y análisis técnicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (652, '72100', 'Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (653, '72199', 'Investigaciones científicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (654, '72200', 'Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (655, '73100', 'Publicidad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (656, '73200', 'Investigación de mercados y realización de encuestas de opinión pública', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (657, '74100', 'Actividades de diseño especializado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (658, '74200', 'Actividades de fotografía', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (659, '74900', 'Servicios profesionales y científicos n.c.p.', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (660, '75000', 'Actividades veterinarias', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (661, '77101', 'Alquiler de equipo de transporte terrestre', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (662, '77102', 'Alquiler de equipo de transporte acuático', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (663, '77103', 'Alquiler de equipo de transporte por vía aérea', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (664, '77210', 'Alquiler y arrendamiento de equipo de recreo y deportivo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (665, '77220', 'Alquiler de cintas de video y discos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (666, '77290', 'Alquiler de otros efectos personales y enseres domésticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (667, '77300', 'Alquiler de maquinaria y equipo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (668, '77400', 'Arrendamiento de productos de propiedad intelectual', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (669, '78100', 'Obtención y dotación de personal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (670, '78200', 'Actividades de las agencias de trabajo temporal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (671, '78300', 'Dotación de recursos humanos y gestión; gestión de las funciones de recursos humanos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (672, '79110', 'Actividades de agencias de viajes y organizadores de viajes; actividades de asistencia a turistas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (673, '79120', 'Actividades de los operadores turísticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (674, '79900', 'Otros servicios de reservas y actividades relacionadas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (675, '80100', 'Servicios de seguridad privados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (676, '80201', 'Actividades de servicios de sistemas de seguridad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (677, '80202', 'Actividades para la prestación de sistemas de seguridad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (678, '80300', 'Actividades de investigación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (770, '10003', 'Estudiante', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (679, '81100', 'Actividades combinadas de mantenimiento de edificios e instalaciones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (680, '81210', 'Limpieza general de edificios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (681, '81290', 'Otras actividades combinadas de mantenimiento de edificios e instalaciones ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (682, '81300', 'Servicio de jardinería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (683, '82110', 'Servicios administrativos de oficinas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (684, '82190', 'Servicio de fotocopiado y similares, excepto en imprentas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (685, '82200', 'Actividades de las centrales de llamadas (call center)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (686, '82300', 'Organización de convenciones y ferias de negocios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (687, '82910', 'Actividades de agencias de cobro y oficinas de crédito', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (688, '82921', 'Servicios de envase y empaque de productos alimenticios', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (689, '82922', 'Servicios de envase y empaque de productos medicinales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (690, '82929', 'Servicio de envase y empaque ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (691, '82990', 'Actividades de apoyo empresariales ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (692, '84110', 'Actividades de la Administración Pública en general', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (693, '84111', 'Alcaldías Municipales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (694, '84120', 'Regulación de las actividades de prestación de servicios sanitarios, educativos, culturales y otros servicios sociales, excepto seguridad social', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (695, '84130', 'Regulación y facilitación de la actividad económica', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (696, '84210', 'Actividades de administración y funcionamiento del Ministerio de Relaciones Exteriores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (697, '84220', 'Actividades de defensa', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (698, '84230', 'Actividades de mantenimiento del orden público y de seguridad', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (699, '84300', 'Actividades de planes de seguridad social de afiliación obligatoria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (700, '85101', 'Guardería educativa', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (701, '85102', 'Enseñanza preescolar o parvularia', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (702, '85103', 'Enseñanza primaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (703, '85104', 'Servicio de educación preescolar y primaria integrada', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (704, '85211', 'Enseñanza secundaria tercer ciclo (7°, 8° y 9°)', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (705, '85212', 'Enseñanza secundaria de formación general bachillerato', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (706, '85221', 'Enseñanza secundaria de formación técnica y profesional', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (707, '85222', 'Enseñanza secundaria de formación técnica y profesional integrada con enseñanza primaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (708, '85301', 'Enseñanza superior universitaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (709, '85302', 'Enseñanza superior no universitaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (710, '85303', 'Enseñanza superior integrada a educación secundaria y/o primaria', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (711, '85410', 'Educación deportiva y recreativa', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (712, '85420', 'Educación cultural', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (713, '85490', 'Otros tipos de enseñanza ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (714, '85499', 'Enseñanza formal', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (715, '85500', 'Servicios de apoyo a la enseñanza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (716, '86100', 'Actividades de hospitales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (717, '86201', 'Clínicas médicas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (718, '86202', 'Servicios de Odontología', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (719, '86203', 'Servicios médicos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (720, '86901', 'Servicios de análisis y estudios de diagnóstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (721, '86902', 'Actividades de atención de la salud humana', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (722, '86909', 'Otros Servicio relacionados con la salud ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (723, '87100', 'Residencias de ancianos con atención de enfermería', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (724, '87200', 'Instituciones dedicadas al tratamiento del retraso mental, problemas de salud mental y el uso indebido de sustancias nocivas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (725, '87300', 'Instituciones dedicadas al cuidado de ancianos y discapacitados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (726, '87900', 'Actividades de asistencia a niños y jóvenes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (727, '87901', 'Otras actividades de atención en instituciones', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (728, '88100', 'Actividades de asistencia sociales sin alojamiento para ancianos y discapacitados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (729, '88900', 'Servicios sociales sin alojamiento ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (730, '90000', 'Actividades creativas artísticas y de esparcimiento', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (731, '91010', 'Actividades de bibliotecas y archivos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (732, '91020', 'Actividades de museos y preservación de lugares y edificios históricos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (733, '91030', 'Actividades de jardines botánicos, zoológicos y de reservas naturales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (734, '92000', 'Actividades de juegos y apuestas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (735, '93110', 'Gestión de instalaciones deportivas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (736, '93120', 'Actividades de clubes deportivos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (737, '93190', 'Otras actividades deportivas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (738, '93210', 'Actividades de parques de atracciones y parques temáticos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (739, '93291', 'Discotecas y salas de baile', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (740, '93298', 'Centros vacacionales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (741, '93299', 'Actividades de esparcimiento ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (742, '94110', 'Actividades de organizaciones empresariales y de empleadores', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (743, '94120', 'Actividades de organizaciones profesionales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (744, '94200', 'Actividades de sindicatos', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (745, '94910', 'Actividades de organizaciones religiosas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (746, '94920', 'Actividades de organizaciones políticas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (747, '94990', 'Actividades de asociaciones ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (748, '95110', 'Reparación de computadoras y equipo periférico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (749, '95120', 'Reparación de equipo de comunicación', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (750, '95210', 'Reparación de aparatos electrónicos de consumo', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (751, '95220', 'Reparación de aparatos domésticos y equipo de hogar y jardín', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (752, '95230', 'Reparación de calzado y artículos de cuero', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (753, '95240', 'Reparación de muebles y accesorios para el hogar', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (754, '95291', 'Reparación de instrumentos musicales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (755, '95292', 'Servicios de cerrajería y copiado de llaves', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (756, '95293', 'Reparación de joyas y relojes', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (757, '95294', 'Reparación de bicicletas, sillas de ruedas y rodados ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (758, '95299', 'Reparaciones de enseres personales ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (759, '96010', 'Lavado y limpieza de prendas de tela y de piel, incluso la limpieza en seco', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (760, '96020', 'Peluquería y otros tratamientos de belleza', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (761, '96030', 'Pompas fúnebres y actividades conexas', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (762, '96091', 'Servicios de sauna y otros servicios para la estética corporal ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (763, '96092', 'Servicios ncp', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (764, '97000', 'Actividad de los hogares en calidad de empleadores de personal doméstico', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (765, '98100', 'Actividades indiferenciadas de producción de bienes de los hogares privados para uso propio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (766, '98200', 'Actividades indiferenciadas de producción de servicios de los hogares privados para uso propio', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (767, '99000', 'Actividades de organizaciones y órganos extraterritoriales', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (768, '10001', 'Empleados', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (771, '10004', 'Desempleado', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (772, '10005', 'Otros', '');
-INSERT INTO "ActividadEconomica" (id, codigo, valor, descripcion) VALUES (773, '10006', 'Comerciante', '');
+insert into facturalink."ActividadEconomica" (id, codigo, valor, descripcion)
+values  (1, '01111', 'Cultivo de cereales excepto arroz y para forrajes', ''),
+        (2, '01112', 'Cultivo de legumbres', ''),
+        (3, '01113', 'Cultivo de semillas oleaginosas', ''),
+        (4, '01114', 'Cultivo de plantas para la preparación de semillas', ''),
+        (5, '01119', 'Cultivo de otros cereales excepto arroz y forrajeros n.c.p.', ''),
+        (6, '01120', 'Cultivo de arroz', ''),
+        (7, '01131', 'Cultivo de raíces y tubérculos', ''),
+        (8, '01132', 'Cultivo de brotes, bulbos, vegetales tubérculos y cultivos similares', ''),
+        (9, '01133', 'Cultivo horticola de fruto', ''),
+        (10, '01134', 'Cultivo de hortalizas de hoja y otras hortalizas ncp', ''),
+        (11, '01140', 'Cultivo de caña de azucar', ''),
+        (12, '01150', 'Cultivo de tabaco', ''),
+        (13, '01161', 'Cultivo de algodón', ''),
+        (14, '01162', 'Cultivo de fibras vegetales excepto algodón', ''),
+        (15, '01191', 'Cultivo de plantas no perennes para la producción de semillas y flores', ''),
+        (16, '01192', 'Cultivo de cereales y pastos para la alimentación animal', ''),
+        (17, '01199', 'Producción de cultivos no estacionales ncp', ''),
+        (18, '01220', 'Cultivo de frutas tropicales', ''),
+        (19, '01230', 'Cultivo de cítricos', ''),
+        (20, '01240', 'Cultivo de frutas de pepita y hueso', ''),
+        (21, '01251', 'Cultivo de frutas ncp', ''),
+        (22, '01252', 'Cultivo de otros frutos y nueces de árboles y arbustos', ''),
+        (23, '01260', 'Cultivo de frutos oleaginosos', ''),
+        (24, '01271', 'Cultivo de café', ''),
+        (25, '01272', 'Cultivo de plantas para la elaboración de bebidas excepto café', ''),
+        (26, '01281', 'Cultivo de especias y aromáticas', ''),
+        (27, '01282', 'Cultivo de plantas para la obtención de productos medicinales y farmacéuticos', ''),
+        (28, '01291', 'Cultivo de árboles de hule (caucho) para la obtención de látex', ''),
+        (29, '01292', 'Cultivo de plantas para la obtención de productos químicos y colorantes', ''),
+        (30, '01299', 'Producción de cultivos perennes ncp', ''),
+        (31, '01300', 'Propagación de plantas', ''),
+        (32, '01301', 'Cultivo de plantas y flores ornamentales', ''),
+        (33, '01410', 'Cría y engorde de ganado bovino', ''),
+        (34, '01420', 'Cría de caballos y otros equinos', ''),
+        (35, '01440', 'Cría de ovejas y cabras', ''),
+        (36, '01450', 'Cría de cerdos', ''),
+        (37, '01460', 'Cría de aves de corral y producción de huevos', ''),
+        (38, '01491', 'Cría de abejas apicultura para la obtención de miel y otros productos apícolas', ''),
+        (39, '01492', 'Cría de conejos', ''),
+        (40, '01493', 'Cría de iguanas y garrobos', ''),
+        (41, '01494', 'Cría de mariposas y otros insectos', ''),
+        (42, '01499', 'Cría y obtención de productos animales n.c.p.', ''),
+        (43, '01500', 'Cultivo de productos agrícolas en combinación con la cría de animales', ''),
+        (44, '01611', 'Servicios de maquinaria agrícola', ''),
+        (45, '01612', 'Control de plagas', ''),
+        (46, '01613', 'Servicios de riego', ''),
+        (47, '01614', 'Servicios de contratación de mano de obra para la agricultura', ''),
+        (48, '01619', 'Servicios agrícolas ncp', ''),
+        (49, '01621', 'Actividades para mejorar la reproducción, el crecimiento y el rendimiento de los animales y sus productos', ''),
+        (50, '01622', 'Servicios de mano de obra pecuaria', ''),
+        (51, '01629', 'Servicios pecuarios ncp', ''),
+        (52, '01631', 'Labores post cosecha de preparación de los productos agrícolas para su comercialización o para la industria', ''),
+        (53, '01632', 'Servicio de beneficio de café', ''),
+        (54, '01633', 'Servicio de beneficiado de plantas textiles (incluye el beneficiado cuando este es realizado en la misma explotación agropecuaria)', ''),
+        (55, '01640', 'Tratamiento de semillas para la propagación', ''),
+        (56, '01700', 'Caza ordinaria y mediante trampas, repoblación de animales de caza y servicios conexos', ''),
+        (57, '02100', 'Silvicultura y otras actividades forestales', ''),
+        (58, '02200', 'Extracción de madera', ''),
+        (59, '02300', 'Recolección de productos diferentes a la madera', ''),
+        (60, '02400', 'Servicios de apoyo a la silvicultura', ''),
+        (61, '03110', 'Pesca marítima de altura y costera', ''),
+        (62, '03120', 'Pesca de agua dulce', ''),
+        (63, '03210', 'Acuicultura marítima', ''),
+        (64, '03220', 'Acuicultura de agua dulce', ''),
+        (65, '03300', 'Servicios de apoyo a la pesca y acuicultura', ''),
+        (66, '05100', 'Extracción de hulla', ''),
+        (67, '05200', 'Extracción y aglomeración de lignito', ''),
+        (68, '06100', 'Extracción de petróleo crudo', ''),
+        (69, '06200', 'Extracción de gas natural', ''),
+        (70, '07100', 'Extracción de minerales de hierro', ''),
+        (71, '07210', 'Extracción de minerales de uranio y torio', ''),
+        (72, '07290', 'Extracción de minerales metalíferos no ferrosos', ''),
+        (73, '08100', 'Extracción de piedra, arena y arcilla', ''),
+        (74, '08910', 'Extracción de minerales para la fabricación de abonos y productos químicos', ''),
+        (75, '08920', 'Extracción y aglomeración de turba', ''),
+        (76, '08930', 'Extracción de sal', ''),
+        (77, '08990', 'Explotación de otras minas y canteras ncp', ''),
+        (78, '09100', 'Actividades de apoyo a la extracción de petróleo y gas natural', ''),
+        (79, '09900', 'Actividades de apoyo a la explotación de minas y canteras', ''),
+        (80, '10101', 'Servicio de rastros y mataderos de bovinos y porcinos', ''),
+        (81, '10102', 'Matanza y procesamiento de bovinos y porcinos', ''),
+        (82, '10103', 'Matanza y procesamientos de aves de corral', ''),
+        (83, '10104', 'Elaboración y conservación de embutidos y tripas naturales', ''),
+        (84, '10105', 'Servicios de conservación y empaque de carnes', ''),
+        (85, '10106', 'Elaboración y conservación de grasas y aceites animales', ''),
+        (86, '10107', 'Servicios de molienda de carne', ''),
+        (87, '10108', 'Elaboración de productos de carne ncp', ''),
+        (88, '10201', 'Procesamiento y conservación de pescado, crustáceos y moluscos', ''),
+        (89, '10209', 'Fabricación de productos de pescado ncp', ''),
+        (90, '10301', 'Elaboración de jugos de frutas y hortalizas', ''),
+        (91, '10302', 'Elaboración y envase de jaleas, mermeladas y frutas deshidratadas', ''),
+        (92, '10309', 'Elaboración de productos de frutas y hortalizas n.c.p.', ''),
+        (93, '10401', 'Fabricación de aceites y grasas vegetales y animales comestibles', ''),
+        (94, '10402', 'Fabricación de aceites y grasas vegetales y animales no comestibles', ''),
+        (95, '10409', 'Servicio de maquilado de aceites', ''),
+        (96, '10501', 'Fabricación de productos lácteos excepto sorbetes y quesos sustitutos', ''),
+        (97, '10502', 'Fabricación de sorbetes y helados', ''),
+        (98, '10503', 'Fabricación de quesos', ''),
+        (99, '10611', 'Molienda de cereales', ''),
+        (100, '10612', 'Elaboración de cereales para el desayuno y similares', ''),
+        (101, '10613', 'Servicios de beneficiado de productos agrícolas ncp (excluye Beneficio de azúcar rama 1072 y beneficio de café rama 0163)', ''),
+        (102, '10621', 'Fabricación de almidón', ''),
+        (103, '10628', 'Servicio de molienda de maíz húmedo molino para nixtamal', ''),
+        (104, '10711', 'Elaboración de tortillas', ''),
+        (105, '10712', 'Fabricación de pan, galletas y barquillos', ''),
+        (106, '10713', 'Fabricación de repostería', ''),
+        (107, '10721', 'Ingenios azucareros', ''),
+        (108, '10722', 'Molienda de caña de azúcar para la elaboración de dulces', ''),
+        (109, '10723', 'Elaboración de jarabes de azúcar y otros similares', ''),
+        (110, '10724', 'Maquilado de azúcar de caña', ''),
+        (111, '10730', 'Fabricación de cacao, chocolates y productos de confitería', ''),
+        (112, '10740', 'Elaboración de macarrones, fideos, y productos farináceos similares', ''),
+        (113, '10750', 'Elaboración de comidas y platos preparados para la reventa en', ''),
+        (114, '10791', 'Elaboración de productos de café', ''),
+        (115, '10792', 'Elaboración de especies, sazonadores y condimentos', ''),
+        (116, '10793', 'Elaboración de sopas, cremas y consomé', ''),
+        (117, '10794', 'Fabricación de bocadillos tostados y/o fritos', ''),
+        (118, '10799', 'Elaboración de productos alimenticios ncp', ''),
+        (119, '10800', 'Elaboración de alimentos preparados para animales', ''),
+        (120, '11012', 'Fabricación de aguardiente y licores', ''),
+        (121, '11020', 'Elaboración de vinos', ''),
+        (122, '11030', 'Fabricacion de cerveza', ''),
+        (123, '11041', 'Fabricación de aguas gaseosas', ''),
+        (124, '11042', 'Fabricación y envasado de agua', ''),
+        (125, '11043', 'Elaboración de refrescos', ''),
+        (126, '11048', 'Maquilado de aguas gaseosas', ''),
+        (127, '11049', 'Elaboración de bebidas no alcohólicas', ''),
+        (128, '12000', 'Elaboración de productos de tabaco', ''),
+        (129, '13111', 'Preparación de fibras textiles', ''),
+        (130, '13112', 'Fabricación de hilados', ''),
+        (131, '13120', 'Fabricación de telas', ''),
+        (132, '13130', 'Acabado de productos textiles', ''),
+        (133, '13910', 'Fabricación de tejidos de punto y ganchillo', ''),
+        (134, '13921', 'Fabricación de productos textiles para el hogar', ''),
+        (135, '13922', 'Sacos, bolsas y otros artículos textiles', ''),
+        (136, '13929', 'Fabricación de artículos confeccionados con materiales textiles, excepto prendas de vestir n.c.p', ''),
+        (137, '13930', 'Fabricación de tapices y alfombras', ''),
+        (138, '13941', 'Fabricación de cuerdas de henequén y otras fibras naturales (lazos, pitas)', ''),
+        (139, '13942', 'Fabricación de redes de diversos materiales', ''),
+        (140, '13948', 'Maquilado de productos trenzables de cualquier material (petates, sillas, etc.)', ''),
+        (141, '13991', 'Fabricación de adornos, etiquetas y otros artículos para prendas de vestir', ''),
+        (142, '13992', 'Servicio de bordados en artículos y prendas de tela', ''),
+        (143, '13999', 'Fabricación de productos textiles ncp', ''),
+        (144, '14101', 'Fabricación de ropa interior, para dormir y similares', ''),
+        (145, '14102', 'Fabricación de ropa para niños', ''),
+        (146, '14103', 'Fabricación de prendas de vestir para ambos sexos', ''),
+        (147, '14104', 'Confección de prendas a medida', ''),
+        (148, '14105', 'Fabricación de prendas de vestir para deportes', ''),
+        (149, '14106', 'Elaboración de artesanías de uso personal confeccionadas especialmente de materiales textiles', ''),
+        (150, '14108', 'Maquilado de prendas de vestir, accesorios y otros', ''),
+        (151, '14109', 'Fabricación de prendas y accesorios de vestir n.c.p.', ''),
+        (152, '14200', 'Fabricación de artículos de piel', ''),
+        (153, '14301', 'Fabricación de calcetines, calcetas, medias (panty house) y otros similares', ''),
+        (154, '14302', 'Fabricación de ropa interior de tejido de punto', ''),
+        (155, '14309', 'Fabricación de prendas de vestir de tejido de punto ncp', ''),
+        (156, '15110', 'Curtido y adobo de cueros; adobo y teñido de pieles', ''),
+        (157, '15121', 'Fabricación de maletas, bolsos de mano y otros artículos de marroquinería', ''),
+        (158, '15122', 'Fabricación de monturas, accesorios y vainas talabartería', ''),
+        (159, '15123', 'Fabricación de artesanías principalmente de cuero natural y sintético', ''),
+        (160, '15128', 'Maquilado de artículos de cuero natural, sintético y de otros materiales', ''),
+        (161, '15201', 'Fabricación de calzado', ''),
+        (162, '15202', 'Fabricación de partes y accesorios de calzado', ''),
+        (163, '15208', 'Maquilado de partes y accesorios de calzado', ''),
+        (164, '16100', 'Aserradero y acepilladura de madera', ''),
+        (165, '16210', 'Fabricación de madera laminada, terciada, enchapada y contrachapada, paneles para la construcción', ''),
+        (166, '16220', 'Fabricación de partes y piezas de carpintería para edificios y construcciones', ''),
+        (167, '16230', 'Fabricación de envases y recipientes de madera', ''),
+        (168, '16292', 'Fabricación de artesanías de madera, semillas, materiales trenzables', ''),
+        (169, '16299', 'Fabricación de productos de madera, corcho, paja y materiales trenzables ncp', ''),
+        (170, '17010', 'Fabricación de pasta de madera, papel y cartón', ''),
+        (171, '17020', 'Fabricación de papel y cartón ondulado y envases de papel y cartón', ''),
+        (172, '17091', 'Fabricación de artículos de papel y cartón de uso personal y doméstico', ''),
+        (173, '17092', 'Fabricación de productos de papel ncp', ''),
+        (174, '18110', 'Impresión', ''),
+        (175, '18120', 'Servicios relacionados con la impresión', ''),
+        (176, '18200', 'Reproducción de grabaciones', ''),
+        (177, '19100', 'Fabricación de productos de hornos de coque', ''),
+        (178, '19201', 'Fabricación de combustible', ''),
+        (179, '19202', 'Fabricación de aceites y lubricantes', ''),
+        (180, '20111', 'Fabricación de materias primas para la fabricación de colorantes', ''),
+        (181, '20112', 'Fabricación de materiales curtientes', ''),
+        (182, '20113', 'Fabricación de gases industriales', ''),
+        (183, '20114', 'Fabricación de alcohol etílico', ''),
+        (184, '20119', 'Fabricación de sustancias químicas básicas', ''),
+        (185, '20120', 'Fabricación de abonos y fertilizantes', ''),
+        (186, '20130', 'Fabricación de plástico y caucho en formas primarias', ''),
+        (187, '20210', 'Fabricación de plaguicidas y otros productos químicos de uso agropecuario', ''),
+        (188, '20220', 'Fabricación de pinturas, barnices y productos de revestimiento similares; tintas de imprenta y masillas', ''),
+        (189, '20231', 'Fabricación de jabones, detergentes y similares para limpieza', ''),
+        (190, '20232', 'Fabricación de perfumes, cosméticos y productos de higiene y cuidado personal, incluyendo tintes, champú, etc.', ''),
+        (191, '20291', 'Fabricación de tintas y colores para escribir y pintar; fabricación de cintas para impresoras', ''),
+        (192, '20292', 'Fabricación de productos pirotécnicos, explosivos y municiones', ''),
+        (193, '20299', 'Fabricación de productos químicos n.c.p.', ''),
+        (194, '20300', 'Fabricación de fibras artificiales', ''),
+        (195, '21001', 'Manufactura de productos farmacéuticos, sustancias químicas y productos botánicos', ''),
+        (196, '21008', 'Maquilado de medicamentos', ''),
+        (197, '22110', 'Fabricación de cubiertas y cámaras; renovación y recauchutado de cubiertas', ''),
+        (198, '22190', 'Fabricación de otros productos de caucho', ''),
+        (199, '22201', 'Fabricación de envases plásticos', ''),
+        (200, '22202', 'Fabricación de productos plásticos para uso personal o doméstico', ''),
+        (201, '22208', 'Maquila de plásticos', ''),
+        (202, '22209', 'Fabricación de productos plásticos n.c.p.', ''),
+        (203, '23101', 'Fabricación de vidrio', ''),
+        (204, '23102', 'Fabricación de recipientes y envases de vidrio', ''),
+        (205, '23108', 'Servicio de maquilado', ''),
+        (206, '23109', 'Fabricación de productos de vidrio n.c.p.', ''),
+        (207, '23910', 'Fabricación de productos refractarios', ''),
+        (208, '23920', 'Fabricación de productos de arcilla para la construcción', ''),
+        (209, '23931', 'Fabricación de productos de cerámica y porcelana no refractaria', ''),
+        (210, '23932', 'Fabricación de productos de cerámica y porcelana n.c.p.', ''),
+        (211, '23940', 'Fabricación de cemento, cal y yeso', ''),
+        (212, '23950', 'Fabricación de artículos de hormigón, cemento y yeso', ''),
+        (213, '23960', 'Corte, tallado y acabado de la piedra', ''),
+        (214, '23990', 'Fabricación de productos minerales no metálicos n.c.p.', ''),
+        (215, '24100', 'Industrias básicas de hierro y acero', ''),
+        (216, '24200', 'Fabricación de productos primarios de metales preciosos y metales no ferrosos', ''),
+        (217, '24310', 'Fundición de hierro y acero', ''),
+        (218, '24320', 'Fundición de metales no ferrosos', ''),
+        (219, '25111', 'Fabricación de productos metálicos para uso estructural', ''),
+        (220, '25118', 'Servicio de maquila para la fabricación de estructuras metálicas', ''),
+        (221, '25120', 'Fabricación de tanques, depósitos y recipientes de metal', ''),
+        (222, '25130', 'Fabricación de generadores de vapor, excepto calderas de agua caliente para calefacción central', ''),
+        (223, '25200', 'Fabricación de armas y municiones', ''),
+        (224, '25910', 'Forjado, prensado, estampado y laminado de metales; pulvimetalurgia', ''),
+        (225, '25920', 'Tratamiento y revestimiento de metales', ''),
+        (226, '25930', 'Fabricación de artículos de cuchillería, herramientas de mano y artículos de ferretería', ''),
+        (227, '25991', 'Fabricación de envases y artículos conexos de metal', ''),
+        (228, '25992', 'Fabricación de artículos metálicos de uso personal y/o doméstico', ''),
+        (229, '25999', 'Fabricación de productos elaborados de metal ncp', ''),
+        (230, '26100', 'Fabricación de componentes electrónicos', ''),
+        (231, '26200', 'Fabricación de computadoras y equipo conexo', ''),
+        (232, '26300', 'Fabricación de equipo de comunicaciones', ''),
+        (233, '26400', 'Fabricación de aparatos electrónicos de consumo para audio, video, radio y televisión', ''),
+        (234, '26510', 'Fabricación de instrumentos y aparatos para medir, verificar, ensayar, navegar y de control de procesos industriales', ''),
+        (235, '26520', 'Fabricación de relojes y piezas de relojes', ''),
+        (236, '26600', 'Fabricación de equipo médico de irradiación y equipo electrónico de uso médico y terapéutico', ''),
+        (237, '26700', 'Fabricación de instrumentos de óptica y equipo fotográfico', ''),
+        (238, '26800', 'Fabricación de medios magnéticos y ópticos', ''),
+        (239, '27100', 'Fabricación de motores, generadores, transformadores eléctricos, aparatos de distribución y control de electricidad', ''),
+        (240, '27200', 'Fabricación de pilas, baterías y acumuladores', ''),
+        (241, '27310', 'Fabricación de cables de fibra óptica', ''),
+        (242, '27320', 'Fabricación de otros hilos y cables eléctricos', ''),
+        (243, '27330', 'Fabricación de dispositivos de cableados', ''),
+        (244, '27400', 'Fabricación de equipo eléctrico de iluminación', ''),
+        (245, '27500', 'Fabricación de aparatos de uso doméstico', ''),
+        (246, '27900', 'Fabricación de otros tipos de equipo eléctrico', ''),
+        (247, '28110', 'Fabricación de motores y turbinas, excepto motores para aeronaves, vehículos automotores y motocicletas', ''),
+        (248, '28120', 'Fabricación de equipo hidráulico', ''),
+        (249, '28130', 'Fabricación de otras bombas, compresores, grifos y válvulas', ''),
+        (250, '28140', 'Fabricación de cojinetes, engranajes, trenes de engranajes y piezas de transmisión', ''),
+        (251, '28150', 'Fabricación de hornos y quemadores', ''),
+        (252, '28160', 'Fabricación de equipo de elevación y manipulación', ''),
+        (253, '28170', 'Fabricación de maquinaria y equipo de oficina', ''),
+        (254, '28180', 'Fabricación de herramientas manuales', ''),
+        (255, '28190', 'Fabricación de otros tipos de maquinaria de uso general', ''),
+        (256, '28210', 'Fabricación de maquinaria agropecuaria y forestal', ''),
+        (257, '28220', 'Fabricación de máquinas para conformar metales y maquinaria herramienta', ''),
+        (258, '28230', 'Fabricación de maquinaria metalúrgica', ''),
+        (259, '28240', 'Fabricación de maquinaria para la explotación de minas y canteras y para obras de construcción', ''),
+        (260, '28250', 'Fabricación de maquinaria para la elaboración de alimentos, bebidas y tabaco', ''),
+        (261, '28260', 'Fabricación de maquinaria para la elaboración de productos textiles, prendas de vestir y cueros', ''),
+        (262, '28291', 'Fabricación de máquinas para imprenta', ''),
+        (263, '28299', 'Fabricación de maquinaria de uso especial ncp', ''),
+        (264, '29100', 'Fabricación de vehículos automotores', ''),
+        (353, '46211', 'Venta de productos para uso agropecuario', ''),
+        (265, '29200', 'Fabricación de carrocerías para vehículos automotores; fabricación de remolques y semirremolques', ''),
+        (266, '29300', 'Fabricación de partes, piezas y accesorios para vehículos automotores', ''),
+        (267, '30110', 'Fabricación de buques', ''),
+        (268, '30120', 'Construcción y reparación de embarcaciones de recreo', ''),
+        (269, '30200', 'Fabricación de locomotoras y de material rodante', ''),
+        (270, '30300', 'Fabricación de aeronaves y naves espaciales', ''),
+        (271, '30400', 'Fabricación de vehículos militares de combate', ''),
+        (272, '30910', 'Fabricación de motocicletas', ''),
+        (273, '30920', 'Fabricación de bicicletas y sillones de ruedas para inválidos', ''),
+        (274, '30990', 'Fabricación de equipo de transporte ncp', ''),
+        (275, '31001', 'Fabricación de colchones y somier', ''),
+        (276, '31002', 'Fabricación de muebles y otros productos de madera a medida', ''),
+        (277, '31008', 'Servicios de maquilado de muebles', ''),
+        (278, '31009', 'Fabricación de muebles ncp', ''),
+        (279, '32110', 'Fabricación de joyas platerías y joyerías', ''),
+        (280, '32120', 'Fabricación de joyas de imitación (fantasía) y artículos conexos', ''),
+        (281, '32200', 'Fabricación de instrumentos musicales', ''),
+        (282, '32301', 'Fabricación de artículos de deporte', ''),
+        (283, '32308', 'Servicio de maquila de productos deportivos', ''),
+        (284, '32401', 'Fabricación de juegos de mesa y de salón', ''),
+        (285, '32402', 'Servicio de maquilado de juguetes y juegos', ''),
+        (286, '32409', 'Fabricación de juegos y juguetes ncp', ''),
+        (287, '32500', 'Fabricación de instrumentos y materiales médicos y odontológicos', ''),
+        (288, '32901', 'Fabricación de lápices, bolígrafos, sellos y artículos de librería en general', ''),
+        (289, '32902', 'Fabricación de escobas, cepillos, pinceles y similares', ''),
+        (290, '32903', 'Fabricación de artesanías de materiales diversos', ''),
+        (291, '32904', 'Fabricación de artículos de uso personal y domésticos ncp', ''),
+        (292, '32905', 'Fabricación de accesorios para las confecciones y la marroquinería n.c.p.', ''),
+        (293, '32908', 'Servicios de maquila ncp', ''),
+        (294, '32909', 'Fabricación de productos manufacturados n.c.p.', ''),
+        (295, '33110', 'Reparación y mantenimiento de productos elaborados de metal', ''),
+        (296, '33120', 'Reparación y mantenimiento de maquinaria', ''),
+        (297, '33130', 'Reparación y mantenimiento de equipo electrónico y óptico', ''),
+        (298, '33140', 'Reparación y mantenimiento de equipo eléctrico', ''),
+        (299, '33150', 'Reparación y mantenimiento de equipo de transporte, excepto vehículos automotores', ''),
+        (300, '33190', 'Reparación y mantenimiento de equipos n.c.p.', ''),
+        (301, '33200', 'Instalación de maquinaria y equipo industrial', ''),
+        (302, '35101', 'Generación de energía eléctrica', ''),
+        (303, '35102', 'Transmisión de energía eléctrica', ''),
+        (304, '35103', 'Distribución de energía eléctrica', ''),
+        (305, '35200', 'Fabricación de gas, distribución de combustibles gaseosos por tuberías', ''),
+        (306, '35300', 'Suministro de vapor y agua caliente', ''),
+        (307, '36000', 'Captación, tratamiento y suministro de agua', ''),
+        (308, '37000', 'Evacuación de aguas residuales (alcantarillado)', ''),
+        (309, '38110', 'Recolección y transporte de desechos sólidos proveniente de hogares y sector urbano', ''),
+        (310, '38120', 'Recolección de desechos peligrosos', ''),
+        (311, '38210', 'Tratamiento y eliminación de desechos inicuos', ''),
+        (312, '38220', 'Tratamiento y eliminación de desechos peligrosos', ''),
+        (313, '38301', 'Reciclaje de desperdicios y desechos textiles', ''),
+        (314, '38302', 'Reciclaje de desperdicios y desechos de plástico y caucho', ''),
+        (315, '38303', 'Reciclaje de desperdicios y desechos de vidrio', ''),
+        (316, '38304', 'Reciclaje de desperdicios y desechos de papel y cartón', ''),
+        (317, '38305', 'Reciclaje de desperdicios y desechos metálicos', ''),
+        (318, '38309', 'Reciclaje de desperdicios y desechos no metálicos n.c.p.', ''),
+        (319, '39000', 'Actividades de Saneamiento y otros Servicios de Gestión de Desechos', ''),
+        (320, '41001', 'Construcción de edificios residenciales', ''),
+        (321, '41002', 'Construcción de edificios no residenciales', ''),
+        (322, '42100', 'Construcción de carreteras, calles y caminos', ''),
+        (323, '42200', 'Construcción de proyectos de servicio público', ''),
+        (324, '42900', 'Construcción de obras de ingeniería civil n.c.p.', ''),
+        (325, '43110', 'Demolición', ''),
+        (326, '43120', 'Preparación de terreno', ''),
+        (327, '43210', 'Instalaciones eléctricas', ''),
+        (328, '43220', 'Instalación de fontanería, calefacción y aire acondicionado', ''),
+        (329, '43290', 'Otras instalaciones para obras de construcción', ''),
+        (330, '43300', 'Terminacion y acabado de edificios', ''),
+        (331, '43900', 'Otras actividades especializadas de construcción', ''),
+        (332, '43901', 'Fabricación de techos y materiales diversos', ''),
+        (333, '45100', 'Venta de vehículos automotores', ''),
+        (334, '45201', 'Reparación mecánica de vehículos automotores', ''),
+        (335, '45202', 'Reparaciones eléctricas del automotor y recarga de baterías', ''),
+        (336, '45203', 'Enderezado y pintura de vehículos automotores', ''),
+        (337, '45204', 'Reparaciones de radiadores, escapes y silenciadores', ''),
+        (338, '45205', 'Reparación y reconstrucción de vías, stop y otros artículos de fibra de vidrio', ''),
+        (339, '45206', 'Reparación de llantas de vehículos automotores', ''),
+        (340, '45207', 'Polarizado de vehículos (mediante la adhesión de papel especial a los vidrios)', ''),
+        (341, '45208', 'Lavado y pasteado de vehículos (carwash)', ''),
+        (342, '45209', 'Reparaciones de vehículos n.c.p.', ''),
+        (343, '45211', 'Remolque de vehículos automotores', ''),
+        (344, '45301', 'Venta de partes, piezas y accesorios nuevos para vehículos automotores', ''),
+        (345, '45302', 'Venta de partes, piezas y accesorios usados para vehículos automotores', ''),
+        (346, '45401', 'Venta de motocicletas', ''),
+        (347, '45402', 'Venta de repuestos, piezas y accesorios de motocicletas', ''),
+        (348, '45403', 'Mantenimiento y reparación de motocicletas', ''),
+        (349, '46100', 'Venta al por mayor a cambio de retribución o por contrata', ''),
+        (350, '46201', 'Venta al por mayor de materias primas agrícolas', ''),
+        (351, '46202', 'Venta al por mayor de productos de la silvicultura', ''),
+        (352, '46203', 'Venta al por mayor de productos pecuarios y de granja', ''),
+        (354, '46291', 'Venta al por mayor de granos básicos (cereales, leguminosas)', ''),
+        (355, '46292', 'Venta al por mayor de semillas mejoradas para cultivo', ''),
+        (356, '46293', 'Venta al por mayor de café oro y uva', ''),
+        (357, '46294', 'Venta al por mayor de caña de azúcar', ''),
+        (358, '46295', 'Venta al por mayor de flores, plantas y otros productos naturales', ''),
+        (359, '46296', 'Venta al por mayor de productos agrícolas', ''),
+        (360, '46297', 'Venta al por mayor de ganado bovino (vivo)', ''),
+        (361, '46298', 'Venta al por mayor de animales porcinos, ovinos, caprino, canículas, apícolas, avícolas vivos', ''),
+        (362, '46299', 'Venta de otras especies vivas del reino animal', ''),
+        (363, '46301', 'Venta al por mayor de alimentos', ''),
+        (364, '46302', 'Venta al por mayor de bebidas', ''),
+        (365, '46303', 'Venta al por mayor de tabaco', ''),
+        (366, '46371', 'Venta al por mayor de frutas, hortalizas (verduras), legumbres y tubérculos', ''),
+        (367, '46372', 'Venta al por mayor de pollos, gallinas destazadas, pavos y otras aves', ''),
+        (368, '46373', 'Venta al por mayor de carne bovina y porcina, productos de carne y embutidos', ''),
+        (369, '46374', 'Venta al por mayor de huevos', ''),
+        (370, '46375', 'Venta al por mayor de productos lácteos', ''),
+        (371, '46376', 'Venta al por mayor de productos farináceos de panadería (pan dulce, cakes, repostería, etc.)', ''),
+        (372, '46377', 'Venta al por mayor de pastas alimenticias, aceites y grasas comestibles vegetal y animal', ''),
+        (373, '46378', 'Venta al por mayor de sal comestible', ''),
+        (374, '46379', 'Venta al por mayor de azúcar', ''),
+        (375, '46391', 'Venta al por mayor de abarrotes (vinos, licores, productos alimenticios envasados, etc.)', ''),
+        (376, '46392', 'Venta al por mayor de aguas gaseosas', ''),
+        (377, '46393', 'Venta al por mayor de agua purificada', ''),
+        (378, '46394', 'Venta al por mayor de refrescos y otras bebidas, líquidas o en polvo', ''),
+        (379, '46395', 'Venta al por mayor de cerveza y licores', ''),
+        (380, '46396', 'Venta al por mayor de hielo', ''),
+        (381, '46411', 'Venta al por mayor de hilados, tejidos y productos textiles de mercería', ''),
+        (382, '46412', 'Venta al por mayor de artículos textiles excepto confecciones para el hogar', ''),
+        (383, '46413', 'Venta al por mayor de confecciones textiles para el hogar', ''),
+        (384, '46414', 'Venta al por mayor de prendas de vestir y accesorios de vestir', ''),
+        (385, '46415', 'Venta al por mayor de ropa usada', ''),
+        (386, '46416', 'Venta al por mayor de calzado', ''),
+        (387, '46417', 'Venta al por mayor de artículos de marroquinería y talabartería', ''),
+        (388, '46418', 'Venta al por mayor de artículos de peletería', ''),
+        (389, '46419', 'Venta al por mayor de otros artículos textiles n.c.p.', ''),
+        (390, '46471', 'Venta al por mayor de instrumentos musicales', ''),
+        (391, '46472', 'Venta al por mayor de colchones, almohadas, cojines, etc.', ''),
+        (392, '46473', 'Venta al por mayor de artículos de aluminio para el hogar y para otros usos', ''),
+        (393, '46474', 'Venta al por mayor de depósitos y otros artículos plásticos para el hogar y otros usos', ''),
+        (394, '46475', 'Venta al por mayor de cámaras fotográficas, accesorios y materiales', ''),
+        (395, '46482', 'Venta al por mayor de medicamentos, artículos y otros productos de uso veterinario', ''),
+        (396, '46483', 'Venta al por mayor de productos y artículos de belleza y de uso personal', ''),
+        (397, '46484', 'Venta de productos farmacéuticos y medicinales', ''),
+        (398, '46491', 'Venta al por mayor de productos medicinales, cosméticos, perfumería y productos de limpieza', ''),
+        (399, '46492', 'Venta al por mayor de relojes y artículos de joyería', ''),
+        (400, '46493', 'Venta al por mayor de electrodomésticos y artículos del hogar', ''),
+        (401, '46494', 'Venta al por mayor de artículos de bazar y similares', ''),
+        (402, '46495', 'Venta al por mayor de artículos de óptica', ''),
+        (403, '46496', 'Venta al por mayor de revistas, periódicos, libros, artículos de librería y artículos de papel y cartón en general', ''),
+        (404, '46497', 'Venta de artículos deportivos, juguetes y rodados', ''),
+        (405, '46498', 'Venta al por mayor de productos usados para el hogar o el uso personal', ''),
+        (406, '46499', 'Venta al por mayor de enseres domésticos y de uso personal n.c.p.', ''),
+        (407, '46500', 'Venta al por mayor de bicicletas, partes, accesorios y otros', ''),
+        (408, '46510', 'Venta al por mayor de computadoras, equipo periférico y programas informáticos', ''),
+        (409, '46520', 'Venta al por mayor de equipos de comunicación', ''),
+        (410, '46530', 'Venta al por mayor de maquinaria y equipo agropecuario, accesorios, partes y suministros', ''),
+        (411, '46590', 'Venta de equipos e instrumentos de uso profesional y científico y aparatos de medida y control', ''),
+        (412, '46591', 'Venta al por mayor de maquinaria equipo, accesorios y materiales para la industria de la madera y sus productos', ''),
+        (413, '46592', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria gráfica y del papel, cartón y productos de papel y cartón', ''),
+        (414, '46593', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria de productos químicos, plástico y caucho', ''),
+        (415, '46594', 'Venta al por mayor de maquinaria, equipo, accesorios y materiales para la industria metálica y de sus productos', ''),
+        (416, '46595', 'Venta al por mayor de equipamiento para uso médico, odontológico, veterinario y servicios conexos', ''),
+        (417, '46596', 'Venta al por mayor de maquinaria, equipo, accesorios y partes para la industria de la alimentación', ''),
+        (418, '46597', 'Venta al por mayor de maquinaria, equipo, accesorios y partes para la industria textil, confecciones y cuero', ''),
+        (419, '46598', 'Venta al por mayor de maquinaria, equipo y accesorios para la construcción y explotación de minas y canteras', ''),
+        (420, '46599', 'Venta al por mayor de otro tipo de maquinaria y equipo con sus accesorios y partes', ''),
+        (421, '46610', 'Venta al por mayor de otros combustibles sólidos, líquidos, gaseosos y de productos conexos', ''),
+        (422, '46612', 'Venta al por mayor de combustibles para automotores, aviones, barcos, maquinaria y otros', ''),
+        (423, '46613', 'Venta al por mayor de lubricantes, grasas y otros aceites para automotores, maquinaria industrial, etc.', ''),
+        (424, '46614', 'Venta al por mayor de gas propano', ''),
+        (425, '46615', 'Venta al por mayor de leña y carbón', ''),
+        (426, '46620', 'Venta al por mayor de metales y minerales metalíferos', ''),
+        (427, '46631', 'Venta al por mayor de puertas, ventanas, vitrinas y similares', ''),
+        (428, '46632', 'Venta al por mayor de artículos de ferretería y pinturerías', ''),
+        (429, '46633', 'Vidrierías', ''),
+        (430, '46634', 'Venta al por mayor de maderas', ''),
+        (431, '46639', 'Venta al por mayor de materiales para la construcción n.c.p.', ''),
+        (432, '46691', 'Venta al por mayor de sal industrial sin yodar', ''),
+        (433, '46692', 'Venta al por mayor de productos intermedios y desechos de origen textil', ''),
+        (434, '46693', 'Venta al por mayor de productos intermedios y desechos de origen metálico', ''),
+        (435, '46694', 'Venta al por mayor de productos intermedios y desechos de papel y cartón', ''),
+        (436, '46695', 'Venta al por mayor de fertilizantes, abonos, agroquímicos y productos similares', ''),
+        (437, '46696', 'Venta al por mayor de productos intermedios y desechos de origen plástico', ''),
+        (438, '46697', 'Venta al por mayor de tintas para imprenta, productos curtientes y materias y productos colorantes', ''),
+        (439, '46698', 'Venta de productos intermedios y desechos de origen químico y de caucho', ''),
+        (440, '46699', 'Venta al por mayor de productos intermedios y desechos n.c.p.', ''),
+        (441, '46701', 'Venta de algodón en oro', ''),
+        (442, '46900', 'Venta al por mayor de otros productos', ''),
+        (443, '46901', 'Venta al por mayor de cohetes y otros productos pirotécnicos', ''),
+        (444, '46902', 'Venta al por mayor de artículos diversos para consumo humano', ''),
+        (445, '46903', 'Venta al por mayor de armas de fuego, municiones y accesorios', ''),
+        (446, '46904', 'Venta al por mayor de toldos y tiendas de campaña de cualquier material', ''),
+        (447, '46905', 'Venta al por mayor de exhibidores publicitarios y rótulos', ''),
+        (448, '46906', 'Venta al por mayor de artículos promocionales diversos', ''),
+        (449, '47111', 'Venta en supermercados', ''),
+        (450, '47112', 'Venta en tiendas de artículos de primera necesidad', ''),
+        (451, '47119', 'Almacenes (venta de diversos artículos)', ''),
+        (452, '47190', 'Venta al por menor de otros productos en comercios no especializados', ''),
+        (453, '47199', 'Venta de establecimientos no especializados con surtido compuesto principalmente de alimentos, bebidas y tabaco', ''),
+        (454, '47211', 'Venta al por menor de frutas y hortalizas', ''),
+        (455, '47212', 'Venta al por menor de carnes, embutidos y productos de granja', ''),
+        (456, '47213', 'Venta al por menor de pescado y mariscos', ''),
+        (457, '47214', 'Venta al por menor de productos lácteos', ''),
+        (458, '47215', 'Venta al por menor de productos de panadería, repostería y galletas', ''),
+        (459, '47216', 'Venta al por menor de huevos', ''),
+        (460, '47217', 'Venta al por menor de carnes y productos cárnicos', ''),
+        (461, '47218', 'Venta al por menor de granos básicos y otros', ''),
+        (462, '47219', 'Venta al por menor de alimentos n.c.p.', ''),
+        (463, '47221', 'Venta al por menor de hielo', ''),
+        (464, '47223', 'Venta de bebidas no alcohólicas, para su consumo fuera del establecimiento', ''),
+        (465, '47224', 'Venta de bebidas alcohólicas, para su consumo fuera del establecimiento', ''),
+        (466, '47225', 'Venta de bebidas alcohólicas para su consumo dentro del establecimiento', ''),
+        (467, '47230', 'Venta al por menor de tabaco', ''),
+        (468, '47300', 'Venta de combustibles, lubricantes y otros (gasolineras)', ''),
+        (470, '47411', 'Venta al por menor de computadoras y equipo periférico', ''),
+        (471, '47412', 'Venta de equipo y accesorios de telecomunicación', ''),
+        (472, '47420', 'Venta al por menor de equipo de audio y video', ''),
+        (473, '47510', 'Venta al por menor de hilados, tejidos y productos textiles de mercería; confecciones para el hogar y textiles n.c.p.', ''),
+        (474, '47521', 'Venta al por menor de productos de madera', ''),
+        (475, '47522', 'Venta al por menor de artículos de ferretería', ''),
+        (476, '47523', 'Venta al por menor de productos de pinturerías', ''),
+        (477, '47524', 'Venta al por menor en vidrierías', ''),
+        (478, '47529', 'Venta al por menor de materiales de construcción y artículos conexos', ''),
+        (479, '47530', 'Venta al por menor de tapices, alfombras y revestimientos de paredes y pisos en comercios especializados', ''),
+        (480, '47591', 'Venta al por menor de muebles', ''),
+        (481, '47592', 'Venta al por menor de artículos de bazar', ''),
+        (482, '47593', 'Venta al por menor de aparatos electrodomésticos, repuestos y accesorios', ''),
+        (483, '47594', 'Venta al por menor de artículos eléctricos y de iluminación', ''),
+        (484, '47598', 'Venta al por menor de instrumentos musicales', ''),
+        (485, '47610', 'Venta al por menor de libros, periódicos y artículos de papelería en comercios especializados', ''),
+        (486, '47620', 'Venta al por menor de discos láser, cassettes, cintas de video y otros', ''),
+        (487, '47630', 'Venta al por menor de productos y equipos de deporte', ''),
+        (488, '47631', 'Venta al por menor de bicicletas, accesorios y repuestos', ''),
+        (489, '47640', 'Venta al por menor de juegos y juguetes en comercios especializados', ''),
+        (490, '47711', 'Venta al por menor de prendas de vestir y accesorios de vestir', ''),
+        (491, '47712', 'Venta al por menor de calzado', ''),
+        (492, '47713', 'Venta al por menor de artículos de peletería, marroquinería y talabartería', ''),
+        (493, '47721', 'Venta al por menor de medicamentos farmacéuticos y otros materiales y artículos de uso médico, odontológico y veterinario', ''),
+        (494, '47722', 'Venta al por menor de productos cosméticos y de tocador', ''),
+        (495, '47731', 'Venta al por menor de productos de joyería, bisutería, óptica, relojería', ''),
+        (496, '47732', 'Venta al por menor de plantas, semillas, animales y artículos conexos', ''),
+        (497, '47733', 'Venta al por menor de combustibles de uso doméstico (gas propano y gas licuado)', ''),
+        (498, '47734', 'Venta al por menor de artesanías, artículos cerámicos y recuerdos en general', ''),
+        (499, '47735', 'Venta al por menor de ataúdes, lápidas y cruces, trofeos, artículos religiosos en general', ''),
+        (500, '47736', 'Venta al por menor de armas de fuego, municiones y accesorios', ''),
+        (501, '47737', 'Venta al por menor de artículos de cohetería y pirotécnicos', ''),
+        (502, '47738', 'Venta al por menor de artículos desechables de uso personal y doméstico (servilletas, papel higiénico, pañales, toallas sanitarias, etc.)', ''),
+        (503, '47739', 'Venta al por menor de otros productos n.c.p.', ''),
+        (504, '47741', 'Venta al por menor de artículos usados', ''),
+        (505, '47742', 'Venta al por menor de textiles y confecciones usados', ''),
+        (506, '47743', 'Venta al por menor de libros, revistas, papel y cartón usados', ''),
+        (507, '47749', 'Venta al por menor de productos usados n.c.p.', ''),
+        (508, '47811', 'Venta al por menor de frutas, verduras y hortalizas', ''),
+        (509, '47814', 'Venta al por menor de productos lácteos', ''),
+        (510, '47815', 'Venta al por menor de productos de panadería, galletas y similares', ''),
+        (511, '47816', 'Venta al por menor de bebidas', ''),
+        (512, '47818', 'Venta al por menor en tiendas de mercado y puestos', ''),
+        (513, '47821', 'Venta al por menor de hilados, tejidos y productos textiles de mercería en puestos de mercados y ferias', ''),
+        (514, '47822', 'Venta al por menor de artículos textiles excepto confecciones para el hogar en puestos de mercados y ferias', ''),
+        (515, '47823', 'Venta al por menor de confecciones textiles para el hogar en puestos de mercados y ferias', ''),
+        (516, '47824', 'Venta al por menor de prendas de vestir, accesorios de vestir y similares en puestos de mercados y ferias', ''),
+        (517, '47825', 'Venta al por menor de ropa usada', ''),
+        (518, '47826', 'Venta al por menor de calzado, artículos de marroquinería y talabartería en puestos de mercados y ferias', ''),
+        (519, '47827', 'Venta al por menor de artículos de marroquinería y talabartería en puestos de mercados y ferias', ''),
+        (520, '47829', 'Venta al por menor de artículos textiles ncp en puestos de mercados y ferias', ''),
+        (521, '47891', 'Venta al por menor de animales, flores y productos conexos en puestos de feria y mercados', ''),
+        (522, '47892', 'Venta al por menor de productos medicinales, cosméticos, de tocador y de limpieza en puestos de ferias y mercados', ''),
+        (523, '47893', 'Venta al por menor de artículos de bazar en puestos de ferias y mercados', ''),
+        (524, '47894', 'Venta al por menor de artículos de papel, envases, libros, revistas y conexos en puestos de feria y mercados', ''),
+        (525, '47895', 'Venta al por menor de materiales de construcción, electrodomésticos, accesorios para autos y similares en puestos de feria y mercados', ''),
+        (526, '47896', 'Venta al por menor de equipos accesorios para las comunicaciones en puestos de feria y mercados', ''),
+        (527, '47899', 'Venta al por menor en puestos de ferias y mercados n.c.p.', ''),
+        (528, '47910', 'Venta al por menor por correo o Internet', ''),
+        (529, '47990', 'Otros tipos de venta al por menor no realizada, en almacenes, puestos de venta o mercado', ''),
+        (530, '49110', 'Transporte interurbano de pasajeros por ferrocarril', ''),
+        (531, '49120', 'Transporte de carga por ferrocarril', ''),
+        (532, '49211', 'Transporte de pasajeros urbanos e interurbano mediante buses', ''),
+        (533, '49212', 'Transporte de pasajeros interdepartamental mediante microbuses', ''),
+        (534, '49213', 'Transporte de pasajeros urbanos e interurbano mediante microbuses', ''),
+        (535, '49214', 'Transporte de pasajeros interdepartamental mediante buses', ''),
+        (536, '49221', 'Transporte internacional de pasajeros', ''),
+        (537, '49222', 'Transporte de pasajeros mediante taxis y autos con chofer', ''),
+        (538, '49223', 'Transporte escolar', ''),
+        (539, '49225', 'Transporte de pasajeros para excursiones', ''),
+        (540, '49226', 'Servicios de transporte de personal', ''),
+        (541, '49229', 'Transporte de pasajeros por vía terrestre ncp', ''),
+        (542, '49231', 'Transporte de carga urbano', ''),
+        (543, '49232', 'Transporte nacional de carga', ''),
+        (544, '49233', 'Transporte de carga internacional', ''),
+        (545, '49234', 'Servicios de mudanza', ''),
+        (546, '49235', 'Alquiler de vehículos de carga con conductor', ''),
+        (547, '49300', 'Transporte por oleoducto o gasoducto', ''),
+        (548, '50110', 'Transporte de pasajeros marítimo y de cabotaje', ''),
+        (549, '50120', 'Transporte de carga marítimo y de cabotaje', ''),
+        (550, '50211', 'Transporte de pasajeros por vías de navegación interiores', ''),
+        (551, '50212', 'Alquiler de equipo de transporte de pasajeros por vías de navegación interior con conductor', ''),
+        (552, '50220', 'Transporte de carga por vías de navegación interiores', ''),
+        (553, '51100', 'Transporte aéreo de pasajeros', ''),
+        (554, '51201', 'Transporte de carga por vía aérea', ''),
+        (555, '51202', 'Alquiler de equipo de aerotransporte con operadores para el propósito de transportar carga', ''),
+        (556, '52101', 'Alquiler de instalaciones de almacenamiento en zonas francas', ''),
+        (557, '52102', 'Alquiler de silos para conservación y almacenamiento de granos', ''),
+        (558, '52103', 'Alquiler de instalaciones con refrigeración para almacenamiento y conservación de alimentos y otros productos', ''),
+        (559, '52109', 'Alquiler de bodegas para almacenamiento y depósito ncp', ''),
+        (560, '52211', 'Servicio de garaje y estacionamiento', ''),
+        (561, '52212', 'Servicios de terminales para el transporte por vía terrestre', ''),
+        (562, '52219', 'Servicios para el transporte por vía terrestre ncp', ''),
+        (563, '52220', 'Servicios para el transporte acuático', ''),
+        (564, '52230', 'Servicios para el transporte aéreo', ''),
+        (565, '52240', 'Manipulación de carga', ''),
+        (566, '52290', 'Servicios para el transporte ncp', ''),
+        (567, '52291', 'Agencias de tramitaciones aduanales', ''),
+        (568, '53100', 'Servicios de correo nacional', ''),
+        (569, '53200', 'Actividades de correo distintas a las actividades postales nacionales', ''),
+        (570, '53201', 'Agencia privada de correo y encomiendas', ''),
+        (571, '55101', 'Actividades de alojamiento para estancias cortas', ''),
+        (572, '55102', 'Hoteles', ''),
+        (573, '55200', 'Actividades de campamentos, parques de vehículos de recreo y parques de caravanas', ''),
+        (574, '55900', 'Alojamiento ncp', ''),
+        (575, '56101', 'Restaurantes', ''),
+        (576, '56106', 'Pupusería', ''),
+        (577, '56107', 'Actividades varias de restaurantes', ''),
+        (578, '56108', 'Comedores', ''),
+        (579, '56109', 'Merenderos ambulantes', ''),
+        (580, '56210', 'Preparación de comida para eventos especiales', ''),
+        (581, '56291', 'Servicios de provisión de comidas por contrato', ''),
+        (582, '56292', 'Servicios de concesión de cafetines y chalet en empresas', ''),
+        (583, '56299', 'Servicios de preparación de comidas ncp', ''),
+        (584, '56301', 'Servicio de expendio de bebidas en salones y bares', ''),
+        (585, '56302', 'Servicio de expendio de bebidas en puestos callejeros, mercados y ferias', ''),
+        (586, '58110', 'Edición de libros, folletos, partituras y otras ediciones distintas a estas', ''),
+        (587, '58120', 'Edición de directorios y listas de correos', ''),
+        (588, '58130', 'Edición de periódicos, revistas y otras publicaciones periódicas', ''),
+        (589, '58190', 'Otras actividades de edición', ''),
+        (769, '10002', 'Pensionado', ''),
+        (590, '58200', 'Edición de programas informáticos (software)', ''),
+        (591, '59110', 'Actividades de producción cinematográfica', ''),
+        (592, '59120', 'Actividades de post producción de películas, videos y programas de televisión', ''),
+        (593, '59130', 'Actividades de distribución de películas cinematográficas, videos y programas de televisión', ''),
+        (594, '59140', 'Actividades de exhibición de películas cinematográficas y cintas de vídeo', ''),
+        (595, '59200', 'Actividades de edición y grabación de música', ''),
+        (596, '60100', 'Servicios de difusiones de radio', ''),
+        (597, '60201', 'Actividades de programación y difusión de televisión abierta', ''),
+        (598, '60202', 'Actividades de suscripción y difusión de televisión por cable y/o suscripción', ''),
+        (599, '60299', 'Servicios de televisión, incluye televisión por cable', ''),
+        (600, '60900', 'Programación y transmisión de radio y televisión', ''),
+        (601, '61101', 'Servicio de telefonía', ''),
+        (602, '61102', 'Servicio de Internet', ''),
+        (603, '61103', 'Servicio de telefonía fija', ''),
+        (604, '61109', 'Servicio de Internet n.c.p.', ''),
+        (605, '61201', 'Servicios de telefonía celular', ''),
+        (606, '61202', 'Servicios de Internet inalámbrico', ''),
+        (607, '61209', 'Servicios de telecomunicaciones inalámbrico n.c.p.', ''),
+        (608, '61301', 'Telecomunicaciones satelitales', ''),
+        (609, '61309', 'Comunicación vía satélite n.c.p.', ''),
+        (610, '61900', 'Actividades de telecomunicación n.c.p.', ''),
+        (611, '62010', 'Programación Informática', ''),
+        (612, '62020', 'Consultorías y gestión de servicios informáticos', ''),
+        (613, '62090', 'Otras actividades de tecnología de información y servicios de computadora', ''),
+        (614, '63110', 'Procesamiento de datos y actividades relacionadas', ''),
+        (615, '63120', 'Portales WEB', ''),
+        (616, '63910', 'Servicios de Agencias de Noticias', ''),
+        (617, '63990', 'Otros servicios de información n.c.p.', ''),
+        (618, '64110', 'Servicios provistos por el Banco Central de El Salvador', ''),
+        (619, '64190', 'Bancos', ''),
+        (620, '64192', 'Entidades dedicadas al envío de remesas', ''),
+        (621, '64199', 'Otras entidades financieras', ''),
+        (622, '64200', 'Actividades de sociedades de cartera', ''),
+        (623, '64300', 'Fideicomisos, fondos y otras fuentes de financiamiento', ''),
+        (624, '64910', 'Arrendamientos financieros', ''),
+        (625, '64920', 'Asociaciones cooperativas de ahorro y crédito dedicadas a la intermediación financiera', ''),
+        (626, '64921', 'Instituciones emisoras de tarjetas de crédito y otros', ''),
+        (627, '64922', 'Tipos de crédito n.c.p.', ''),
+        (628, '64928', 'Prestamistas y casas de empeño', ''),
+        (629, '64990', 'Actividades de servicios financieros, excepto la financiación de planes de seguros y de pensiones n.c.p.', ''),
+        (630, '65110', 'Planes de seguros de vida', ''),
+        (631, '65120', 'Planes de seguro excepto de vida', ''),
+        (632, '65199', 'Seguros generales de todo tipo', ''),
+        (633, '65200', 'Planes de seguro', ''),
+        (634, '65300', 'Planes de pensiones', ''),
+        (635, '66110', 'Administración de mercados financieros (Bolsa de Valores)', ''),
+        (636, '66120', 'Actividades bursátiles (Corredores de Bolsa)', ''),
+        (637, '66190', 'Actividades auxiliares de la intermediación financiera n.c.p.', ''),
+        (638, '66210', 'Evaluación de riesgos y daños', ''),
+        (639, '66220', 'Actividades de agentes y corredores de seguros', ''),
+        (640, '66290', 'Otras actividades auxiliares de seguros y fondos de pensiones', ''),
+        (641, '68101', 'Servicio de alquiler y venta de lotes en cementerios', ''),
+        (642, '68109', 'Actividades inmobiliarias realizadas con bienes propios o arrendados n.c.p.', ''),
+        (643, '68200', 'Actividades inmobiliarias realizadas a cambio de una retribución o por contrata', ''),
+        (644, '69100', 'Actividades jurídicas', ''),
+        (645, '69200', 'Actividades de contabilidad, teneduría de libros y auditoría; asesoramiento en materia de impuestos', ''),
+        (646, '70100', 'Actividades de oficinas centrales de sociedades de cartera', ''),
+        (647, '70200', 'Actividades de consultoría en gestión empresarial', ''),
+        (648, '71101', 'Servicios de arquitectura y planificación urbana y servicios conexos', ''),
+        (649, '71102', 'Servicios de ingeniería', ''),
+        (650, '71103', 'Servicios de agrimensura, topografía, cartografía, prospección y geofísica y servicios conexos', ''),
+        (651, '71200', 'Ensayos y análisis técnicos', ''),
+        (652, '72100', 'Investigaciones y desarrollo experimental en el campo de las ciencias naturales y la ingeniería', ''),
+        (653, '72199', 'Investigaciones científicas', ''),
+        (654, '72200', 'Investigaciones y desarrollo experimental en el campo de las ciencias sociales y las humanidades', ''),
+        (655, '73100', 'Publicidad', ''),
+        (656, '73200', 'Investigación de mercados y realización de encuestas de opinión pública', ''),
+        (657, '74100', 'Actividades de diseño especializado', ''),
+        (658, '74200', 'Actividades de fotografía', ''),
+        (659, '74900', 'Servicios profesionales y científicos n.c.p.', ''),
+        (660, '75000', 'Actividades veterinarias', ''),
+        (661, '77101', 'Alquiler de equipo de transporte terrestre', ''),
+        (662, '77102', 'Alquiler de equipo de transporte acuático', ''),
+        (663, '77103', 'Alquiler de equipo de transporte por vía aérea', ''),
+        (664, '77210', 'Alquiler y arrendamiento de equipo de recreo y deportivo', ''),
+        (665, '77220', 'Alquiler de cintas de video y discos', ''),
+        (666, '77290', 'Alquiler de otros efectos personales y enseres domésticos', ''),
+        (667, '77300', 'Alquiler de maquinaria y equipo', ''),
+        (668, '77400', 'Arrendamiento de productos de propiedad intelectual', ''),
+        (669, '78100', 'Obtención y dotación de personal', ''),
+        (670, '78200', 'Actividades de las agencias de trabajo temporal', ''),
+        (671, '78300', 'Dotación de recursos humanos y gestión; gestión de las funciones de recursos humanos', ''),
+        (672, '79110', 'Actividades de agencias de viajes y organizadores de viajes; actividades de asistencia a turistas', ''),
+        (673, '79120', 'Actividades de los operadores turísticos', ''),
+        (674, '79900', 'Otros servicios de reservas y actividades relacionadas', ''),
+        (675, '80100', 'Servicios de seguridad privados', ''),
+        (676, '80201', 'Actividades de servicios de sistemas de seguridad', ''),
+        (677, '80202', 'Actividades para la prestación de sistemas de seguridad', ''),
+        (678, '80300', 'Actividades de investigación', ''),
+        (770, '10003', 'Estudiante', ''),
+        (679, '81100', 'Actividades combinadas de mantenimiento de edificios e instalaciones', ''),
+        (680, '81210', 'Limpieza general de edificios', ''),
+        (681, '81290', 'Otras actividades combinadas de mantenimiento de edificios e instalaciones ncp', ''),
+        (682, '81300', 'Servicio de jardinería', ''),
+        (683, '82110', 'Servicios administrativos de oficinas', ''),
+        (684, '82190', 'Servicio de fotocopiado y similares, excepto en imprentas', ''),
+        (685, '82200', 'Actividades de las centrales de llamadas (call center)', ''),
+        (686, '82300', 'Organización de convenciones y ferias de negocios', ''),
+        (687, '82910', 'Actividades de agencias de cobro y oficinas de crédito', ''),
+        (688, '82921', 'Servicios de envase y empaque de productos alimenticios', ''),
+        (689, '82922', 'Servicios de envase y empaque de productos medicinales', ''),
+        (690, '82929', 'Servicio de envase y empaque ncp', ''),
+        (691, '82990', 'Actividades de apoyo empresariales ncp', ''),
+        (692, '84110', 'Actividades de la Administración Pública en general', ''),
+        (693, '84111', 'Alcaldías Municipales', ''),
+        (694, '84120', 'Regulación de las actividades de prestación de servicios sanitarios, educativos, culturales y otros servicios sociales, excepto seguridad social', ''),
+        (695, '84130', 'Regulación y facilitación de la actividad económica', ''),
+        (696, '84210', 'Actividades de administración y funcionamiento del Ministerio de Relaciones Exteriores', ''),
+        (697, '84220', 'Actividades de defensa', ''),
+        (698, '84230', 'Actividades de mantenimiento del orden público y de seguridad', ''),
+        (699, '84300', 'Actividades de planes de seguridad social de afiliación obligatoria', ''),
+        (700, '85101', 'Guardería educativa', ''),
+        (701, '85102', 'Enseñanza preescolar o parvularia', ''),
+        (702, '85103', 'Enseñanza primaria', ''),
+        (703, '85104', 'Servicio de educación preescolar y primaria integrada', ''),
+        (704, '85211', 'Enseñanza secundaria tercer ciclo (7°, 8° y 9°)', ''),
+        (705, '85212', 'Enseñanza secundaria de formación general bachillerato', ''),
+        (706, '85221', 'Enseñanza secundaria de formación técnica y profesional', ''),
+        (707, '85222', 'Enseñanza secundaria de formación técnica y profesional integrada con enseñanza primaria', ''),
+        (708, '85301', 'Enseñanza superior universitaria', ''),
+        (709, '85302', 'Enseñanza superior no universitaria', ''),
+        (710, '85303', 'Enseñanza superior integrada a educación secundaria y/o primaria', ''),
+        (711, '85410', 'Educación deportiva y recreativa', ''),
+        (712, '85420', 'Educación cultural', ''),
+        (713, '85490', 'Otros tipos de enseñanza ncp', ''),
+        (714, '85499', 'Enseñanza formal', ''),
+        (715, '85500', 'Servicios de apoyo a la enseñanza', ''),
+        (716, '86100', 'Actividades de hospitales', ''),
+        (717, '86201', 'Clínicas médicas', ''),
+        (718, '86202', 'Servicios de Odontología', ''),
+        (719, '86203', 'Servicios médicos', ''),
+        (720, '86901', 'Servicios de análisis y estudios de diagnóstico', ''),
+        (721, '86902', 'Actividades de atención de la salud humana', ''),
+        (722, '86909', 'Otros Servicio relacionados con la salud ncp', ''),
+        (723, '87100', 'Residencias de ancianos con atención de enfermería', ''),
+        (724, '87200', 'Instituciones dedicadas al tratamiento del retraso mental, problemas de salud mental y el uso indebido de sustancias nocivas', ''),
+        (725, '87300', 'Instituciones dedicadas al cuidado de ancianos y discapacitados', ''),
+        (726, '87900', 'Actividades de asistencia a niños y jóvenes', ''),
+        (727, '87901', 'Otras actividades de atención en instituciones', ''),
+        (728, '88100', 'Actividades de asistencia sociales sin alojamiento para ancianos y discapacitados', ''),
+        (729, '88900', 'Servicios sociales sin alojamiento ncp', ''),
+        (730, '90000', 'Actividades creativas artísticas y de esparcimiento', ''),
+        (731, '91010', 'Actividades de bibliotecas y archivos', ''),
+        (732, '91020', 'Actividades de museos y preservación de lugares y edificios históricos', ''),
+        (733, '91030', 'Actividades de jardines botánicos, zoológicos y de reservas naturales', ''),
+        (734, '92000', 'Actividades de juegos y apuestas', ''),
+        (735, '93110', 'Gestión de instalaciones deportivas', ''),
+        (736, '93120', 'Actividades de clubes deportivos', ''),
+        (737, '93190', 'Otras actividades deportivas', ''),
+        (738, '93210', 'Actividades de parques de atracciones y parques temáticos', ''),
+        (739, '93291', 'Discotecas y salas de baile', ''),
+        (740, '93298', 'Centros vacacionales', ''),
+        (741, '93299', 'Actividades de esparcimiento ncp', ''),
+        (742, '94110', 'Actividades de organizaciones empresariales y de empleadores', ''),
+        (743, '94120', 'Actividades de organizaciones profesionales', ''),
+        (744, '94200', 'Actividades de sindicatos', ''),
+        (745, '94910', 'Actividades de organizaciones religiosas', ''),
+        (746, '94920', 'Actividades de organizaciones políticas', ''),
+        (747, '94990', 'Actividades de asociaciones ncp', ''),
+        (748, '95110', 'Reparación de computadoras y equipo periférico', ''),
+        (749, '95120', 'Reparación de equipo de comunicación', ''),
+        (750, '95210', 'Reparación de aparatos electrónicos de consumo', ''),
+        (751, '95220', 'Reparación de aparatos domésticos y equipo de hogar y jardín', ''),
+        (752, '95230', 'Reparación de calzado y artículos de cuero', ''),
+        (753, '95240', 'Reparación de muebles y accesorios para el hogar', ''),
+        (754, '95291', 'Reparación de instrumentos musicales', ''),
+        (755, '95292', 'Servicios de cerrajería y copiado de llaves', ''),
+        (756, '95293', 'Reparación de joyas y relojes', ''),
+        (757, '95294', 'Reparación de bicicletas, sillas de ruedas y rodados ncp', ''),
+        (758, '95299', 'Reparaciones de enseres personales ncp', ''),
+        (759, '96010', 'Lavado y limpieza de prendas de tela y de piel, incluso la limpieza en seco', ''),
+        (760, '96020', 'Peluquería y otros tratamientos de belleza', ''),
+        (761, '96030', 'Pompas fúnebres y actividades conexas', ''),
+        (762, '96091', 'Servicios de sauna y otros servicios para la estética corporal ncp', ''),
+        (763, '96092', 'Servicios ncp', ''),
+        (764, '97000', 'Actividad de los hogares en calidad de empleadores de personal doméstico', ''),
+        (765, '98100', 'Actividades indiferenciadas de producción de bienes de los hogares privados para uso propio', ''),
+        (766, '98200', 'Actividades indiferenciadas de producción de servicios de los hogares privados para uso propio', ''),
+        (767, '99000', 'Actividades de organizaciones y órganos extraterritoriales', ''),
+        (768, '10001', 'Empleados', ''),
+        (771, '10004', 'Desempleado', ''),
+        (772, '10005', 'Otros', ''),
+        (773, '10006', 'Comerciante', '');
+
+insert into facturalink."Catalogo" (id, "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt")
+values  (1, 'CAT-002', '1', 'Factura', '', '2025-03-23 21:41:46.675', '2025-03-23 21:41:46.675', 'ACTIVO'),
+        (2, 'CAT-002', '3', 'Comprobante de crédito fiscal', '', '2025-03-23 21:41:46.683', '2025-03-23 21:41:46.683', 'ACTIVO'),
+        (3, 'CAT-002', '4', 'Nota de remisión', '', '2025-03-23 21:41:46.697', '2025-03-23 21:41:46.697', 'ACTIVO'),
+        (4, 'CAT-002', '5', 'Nota de crédito', '', '2025-03-23 21:41:46.708', '2025-03-23 21:41:46.708', 'ACTIVO'),
+        (5, 'CAT-002', '6', 'Nota de débito', '', '2025-03-23 21:41:46.718', '2025-03-23 21:41:46.718', 'ACTIVO'),
+        (6, 'CAT-002', '7', 'Comprobante de retención', '', '2025-03-23 21:41:46.728', '2025-03-23 21:41:46.728', 'ACTIVO'),
+        (7, 'CAT-002', '8', 'Comprobante de liquidación', '', '2025-03-23 21:41:46.741', '2025-03-23 21:41:46.741', 'ACTIVO'),
+        (8, 'CAT-002', '9', 'Documento contable de liquidación', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (9, 'CAT-002', '11', 'Facturas de exportación', '', '2025-03-23 21:41:46.762', '2025-03-23 21:41:46.762', 'ACTIVO'),
+        (10, 'CAT-002', '14', 'Factura de sujeto excluido', '', '2025-03-23 21:41:46.773', '2025-03-23 21:41:46.773', 'ACTIVO'),
+        (11, 'CAT-002', '15', 'Comprobante de donación', '', '2025-03-23 21:41:46.783', '2025-03-23 21:41:46.783', 'ACTIVO'),
+        (12, 'CAT-003', '1', 'Modelo Facturación previo', '', '2025-03-23 21:41:46.793', '2025-03-23 21:41:46.793', 'ACTIVO'),
+        (13, 'CAT-003', '2', 'Modelo Facturación diferido', '', '2025-03-23 21:41:46.803', '2025-03-23 21:41:46.803', 'ACTIVO'),
+        (14, 'CAT-004', '1', 'Transmisión normal', '', '2025-03-23 21:41:46.812', '2025-03-23 21:41:46.812', 'ACTIVO'),
+        (15, 'CAT-004', '2', 'Transmisión por contingencia', '', '2025-03-23 21:41:46.822', '2025-03-23 21:41:46.822', 'ACTIVO'),
+        (16, 'CAT-005', '1', 'No disponibilidad de sistema del MH', '', '2025-03-23 21:41:46.831', '2025-03-23 21:41:46.831', 'ACTIVO'),
+        (17, 'CAT-005', '2', 'No disponibilidad de sistema del emisor', '', '2025-03-23 21:41:46.842', '2025-03-23 21:41:46.842', 'ACTIVO'),
+        (18, 'CAT-005', '3', 'Falla en el suministro de servicio de Internet del Emisor', '', '2025-03-23 21:41:46.851', '2025-03-23 21:41:46.851', 'ACTIVO'),
+        (19, 'CAT-005', '4', 'Falla en el suministro de servicio de energía eléctrica del emisor que impida la transmisión de los DTE', '', '2025-03-23 21:41:46.862', '2025-03-23 21:41:46.862', 'ACTIVO'),
+        (20, 'CAT-005', '5', 'Otro (deberá digitar un máximo de 500 caracteres explicando el motivo)', '', '2025-03-23 21:41:46.874', '2025-03-23 21:41:46.874', 'ACTIVO'),
+        (21, 'CAT-006', '22', 'Retención IVA 1%', '', '2025-03-23 21:41:46.884', '2025-03-23 21:41:46.884', 'ACTIVO'),
+        (22, 'CAT-001', '00', 'Modo prueba', '', '2025-03-23 21:44:08.130', '2025-03-23 21:44:08.130', 'ACTIVO'),
+        (23, 'CAT-001', '01', 'Modo producción', '', '2025-03-23 21:44:08.145', '2025-03-23 21:44:08.145', 'ACTIVO'),
+        (24, 'CAT-002', '01', 'Factura', '', '2025-03-23 21:44:08.157', '2025-03-23 21:44:08.157', 'ACTIVO'),
+        (25, 'CAT-002', '03', 'Comprobante de crédito fiscal', '', '2025-03-23 21:44:08.168', '2025-03-23 21:44:08.168', 'ACTIVO'),
+        (26, 'CAT-002', '04', 'Nota de remisión', '', '2025-03-23 21:44:08.179', '2025-03-23 21:44:08.179', 'ACTIVO'),
+        (27, 'CAT-002', '05', 'Nota de crédito', '', '2025-03-23 21:44:08.189', '2025-03-23 21:44:08.189', 'ACTIVO'),
+        (28, 'CAT-002', '06', 'Nota de débito', '', '2025-03-23 21:44:08.201', '2025-03-23 21:44:08.201', 'ACTIVO'),
+        (29, 'CAT-002', '07', 'Comprobante de retención', '', '2025-03-23 21:44:08.214', '2025-03-23 21:44:08.214', 'ACTIVO'),
+        (30, 'CAT-002', '08', 'Comprobante de liquidación', '', '2025-03-23 21:44:08.227', '2025-03-23 21:44:08.227', 'ACTIVO'),
+        (31, 'CAT-002', '09', 'Documento contable de liquidación', '', '2025-03-23 21:44:08.239', '2025-03-23 21:44:08.239', 'ACTIVO'),
+        (32, 'CAT-006', 'C4', 'Retención IVA 13%', '', '2025-03-23 21:44:08.420', '2025-03-23 21:44:08.420', 'ACTIVO'),
+        (33, 'CAT-006', 'C9', 'Otras retenciones IVA casos especiales', '', '2025-03-23 21:44:08.432', '2025-03-23 21:44:08.432', 'ACTIVO'),
+        (34, 'CAT-020', 'AF', 'Afganistán', '', '2025-03-23 21:54:45.819', '2025-03-23 21:54:45.819', 'ACTIVO'),
+        (35, 'CAT-020', 'AX', 'Aland', '', '2025-03-23 21:54:45.832', '2025-03-23 21:54:45.832', 'ACTIVO'),
+        (36, 'CAT-020', 'AL', 'Albania', '', '2025-03-23 21:54:45.844', '2025-03-23 21:54:45.844', 'ACTIVO'),
+        (37, 'CAT-020', 'DE', 'Alemania', '', '2025-03-23 21:54:45.856', '2025-03-23 21:54:45.856', 'ACTIVO'),
+        (38, 'CAT-020', 'AD', 'Andorra', '', '2025-03-23 21:54:45.866', '2025-03-23 21:54:45.866', 'ACTIVO'),
+        (39, 'CAT-020', 'AO', 'Angola', '', '2025-03-23 21:54:45.875', '2025-03-23 21:54:45.875', 'ACTIVO'),
+        (40, 'CAT-020', 'AI', 'Anguila', '', '2025-03-23 21:54:45.885', '2025-03-23 21:54:45.885', 'ACTIVO'),
+        (41, 'CAT-020', 'AQ', 'Antártica', '', '2025-03-23 21:54:45.894', '2025-03-23 21:54:45.894', 'ACTIVO'),
+        (42, 'CAT-020', 'AG', 'Antigua y Barbuda', '', '2025-03-23 21:54:45.904', '2025-03-23 21:54:45.904', 'ACTIVO'),
+        (43, 'CAT-020', 'AW', 'Aruba', '', '2025-03-23 21:54:45.913', '2025-03-23 21:54:45.913', 'ACTIVO'),
+        (44, 'CAT-020', 'SA', 'Arabia Saudita', '', '2025-03-23 21:54:45.924', '2025-03-23 21:54:45.924', 'ACTIVO'),
+        (45, 'CAT-020', 'DZ', 'Argelia', '', '2025-03-23 21:54:45.935', '2025-03-23 21:54:45.935', 'ACTIVO'),
+        (46, 'CAT-020', 'AR', 'Argentina', '', '2025-03-23 21:54:45.947', '2025-03-23 21:54:45.947', 'ACTIVO'),
+        (47, 'CAT-020', 'AM', 'Armenia', '', '2025-03-23 21:54:45.956', '2025-03-23 21:54:45.956', 'ACTIVO'),
+        (48, 'CAT-020', 'AU', 'Australia', '', '2025-03-23 21:54:45.964', '2025-03-23 21:54:45.964', 'ACTIVO'),
+        (49, 'CAT-020', 'AT', 'Austria', '', '2025-03-23 21:54:45.974', '2025-03-23 21:54:45.974', 'ACTIVO'),
+        (50, 'CAT-020', 'AZ', 'Azerbaiyán', '', '2025-03-23 21:54:45.983', '2025-03-23 21:54:45.983', 'ACTIVO'),
+        (51, 'CAT-020', 'BS', 'Bahamas', '', '2025-03-23 21:54:45.992', '2025-03-23 21:54:45.992', 'ACTIVO'),
+        (52, 'CAT-020', 'BH', 'Bahrein', '', '2025-03-23 21:54:46.001', '2025-03-23 21:54:46.001', 'ACTIVO'),
+        (53, 'CAT-020', 'BD', 'Bangladesh', '', '2025-03-23 21:54:46.010', '2025-03-23 21:54:46.010', 'ACTIVO'),
+        (54, 'CAT-020', 'BB', 'Barbados', '', '2025-03-23 21:54:46.018', '2025-03-23 21:54:46.018', 'ACTIVO'),
+        (55, 'CAT-020', 'BE', 'Bélgica', '', '2025-03-23 21:54:46.028', '2025-03-23 21:54:46.028', 'ACTIVO'),
+        (56, 'CAT-020', 'BZ', 'Belice', '', '2025-03-23 21:54:46.036', '2025-03-23 21:54:46.036', 'ACTIVO'),
+        (57, 'CAT-020', 'BJ', 'Benin', '', '2025-03-23 21:54:46.046', '2025-03-23 21:54:46.046', 'ACTIVO'),
+        (58, 'CAT-020', 'BM', 'Bermudas', '', '2025-03-23 21:54:46.054', '2025-03-23 21:54:46.054', 'ACTIVO'),
+        (59, 'CAT-020', 'BY', 'Bielorrusia', '', '2025-03-23 21:54:46.063', '2025-03-23 21:54:46.063', 'ACTIVO'),
+        (60, 'CAT-020', 'BO', 'Bolivia', '', '2025-03-23 21:54:46.072', '2025-03-23 21:54:46.072', 'ACTIVO'),
+        (61, 'CAT-020', 'BR', 'Brasil', '', '2025-03-23 21:54:46.085', '2025-03-23 21:54:46.085', 'ACTIVO'),
+        (62, 'CAT-020', 'BG', 'Bulgaria', '', '2025-03-23 21:54:46.094', '2025-03-23 21:54:46.094', 'ACTIVO'),
+        (63, 'CAT-020', 'CA', 'Canadá', '', '2025-03-23 21:54:46.101', '2025-03-23 21:54:46.101', 'ACTIVO'),
+        (64, 'CAT-020', 'CL', 'Chile', '', '2025-03-23 21:54:46.113', '2025-03-23 21:54:46.113', 'ACTIVO'),
+        (65, 'CAT-020', 'CN', 'China', '', '2025-03-23 21:54:46.121', '2025-03-23 21:54:46.121', 'ACTIVO'),
+        (66, 'CAT-020', 'CO', 'Colombia', '', '2025-03-23 21:54:46.129', '2025-03-23 21:54:46.129', 'ACTIVO'),
+        (67, 'CAT-020', 'CR', 'Costa Rica', '', '2025-03-23 21:54:46.157', '2025-03-23 21:54:46.157', 'ACTIVO'),
+        (68, 'CAT-020', 'CU', 'Cuba', '', '2025-03-23 21:54:46.166', '2025-03-23 21:54:46.166', 'ACTIVO'),
+        (69, 'CAT-020', 'DK', 'Dinamarca', '', '2025-03-23 21:54:46.175', '2025-03-23 21:54:46.175', 'ACTIVO'),
+        (70, 'CAT-020', 'DO', 'República Dominicana', '', '2025-03-23 21:54:46.186', '2025-03-23 21:54:46.186', 'ACTIVO'),
+        (71, 'CAT-020', 'EC', 'Ecuador', '', '2025-03-23 21:54:46.196', '2025-03-23 21:54:46.196', 'ACTIVO'),
+        (72, 'CAT-020', 'EG', 'Egipto', '', '2025-03-23 21:54:46.204', '2025-03-23 21:54:46.204', 'ACTIVO'),
+        (73, 'CAT-020', 'SV', 'El Salvador', '', '2025-03-23 21:54:46.211', '2025-03-23 21:54:46.211', 'ACTIVO'),
+        (74, 'CAT-020', 'ES', 'España', '', '2025-03-23 21:54:46.219', '2025-03-23 21:54:46.219', 'ACTIVO'),
+        (75, 'CAT-020', 'US', 'Estados Unidos', '', '2025-03-23 21:54:46.226', '2025-03-23 21:54:46.226', 'ACTIVO'),
+        (76, 'CAT-020', 'FR', 'Francia', '', '2025-03-23 21:54:46.234', '2025-03-23 21:54:46.234', 'ACTIVO'),
+        (77, 'CAT-020', 'GR', 'Grecia', '', '2025-03-23 21:54:46.242', '2025-03-23 21:54:46.242', 'ACTIVO'),
+        (78, 'CAT-020', 'GT', 'Guatemala', '', '2025-03-23 21:54:46.251', '2025-03-23 21:54:46.251', 'ACTIVO'),
+        (79, 'CAT-020', 'HN', 'Honduras', '', '2025-03-23 21:54:46.259', '2025-03-23 21:54:46.259', 'ACTIVO'),
+        (80, 'CAT-020', 'IN', 'India', '', '2025-03-23 21:54:46.267', '2025-03-23 21:54:46.267', 'ACTIVO'),
+        (81, 'CAT-020', 'IT', 'Italia', '', '2025-03-23 21:54:46.275', '2025-03-23 21:54:46.275', 'ACTIVO'),
+        (82, 'CAT-020', 'JP', 'Japón', '', '2025-03-23 21:54:46.284', '2025-03-23 21:54:46.284', 'ACTIVO'),
+        (83, 'CAT-020', 'MX', 'México', '', '2025-03-23 21:54:46.291', '2025-03-23 21:54:46.291', 'ACTIVO'),
+        (84, 'CAT-020', 'NI', 'Nicaragua', '', '2025-03-23 21:54:46.299', '2025-03-23 21:54:46.299', 'ACTIVO'),
+        (85, 'CAT-020', 'PA', 'Panamá', '', '2025-03-23 21:54:46.307', '2025-03-23 21:54:46.307', 'ACTIVO'),
+        (86, 'CAT-020', 'PE', 'Perú', '', '2025-03-23 21:54:46.320', '2025-03-23 21:54:46.320', 'ACTIVO'),
+        (87, 'CAT-020', 'PT', 'Portugal', '', '2025-03-23 21:54:46.331', '2025-03-23 21:54:46.331', 'ACTIVO'),
+        (88, 'CAT-020', 'PY', 'Paraguay', '', '2025-03-23 21:54:46.340', '2025-03-23 21:54:46.340', 'ACTIVO'),
+        (89, 'CAT-020', 'UY', 'Uruguay', '', '2025-03-23 21:54:46.348', '2025-03-23 21:54:46.348', 'ACTIVO'),
+        (90, 'CAT-020', 'VE', 'Venezuela', '', '2025-03-23 21:54:46.355', '2025-03-23 21:54:46.355', 'ACTIVO'),
+        (91, 'CAT-021', '1', 'Emisor', '', '2025-03-23 21:54:46.364', '2025-03-23 21:54:46.364', 'ACTIVO'),
+        (92, 'CAT-021', '2', 'Receptor', '', '2025-03-23 21:54:46.372', '2025-03-23 21:54:46.372', 'ACTIVO'),
+        (93, 'CAT-021', '3', 'Médico (F-958)', '', '2025-03-23 21:54:46.380', '2025-03-23 21:54:46.380', 'ACTIVO'),
+        (94, 'CAT-021', '4', 'Transporte (Factura de exportación)', '', '2025-03-23 21:54:46.391', '2025-03-23 21:54:46.391', 'ACTIVO'),
+        (95, 'CAT-022', '36', 'NIT', '', '2025-03-23 21:54:46.398', '2025-03-23 21:54:46.398', 'ACTIVO'),
+        (96, 'CAT-022', '13', 'DUI', '', '2025-03-23 21:54:46.405', '2025-03-23 21:54:46.405', 'ACTIVO'),
+        (97, 'CAT-022', '37', 'Otro', '', '2025-03-23 21:54:46.413', '2025-03-23 21:54:46.413', 'ACTIVO'),
+        (98, 'CAT-022', '03', 'Pasaporte', '', '2025-03-23 21:54:46.421', '2025-03-23 21:54:46.421', 'ACTIVO'),
+        (99, 'CAT-022', '02', 'Carnet de Residente', '', '2025-03-23 21:54:46.428', '2025-03-23 21:54:46.428', 'ACTIVO'),
+        (100, 'CAT-023', '01', 'Factura Electrónica', '', '2025-03-23 21:54:46.436', '2025-03-23 21:54:46.436', 'ACTIVO'),
+        (101, 'CAT-023', '03', 'Comprobante de Crédito Fiscal Electrónico', '', '2025-03-23 21:54:46.444', '2025-03-23 21:54:46.444', 'ACTIVO'),
+        (102, 'CAT-023', '04', 'Nota de Remisión Electrónica', '', '2025-03-23 21:54:46.452', '2025-03-23 21:54:46.452', 'ACTIVO'),
+        (103, 'CAT-023', '05', 'Nota de Crédito Electrónica', '', '2025-03-23 21:54:46.464', '2025-03-23 21:54:46.464', 'ACTIVO'),
+        (104, 'CAT-023', '06', 'Nota de Débito Electrónica', '', '2025-03-23 21:54:46.477', '2025-03-23 21:54:46.477', 'ACTIVO'),
+        (105, 'CAT-023', '11', 'Factura de Exportación Electrónica', '', '2025-03-23 21:54:46.484', '2025-03-23 21:54:46.484', 'ACTIVO'),
+        (106, 'CAT-023', '14', 'Factura de Sujeto Excluido Electrónica', '', '2025-03-23 21:54:46.492', '2025-03-23 21:54:46.492', 'ACTIVO'),
+        (107, 'CAT-024', '1', 'Error en la Información del Documento Tributario Electrónico', '', '2025-03-23 21:54:46.498', '2025-03-23 21:54:46.498', 'ACTIVO'),
+        (108, 'CAT-024', '2', 'Rescindir de la operación realizada', '', '2025-03-23 21:54:46.505', '2025-03-23 21:54:46.505', 'ACTIVO'),
+        (109, 'CAT-024', '3', 'Otro', '', '2025-03-23 21:54:46.513', '2025-03-23 21:54:46.513', 'ACTIVO'),
+        (110, 'CAT-025', '01', 'Depósito', '', '2025-03-23 21:54:46.522', '2025-03-23 21:54:46.522', 'ACTIVO'),
+        (111, 'CAT-025', '02', 'Propiedad', '', '2025-03-23 21:54:46.533', '2025-03-23 21:54:46.533', 'ACTIVO'),
+        (112, 'CAT-025', '03', 'Consignación', '', '2025-03-23 21:54:46.541', '2025-03-23 21:54:46.541', 'ACTIVO'),
+        (113, 'CAT-025', '04', 'Traslado', '', '2025-03-23 21:54:46.553', '2025-03-23 21:54:46.553', 'ACTIVO'),
+        (114, 'CAT-025', '05', 'Otros', '', '2025-03-23 21:54:46.562', '2025-03-23 21:54:46.562', 'ACTIVO'),
+        (115, 'CAT-026', '1', 'Efectivo', '', '2025-03-23 21:54:46.570', '2025-03-23 21:54:46.570', 'ACTIVO'),
+        (116, 'CAT-026', '2', 'Bien', '', '2025-03-23 21:54:46.580', '2025-03-23 21:54:46.580', 'ACTIVO'),
+        (117, 'CAT-026', '3', 'Servicio', '', '2025-03-23 21:54:46.592', '2025-03-23 21:54:46.592', 'ACTIVO'),
+        (118, 'CAT-027', '01', 'Terrestre San Bartolo', '', '2025-03-23 21:54:46.600', '2025-03-23 21:54:46.600', 'ACTIVO'),
+        (119, 'CAT-027', '02', 'Marítima de Acajutla', '', '2025-03-23 21:54:46.629', '2025-03-23 21:54:46.629', 'ACTIVO'),
+        (120, 'CAT-027', '03', 'Aérea De Comalapa', '', '2025-03-23 21:54:46.639', '2025-03-23 21:54:46.639', 'ACTIVO'),
+        (121, 'CAT-027', '04', 'Terrestre Las Chinamas', '', '2025-03-23 21:54:46.649', '2025-03-23 21:54:46.649', 'ACTIVO'),
+        (122, 'CAT-027', '05', 'Terrestre La Hachadura', '', '2025-03-23 21:54:46.658', '2025-03-23 21:54:46.658', 'ACTIVO'),
+        (123, 'CAT-027', '06', 'Terrestre Santa Ana', '', '2025-03-23 21:54:46.667', '2025-03-23 21:54:46.667', 'ACTIVO'),
+        (124, 'CAT-027', '07', 'Terrestre San Cristóbal', '', '2025-03-23 21:54:46.676', '2025-03-23 21:54:46.676', 'ACTIVO'),
+        (125, 'CAT-027', '08', 'Terrestre Anguiatú', '', '2025-03-23 21:54:46.687', '2025-03-23 21:54:46.687', 'ACTIVO'),
+        (126, 'CAT-027', '09', 'Terrestre El Amatillo', '', '2025-03-23 21:54:46.712', '2025-03-23 21:54:46.712', 'ACTIVO'),
+        (127, 'CAT-027', '10', 'Marítima La Unión', '', '2025-03-23 21:54:46.721', '2025-03-23 21:54:46.721', 'ACTIVO'),
+        (128, 'CAT-027', '11', 'Terrestre El Poy', '', '2025-03-23 21:54:46.730', '2025-03-23 21:54:46.730', 'ACTIVO'),
+        (129, 'CAT-029', '1', 'Persona Natural', '', '2025-03-23 21:54:46.741', '2025-03-23 21:54:46.741', 'ACTIVO'),
+        (130, 'CAT-029', '2', 'Persona Jurídica', '', '2025-03-23 21:54:46.750', '2025-03-23 21:54:46.750', 'ACTIVO'),
+        (131, 'CAT-030', '1', 'Terrestre', '', '2025-03-23 21:54:46.758', '2025-03-23 21:54:46.758', 'ACTIVO'),
+        (132, 'CAT-030', '2', 'Aéreo', '', '2025-03-23 21:54:46.767', '2025-03-23 21:54:46.767', 'ACTIVO'),
+        (133, 'CAT-030', '3', 'Marítimo', '', '2025-03-23 21:54:46.775', '2025-03-23 21:54:46.775', 'ACTIVO'),
+        (134, 'CAT-030', '4', 'Ferroviario', '', '2025-03-23 21:54:46.784', '2025-03-23 21:54:46.784', 'ACTIVO'),
+        (135, 'CAT-030', '5', 'Multimodal', '', '2025-03-23 21:54:46.793', '2025-03-23 21:54:46.793', 'ACTIVO'),
+        (136, 'CAT-030', '6', 'Correo', '', '2025-03-23 21:54:46.802', '2025-03-23 21:54:46.802', 'ACTIVO'),
+        (137, 'CAT-031', '01', 'EXW-En fábrica', '', '2025-03-23 21:54:46.812', '2025-03-23 21:54:46.812', 'ACTIVO'),
+        (138, 'CAT-031', '02', 'FCA-Libre transportista', '', '2025-03-23 21:54:46.822', '2025-03-23 21:54:46.822', 'ACTIVO'),
+        (139, 'CAT-031', '03', 'CPT-Transporte pagado hasta', '', '2025-03-23 21:54:46.831', '2025-03-23 21:54:46.831', 'ACTIVO'),
+        (140, 'CAT-031', '04', 'CIP-Transporte y seguro pagado hasta', '', '2025-03-23 21:54:46.840', '2025-03-23 21:54:46.840', 'ACTIVO'),
+        (141, 'CAT-031', '05', 'DAP-Entrega en el lugar', '', '2025-03-23 21:54:46.849', '2025-03-23 21:54:46.849', 'ACTIVO'),
+        (142, 'CAT-031', '06', 'DPU-Entregado en el lugar descargado', '', '2025-03-23 21:54:46.859', '2025-03-23 21:54:46.859', 'ACTIVO'),
+        (143, 'CAT-031', '07', 'DDP-Entrega con impuestos pagados', '', '2025-03-23 21:54:46.868', '2025-03-23 21:54:46.868', 'ACTIVO'),
+        (144, 'CAT-032', '1', 'Domiciliado', '', '2025-03-23 21:54:46.877', '2025-03-23 21:54:46.877', 'ACTIVO'),
+        (145, 'CAT-032', '2', 'No Domiciliado', '', '2025-03-23 21:54:46.885', '2025-03-23 21:54:46.885', 'ACTIVO'),
+        (146, 'CAT-013', '00', 'Otro', '(Para extranjeros)', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (147, 'CAT-013', '13', 'AHUACHAPAN NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (148, 'CAT-013', '14', 'AHUACHAPAN CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (149, 'CAT-013', '15', 'AHUACHAPAN SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (150, 'CAT-013', '14', 'SANTA ANA NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (151, 'CAT-013', '15', 'SANTA ANA CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (152, 'CAT-013', '16', 'SANTA ANA ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (153, 'CAT-013', '17', 'SANTA ANA OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (154, 'CAT-013', '17', 'SONSONATE NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (155, 'CAT-013', '18', 'SONSONATE CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (156, 'CAT-013', '19', 'SONSONATE ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (157, 'CAT-013', '20', 'SONSONATE OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (158, 'CAT-013', '34', 'CHALATENANGO NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (159, 'CAT-013', '35', 'CHALATENANGO CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (160, 'CAT-013', '36', 'CHALATENANGO SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (161, 'CAT-013', '23', 'LA LIBERTAD NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (162, 'CAT-013', '24', 'LA LIBERTAD CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (163, 'CAT-013', '25', 'LA LIBERTAD OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (164, 'CAT-013', '26', 'LA LIBERTAD ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (165, 'CAT-013', '27', 'LA LIBERTAD COSTA', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (166, 'CAT-013', '28', 'LA LIBERTAD SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (167, 'CAT-013', '20', 'SAN SALVADOR NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (168, 'CAT-013', '21', 'SAN SALVADOR OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (169, 'CAT-013', '22', 'SAN SALVADOR ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (170, 'CAT-013', '23', 'SAN SALVADOR CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (171, 'CAT-013', '24', 'SAN SALVADOR SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (172, 'CAT-013', '17', 'CUSCATLAN NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (173, 'CAT-013', '18', 'CUSCATLAN SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (174, 'CAT-013', '23', 'LA PAZ OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (175, 'CAT-013', '24', 'LA PAZ CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (176, 'CAT-013', '25', 'LA PAZ ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (177, 'CAT-013', '10', 'CABAÑAS OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (178, 'CAT-013', '11', 'CABAÑAS ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (179, 'CAT-013', '14', 'SAN VICENTE NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (180, 'CAT-013', '15', 'SAN VICENTE SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (181, 'CAT-013', '24', 'USULUTAN NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (182, 'CAT-013', '25', 'USULUTAN ESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (183, 'CAT-013', '26', 'USULUTAN OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (184, 'CAT-013', '21', 'SAN MIGUEL NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (185, 'CAT-013', '22', 'SAN MIGUEL CENTRO', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (186, 'CAT-013', '23', 'SAN MIGUEL OESTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (187, 'CAT-013', '27', 'MORAZAN NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (188, 'CAT-013', '28', 'MORAZAN SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (189, 'CAT-013', '19', 'LA UNION NORTE', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (190, 'CAT-013', '20', 'LA UNION SUR', '', '2025-03-30 17:32:03.058', '2025-03-30 17:32:03.058', 'ACTIVO'),
+        (191, 'CAT-012', '00', 'Otro', '(Para extranjeros)', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (192, 'CAT-012', '01', 'Ahuachapán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (193, 'CAT-012', '02', 'Santa Ana', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (194, 'CAT-012', '03', 'Sonsonate', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (195, 'CAT-012', '04', 'Chalatenango', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (196, 'CAT-012', '05', 'La Libertad ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (197, 'CAT-012', '06', 'San Salvador ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (198, 'CAT-012', '07', 'Cuscatlán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (200, 'CAT-012', '09', 'Cabañas ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (201, 'CAT-012', '10', 'San Vicente', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (202, 'CAT-012', '11', 'Usulután', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (203, 'CAT-012', '12', 'San Miguel', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (204, 'CAT-012', '13', 'Morazán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (205, 'CAT-012', '14', 'Unión', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO'),
+        (199, 'CAT-012', '08', 'La Paz', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
+
+insert into facturalink."DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt")
+values  (3, '01', 'FE', 'Factura Electrónica ', 'DE', 22, '2025-03-24 23:31:18.000', '2025-03-24 23:31:24.000'),
+        (4, '03', 'CCFE ', 'Comprobante de crédito fiscal', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (5, '04', 'NRE', 'Nota de remisión ', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (6, '05', 'NCE', 'Nota de crédito ', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (7, '06', 'NDE', 'Nota de débito', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (8, '07', 'CRE', 'Comprobante de retención', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (9, '08', 'CLE', 'Comprobante de liquidación', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (10, '09', 'DCLE', 'Documento contable de liquidación', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (11, '11', 'FEXE', 'Facturas de exportación', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (12, '14', 'FSEE', 'Factura de sujeto excluido', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000'),
+        (13, '15', 'CDE', 'Comprobante de donación', 'DE', 22, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
 
 
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-002', '1', 'Factura', '', '2025-03-23 21:41:46.675', '2025-03-23 21:41:46.675', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-002', '3', 'Comprobante de crédito fiscal', '', '2025-03-23 21:41:46.683', '2025-03-23 21:41:46.683', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '4', 'Nota de remisión', '', '2025-03-23 21:41:46.697', '2025-03-23 21:41:46.697', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '5', 'Nota de crédito', '', '2025-03-23 21:41:46.708', '2025-03-23 21:41:46.708', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '6', 'Nota de débito', '', '2025-03-23 21:41:46.718', '2025-03-23 21:41:46.718', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '7', 'Comprobante de retención', '', '2025-03-23 21:41:46.728', '2025-03-23 21:41:46.728', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '8', 'Comprobante de liquidación', '', '2025-03-23 21:41:46.741', '2025-03-23 21:41:46.741', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '9', 'Documento contable de liquidación', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
+insert into facturalink."Empresa" (id, nombre, logo, direccion, nit, nrc, telefono, correo, "keycloakGroupId", "facturasPermitidas", "facturasUtilizadas", "userAdminCant", "userDedicadosCant", "createdAt", "updatedAt", "estadoRt", "tipoDocumento")
+values  (2, 'Ferreteria, SOCIEDAD ANONIMA DE PERRITOS', null, 'AUTOPISTA A ZACATE LOTIF BRISAS DE LA PAZ', '08020106801037', '2449984', '76873872', 'flores89alvares@gmail.com', null, 500, 500, 1, 1, '2025-04-02 21:08:59.000', '2025-04-02 21:09:01.000', 'ACTIVO', null),
+        (1, 'Ferreteria, SOCIEDAD ANONIMA DE GATITOS', 'el nazareno', 'el nazareno', '08211712781025', '2099146', '70411207', 'mayi20001717@gmail.com', 'el_nazareno', 500, 500, 1, 1, '2025-03-30 10:33:41.000', '2025-03-30 10:33:45.000', 'ACTIVO', null);
 
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '00', 'Otro', '(Para extranjeros)', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '01', 'Ahuachapán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '02', 'Santa Ana', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '03', 'Sonsonate', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '04', 'Chalatenango', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '05', 'La Libertad ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '06', 'San Salvador ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '07', 'Cuscatlán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '08', 'a Paz', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '09', 'Cabañas ', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '10', 'San Vicente', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '11', 'Usulután', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '12', 'San Miguel', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '13', 'Morazán', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-012', '14', 'Unión', '', '2025-03-23 21:41:46.752', '2025-03-23 21:41:46.752', 'ACTIVO');
+insert into facturalink."Sucursal" (id, nombre, direccion, telefono, email, "codPuntoVenta", "codPuntoVentaMH", "tipoEstablecimiento", "municipioId", "departamentoId", "estadoRt", "createdAt", "updatedAt", "createdBy", "updatedBy", "deletedBy", "empresaId", "codigoDte", "codEstable", "codEstableMH")
+values  (3, 'Ferreteria, SOCIEDAD ANONIMA DE PERRITOS', 'AUTOPISTA A ZACATE LOTIF BRISAS DE LA PAZ', '76873872', 'flores89alvares@gmail.com', null, null, '01', 176, 199, 'ACTIVO', '2025-03-30 11:36:33.000', '2025-03-30 11:36:37.000', null, null, null, 2, 'VPM00025', 'N008', 'N008'),
+        (2, 'Ferreteria, SOCIEDAD ANONIMA DE GATITOS 2', 'Tercera Av sur Colonia los Almendros 2, casa 133', '70411207', 'mayi20001717@gmail.com', null, null, '01', 176, 199, 'ACTIVO', '2025-03-30 11:36:33.000', '2025-03-30 11:36:37.000', null, null, null, 1, 'ENZ00025', 'N008', 'N008'),
+        (5, 'Ferreteria, SOCIEDAD ANONIMA DE GATITOS 1', 'Tercera Av sur Colonia los Almendros 2, casa 133', '70411207', 'mayi20001717@gmail.com', null, null, '01', 176, 199, 'ACTIVO', '2025-03-30 11:36:33.000', '2025-03-30 11:36:37.000', null, null, null, 1, 'ENZ20025', 'N008', 'N008'),
+        (6, 'Ferreteria, SOCIEDAD ANONIMA DE GATITOS 3', 'Tercera Av sur Colonia los Almendros 2, casa 133', '70411207', 'mayi20001717@gmail.com', null, null, '01', 176, 199, 'ACTIVO', '2025-03-30 11:36:33.000', '2025-03-30 11:36:37.000', null, null, null, 1, 'ENZ30025', 'N008', 'N008');
 
-INSERT INTO "Catalogo" ("tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES
-('CAT-013', '00', 'Otro', '(Para extranjeros)', now(), now(), 'ACTIVO'),
-('CAT-013', '13', 'AHUACHAPAN NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '14', 'AHUACHAPAN CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '15', 'AHUACHAPAN SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '14', 'SANTA ANA NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '15', 'SANTA ANA CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '16', 'SANTA ANA ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '17', 'SANTA ANA OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '17', 'SONSONATE NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '18', 'SONSONATE CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '19', 'SONSONATE ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '20', 'SONSONATE OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '34', 'CHALATENANGO NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '35', 'CHALATENANGO CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '36', 'CHALATENANGO SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '23', 'LA LIBERTAD NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '24', 'LA LIBERTAD CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '25', 'LA LIBERTAD OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '26', 'LA LIBERTAD ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '27', 'LA LIBERTAD COSTA', '', now(), now(), 'ACTIVO'),
-('CAT-013', '28', 'LA LIBERTAD SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '20', 'SAN SALVADOR NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '21', 'SAN SALVADOR OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '22', 'SAN SALVADOR ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '23', 'SAN SALVADOR CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '24', 'SAN SALVADOR SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '17', 'CUSCATLAN NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '18', 'CUSCATLAN SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '23', 'LA PAZ OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '24', 'LA PAZ CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '25', 'LA PAZ ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '10', 'CABAÑAS OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '11', 'CABAÑAS ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '14', 'SAN VICENTE NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '15', 'SAN VICENTE SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '24', 'USULUTAN NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '25', 'USULUTAN ESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '26', 'USULUTAN OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '21', 'SAN MIGUEL NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '22', 'SAN MIGUEL CENTRO', '', now(), now(), 'ACTIVO'),
-('CAT-013', '23', 'SAN MIGUEL OESTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '27', 'MORAZAN NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '28', 'MORAZAN SUR', '', now(), now(), 'ACTIVO'),
-('CAT-013', '19', 'LA UNION NORTE', '', now(), now(), 'ACTIVO'),
-('CAT-013', '20', 'LA UNION SUR', '', now(), now(), 'ACTIVO');
+insert into facturalink."Credenciales" (id, "empresaId", "nombreCliente", usuario, "clavePublica", "clavePrivada", password, "ambienteId", "accessToken", "createdAt", "updatedAt", "uriAuth", "uriContigencia", "uriRecepcion", "uriAnulacion")
+values  (4, 2, 'ELMER ALEXANDER FLORES ALVAREZ', '08020106801037', 'EAFR1037', 'ELFL0137', 'ElmerAlexanderFlores2001!', 22, 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwODAyMDEwNjgwMTAzNyIsImF1dGhvcml0aWVzIjpbIlVTRVIiLCJVU0VSX0FQSSIsIlVzdWFyaW8iXSwiY19uaXQiOiIwODAyMDEwNjgwMTAzNyIsImNfZHVpIjoiMDEyNzI0NjUyIiwiaWF0IjoxNzQ0MDcyOTMxLCJleHAiOjE3NDQxNTkzMzF9.7a4KFaXuq7csmU6Jy9Ao018cNhfZ4w_2Hc0zwbItEjNgbcqsXHR_vIkkXp9YEAA9atH1ROe6n7jKD-Vl0h3WtA', '2025-03-30 10:43:00.000', '2025-03-30 10:43:03.000', 'https://apitest.dtes.mh.gob.sv/seguridad/auth', 'https://apitest.dtes.mh.gob.sv/fesv/contingencia', 'https://apitest.dtes.mh.gob.sv/fesv/recepciondte', 'https://apitest.dtes.mh.gob.sv/fesv/anulardte'),
+        (2, 1, 'Kirth Douglas Jiménez', '08211712781025', 'KDJJ1778', 'KDJJ1712', 'MajoYaniraKirth1978!', 22, 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIwODIxMTcxMjc4MTAyNSIsImF1dGhvcml0aWVzIjpbIlVTRVIiLCJVU0VSX0FQSSIsIlVzdWFyaW8iXSwiY19uaXQiOiIwODIxMTcxMjc4MTAyNSIsImNfZHVpIjoiMDE4Mjc3MzEwIiwiaWF0IjoxNzQ0MDcyOTI5LCJleHAiOjE3NDQxNTkzMjl9.XVQdN7CAevcExQ8j1rJv_XuGK7SfY2FYSHUTYs4DCP6wXwpyF1vnThOXG5bK7m-07fQU62Ffr-xomFVcvrEHlg', '2025-03-30 10:43:00.000', '2025-03-30 10:43:03.000', 'https://apitest.dtes.mh.gob.sv/seguridad/auth', 'https://apitest.dtes.mh.gob.sv/fesv/contingencia', 'https://apitest.dtes.mh.gob.sv/fesv/recepciondte', 'https://apitest.dtes.mh.gob.sv/fesv/anulardte');
+
+insert into facturalink."Cliente" (id, nombre, email, telefono, "keycloakGroupId", "createdAt", "updatedAt", "estadoRt", "departamentoId", "municipioId", nrc, "numDocumento", "tipoDocumento", direccion)
+values  (2, 'Yanira Rosibel Palacios', 'anipalacios0708@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (4, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (5, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (6, 'Yanira Rosibel Palacios', 'daniel.alex@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (7, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (8, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (9, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (10, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (11, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (12, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (13, 'Yanira Rosibel Palacios', 'usuario10@gmail.com', '66666666', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (14, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (15, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (16, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (17, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (18, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (19, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (20, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (21, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (22, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (23, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (24, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (25, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (26, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (27, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (28, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (29, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (30, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (31, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (32, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (33, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (34, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (35, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (36, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (37, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (38, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (39, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (40, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (41, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (42, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (43, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (44, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (45, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (46, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (47, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (48, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (49, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (50, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (51, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (52, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (53, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (54, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (55, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (56, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (57, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (58, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (59, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (60, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (61, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (62, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (63, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (64, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (65, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (66, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (67, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (68, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (69, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (70, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (71, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (72, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (73, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (74, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (75, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (76, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (77, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (78, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (79, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (80, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (81, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (82, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (83, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (84, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (85, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (86, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (87, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (88, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (89, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (90, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (91, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (92, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (93, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (94, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (95, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (96, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (97, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (98, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (99, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (100, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (101, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (102, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (103, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (104, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (105, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (106, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (107, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (108, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (109, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (110, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (111, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (112, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (113, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (114, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (115, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (116, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (117, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (118, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (119, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (120, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (121, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (122, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (123, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (124, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (125, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (126, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (127, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (128, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (129, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (130, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (131, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (132, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (133, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (134, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (135, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (136, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (137, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (138, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (139, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (140, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (141, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (142, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (143, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (144, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (145, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (146, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (147, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (148, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (149, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (150, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (151, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (152, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (153, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (154, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (155, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (156, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (157, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (158, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (159, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (160, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (161, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (162, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (163, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (164, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (165, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (166, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (167, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (168, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (169, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (170, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (171, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (172, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (173, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (174, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (175, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (176, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (177, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (178, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (179, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (180, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (181, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (182, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (183, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (184, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (185, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (186, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (187, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (188, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (189, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (190, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (191, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (192, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (193, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (194, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (195, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (196, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (197, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (198, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (199, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (200, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (201, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (202, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (203, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (204, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (205, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (206, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (207, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (208, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (209, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (210, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (211, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (212, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (213, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (214, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (215, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (216, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (217, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (218, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (219, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (220, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (221, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (222, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (223, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (224, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (225, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (226, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (227, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (228, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (229, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (230, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (231, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (232, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (233, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (234, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (235, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (236, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (237, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (238, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (239, 'Yanira Rosibel Palacios', 'usuario1@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (240, 'Yanira Rosibel Palacios', 'usuario2@gmail.com', '77777777', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (241, 'Yanira Rosibel Palacios', 'usuario3@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (242, 'Yanira Rosibel Palacios', 'usuario4@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (243, 'Yanira Rosibel Palacios', 'usuario5@gmail.com', '70151139', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (244, 'Yanira Rosibel Palacios', 'usuario6@gmail.com', '22222222', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (245, 'Yanira Rosibel Palacios', 'usuario7@gmail.com', '33333333', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (246, 'Yanira Rosibel Palacios', 'usuario8@gmail.com', '44444444', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (247, 'Yanira Rosibel Palacios', 'usuario11@gmail.com', '55555555', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131'),
+        (248, 'Yanira Rosibel Palacios', 'usuario10@gmail.com', '66666666', null, '2025-03-31 22:19:42.000', '2025-03-31 22:19:46.000', 'ACTIVO', 199, 176, null, '059586029', '13', 'COL LOS ALMENDROS 2 FINAL 3A AVE. SUR CASA 131');
+
+insert into facturalink."ClienteActividadEconomica" ("clienteId", "actividadEconomicaId")
+values  (2, 646),
+        (2, 645),
+        (6, 645),
+        (10, 646),
+        (6, 646);
+
+insert into facturalink."EmpresaDocumentosDte" ("empresaId", "documentosDteId")
+values  (1, 3),
+        (2, 3),
+        (1, 4);
+
+insert into facturalink."EmpresaClientes" ("empresaId", "clienteId", "createdAt", "updatedAt")
+values  (1, 4, '2025-04-06 14:08:01.000', '2025-04-06 14:08:04.000'),
+        (1, 6, '2025-04-06 13:04:05.000', '2025-04-06 13:04:06.000'),
+        (1, 10, '2025-04-06 13:04:05.000', '2025-04-06 13:04:06.000'),
+        (1, 11, '2025-04-06 14:08:01.000', '2025-04-06 14:08:04.000'),
+        (1, 12, '2025-04-06 13:04:05.000', '2025-04-06 13:04:06.000'),
+        (1, 13, '2025-04-06 14:08:01.000', '2025-04-06 14:08:04.000'),
+        (1, 20, '1970-01-01 00:00:00.020', '2025-04-06 13:04:06.000'),
+        (1, 21, '1970-01-01 00:00:00.021', '2025-04-06 13:04:06.000'),
+        (1, 22, '1970-01-01 00:00:00.022', '2025-04-06 13:04:06.000'),
+        (1, 23, '1970-01-01 00:00:00.023', '2025-04-06 13:04:06.000'),
+        (1, 24, '1970-01-01 00:00:00.024', '2025-04-06 13:04:06.000'),
+        (1, 25, '1970-01-01 00:00:00.025', '2025-04-06 13:04:06.000'),
+        (1, 26, '1970-01-01 00:00:00.026', '2025-04-06 13:04:06.000'),
+        (1, 27, '1970-01-01 00:00:00.027', '2025-04-06 13:04:06.000'),
+        (1, 28, '1970-01-01 00:00:00.028', '2025-04-06 13:04:06.000'),
+        (1, 29, '1970-01-01 00:00:00.029', '2025-04-06 13:04:06.000'),
+        (1, 30, '1970-01-01 00:00:00.030', '2025-04-06 13:04:06.000'),
+        (1, 31, '1970-01-01 00:00:00.031', '2025-04-06 13:04:06.000'),
+        (1, 32, '1970-01-01 00:00:00.032', '2025-04-06 13:04:06.000'),
+        (1, 33, '1970-01-01 00:00:00.033', '2025-04-06 13:04:06.000'),
+        (1, 34, '1970-01-01 00:00:00.034', '2025-04-06 13:04:06.000'),
+        (1, 35, '1970-01-01 00:00:00.035', '2025-04-06 13:04:06.000'),
+        (1, 36, '1970-01-01 00:00:00.036', '2025-04-06 13:04:06.000'),
+        (1, 37, '1970-01-01 00:00:00.037', '2025-04-06 13:04:06.000'),
+        (1, 38, '1970-01-01 00:00:00.038', '2025-04-06 13:04:06.000'),
+        (1, 39, '1970-01-01 00:00:00.039', '2025-04-06 13:04:06.000'),
+        (1, 40, '1970-01-01 00:00:00.040', '2025-04-06 13:04:06.000'),
+        (1, 41, '1970-01-01 00:00:00.041', '2025-04-06 13:04:06.000'),
+        (1, 42, '1970-01-01 00:00:00.042', '2025-04-06 13:04:06.000'),
+        (1, 43, '1970-01-01 00:00:00.043', '2025-04-06 13:04:06.000'),
+        (1, 44, '1970-01-01 00:00:00.044', '2025-04-06 13:04:06.000'),
+        (1, 45, '1970-01-01 00:00:00.045', '2025-04-06 13:04:06.000'),
+        (1, 46, '1970-01-01 00:00:00.046', '2025-04-06 13:04:06.000'),
+        (1, 47, '1970-01-01 00:00:00.047', '2025-04-06 13:04:06.000'),
+        (1, 48, '1970-01-01 00:00:00.048', '2025-04-06 13:04:06.000'),
+        (1, 49, '1970-01-01 00:00:00.049', '2025-04-06 13:04:06.000'),
+        (1, 50, '1970-01-01 00:00:00.050', '2025-04-06 13:04:06.000'),
+        (1, 51, '1970-01-01 00:00:00.051', '2025-04-06 13:04:06.000'),
+        (1, 52, '1970-01-01 00:00:00.052', '2025-04-06 13:04:06.000'),
+        (1, 53, '1970-01-01 00:00:00.053', '2025-04-06 13:04:06.000'),
+        (1, 54, '1970-01-01 00:00:00.054', '2025-04-06 13:04:06.000'),
+        (1, 55, '1970-01-01 00:00:00.055', '2025-04-06 13:04:06.000'),
+        (1, 56, '1970-01-01 00:00:00.056', '2025-04-06 13:04:06.000'),
+        (1, 57, '1970-01-01 00:00:00.057', '2025-04-06 13:04:06.000'),
+        (1, 58, '1970-01-01 00:00:00.058', '2025-04-06 13:04:06.000'),
+        (1, 59, '1970-01-01 00:00:00.059', '2025-04-06 13:04:06.000'),
+        (1, 60, '1970-01-01 00:00:00.060', '2025-04-06 13:04:06.000'),
+        (1, 61, '1970-01-01 00:00:00.061', '2025-04-06 13:04:06.000'),
+        (1, 62, '1970-01-01 00:00:00.062', '2025-04-06 13:04:06.000'),
+        (1, 63, '1970-01-01 00:00:00.063', '2025-04-06 13:04:06.000'),
+        (1, 64, '1970-01-01 00:00:00.064', '2025-04-06 13:04:06.000'),
+        (1, 65, '1970-01-01 00:00:00.065', '2025-04-06 13:04:06.000'),
+        (1, 66, '1970-01-01 00:00:00.066', '2025-04-06 13:04:06.000'),
+        (1, 67, '1970-01-01 00:00:00.067', '2025-04-06 13:04:06.000'),
+        (1, 68, '1970-01-01 00:00:00.068', '2025-04-06 13:04:06.000'),
+        (1, 69, '1970-01-01 00:00:00.069', '2025-04-06 13:04:06.000'),
+        (1, 70, '1970-01-01 00:00:00.070', '2025-04-06 13:04:06.000'),
+        (1, 71, '1970-01-01 00:00:00.071', '2025-04-06 13:04:06.000'),
+        (1, 72, '1970-01-01 00:00:00.072', '2025-04-06 13:04:06.000'),
+        (1, 73, '1970-01-01 00:00:00.073', '2025-04-06 13:04:06.000'),
+        (1, 74, '1970-01-01 00:00:00.074', '2025-04-06 13:04:06.000'),
+        (1, 75, '1970-01-01 00:00:00.075', '2025-04-06 13:04:06.000'),
+        (1, 76, '1970-01-01 00:00:00.076', '2025-04-06 13:04:06.000'),
+        (1, 77, '1970-01-01 00:00:00.077', '2025-04-06 13:04:06.000'),
+        (1, 78, '1970-01-01 00:00:00.078', '2025-04-06 13:04:06.000'),
+        (1, 79, '1970-01-01 00:00:00.079', '2025-04-06 13:04:06.000'),
+        (1, 80, '1970-01-01 00:00:00.080', '2025-04-06 13:04:06.000'),
+        (1, 81, '1970-01-01 00:00:00.081', '2025-04-06 13:04:06.000'),
+        (1, 82, '1970-01-01 00:00:00.082', '2025-04-06 13:04:06.000'),
+        (1, 83, '1970-01-01 00:00:00.083', '2025-04-06 13:04:06.000'),
+        (1, 84, '1970-01-01 00:00:00.084', '2025-04-06 13:04:06.000'),
+        (1, 85, '1970-01-01 00:00:00.085', '2025-04-06 13:04:06.000'),
+        (1, 86, '1970-01-01 00:00:00.086', '2025-04-06 13:04:06.000'),
+        (1, 87, '1970-01-01 00:00:00.087', '2025-04-06 13:04:06.000'),
+        (1, 88, '1970-01-01 00:00:00.088', '2025-04-06 13:04:06.000'),
+        (1, 89, '1970-01-01 00:00:00.089', '2025-04-06 13:04:06.000'),
+        (1, 90, '1970-01-01 00:00:00.090', '2025-04-06 13:04:06.000'),
+        (1, 91, '1970-01-01 00:00:00.091', '2025-04-06 13:04:06.000'),
+        (1, 92, '1970-01-01 00:00:00.092', '2025-04-06 13:04:06.000'),
+        (1, 93, '1970-01-01 00:00:00.093', '2025-04-06 13:04:06.000'),
+        (1, 94, '1970-01-01 00:00:00.094', '2025-04-06 13:04:06.000'),
+        (1, 95, '1970-01-01 00:00:00.095', '2025-04-06 13:04:06.000'),
+        (1, 96, '1970-01-01 00:00:00.096', '2025-04-06 13:04:06.000'),
+        (1, 97, '1970-01-01 00:00:00.097', '2025-04-06 13:04:06.000'),
+        (1, 98, '1970-01-01 00:00:00.098', '2025-04-06 13:04:06.000'),
+        (1, 99, '1970-01-01 00:00:00.099', '2025-04-06 13:04:06.000'),
+        (1, 100, '1970-01-01 00:00:00.100', '2025-04-06 13:04:06.000'),
+        (1, 101, '1970-01-01 00:00:00.101', '2025-04-06 13:04:06.000'),
+        (1, 102, '1970-01-01 00:00:00.102', '2025-04-06 13:04:06.000'),
+        (1, 103, '1970-01-01 00:00:00.103', '2025-04-06 13:04:06.000'),
+        (1, 104, '1970-01-01 00:00:00.104', '2025-04-06 13:04:06.000'),
+        (1, 105, '1970-01-01 00:00:00.105', '2025-04-06 13:04:06.000'),
+        (1, 106, '1970-01-01 00:00:00.106', '2025-04-06 13:04:06.000'),
+        (1, 107, '1970-01-01 00:00:00.107', '2025-04-06 13:04:06.000'),
+        (1, 108, '1970-01-01 00:00:00.108', '2025-04-06 13:04:06.000'),
+        (1, 109, '1970-01-01 00:00:00.109', '2025-04-06 13:04:06.000'),
+        (1, 110, '1970-01-01 00:00:00.110', '2025-04-06 13:04:06.000'),
+        (1, 111, '1970-01-01 00:00:00.111', '2025-04-06 13:04:06.000'),
+        (1, 112, '1970-01-01 00:00:00.112', '2025-04-06 13:04:06.000'),
+        (1, 113, '1970-01-01 00:00:00.113', '2025-04-06 13:04:06.000'),
+        (1, 114, '1970-01-01 00:00:00.114', '2025-04-06 13:04:06.000'),
+        (1, 115, '1970-01-01 00:00:00.115', '2025-04-06 13:04:06.000'),
+        (1, 116, '1970-01-01 00:00:00.116', '2025-04-06 13:04:06.000'),
+        (1, 117, '1970-01-01 00:00:00.117', '2025-04-06 13:04:06.000'),
+        (1, 118, '1970-01-01 00:00:00.118', '2025-04-06 13:04:06.000'),
+        (1, 119, '1970-01-01 00:00:00.119', '2025-04-06 13:04:06.000'),
+        (1, 120, '1970-01-01 00:00:00.120', '2025-04-06 13:04:06.000'),
+        (1, 121, '1970-01-01 00:00:00.121', '2025-04-06 13:04:06.000'),
+        (1, 122, '1970-01-01 00:00:00.122', '2025-04-06 13:04:06.000'),
+        (1, 123, '1970-01-01 00:00:00.123', '2025-04-06 13:04:06.000'),
+        (1, 124, '1970-01-01 00:00:00.124', '2025-04-06 13:04:06.000'),
+        (1, 125, '1970-01-01 00:00:00.125', '2025-04-06 13:04:06.000'),
+        (1, 126, '1970-01-01 00:00:00.126', '2025-04-06 13:04:06.000'),
+        (1, 127, '1970-01-01 00:00:00.127', '2025-04-06 13:04:06.000'),
+        (1, 128, '1970-01-01 00:00:00.128', '2025-04-06 13:04:06.000'),
+        (1, 129, '1970-01-01 00:00:00.129', '2025-04-06 13:04:06.000'),
+        (1, 130, '1970-01-01 00:00:00.130', '2025-04-06 13:04:06.000'),
+        (1, 131, '1970-01-01 00:00:00.131', '2025-04-06 13:04:06.000'),
+        (1, 132, '1970-01-01 00:00:00.132', '2025-04-06 13:04:06.000'),
+        (1, 133, '1970-01-01 00:00:00.133', '2025-04-06 13:04:06.000'),
+        (1, 134, '1970-01-01 00:00:00.134', '2025-04-06 13:04:06.000'),
+        (1, 135, '1970-01-01 00:00:00.135', '2025-04-06 13:04:06.000'),
+        (1, 136, '1970-01-01 00:00:00.136', '2025-04-06 13:04:06.000'),
+        (1, 137, '1970-01-01 00:00:00.137', '2025-04-06 13:04:06.000'),
+        (1, 138, '1970-01-01 00:00:00.138', '2025-04-06 13:04:06.000'),
+        (1, 139, '1970-01-01 00:00:00.139', '2025-04-06 13:04:06.000'),
+        (1, 140, '1970-01-01 00:00:00.140', '2025-04-06 13:04:06.000'),
+        (1, 141, '1970-01-01 00:00:00.141', '2025-04-06 13:04:06.000'),
+        (1, 142, '1970-01-01 00:00:00.142', '2025-04-06 13:04:06.000'),
+        (1, 143, '1970-01-01 00:00:00.143', '2025-04-06 13:04:06.000'),
+        (1, 144, '1970-01-01 00:00:00.144', '2025-04-06 13:04:06.000'),
+        (1, 145, '1970-01-01 00:00:00.145', '2025-04-06 13:04:06.000'),
+        (1, 146, '1970-01-01 00:00:00.146', '2025-04-06 13:04:06.000'),
+        (1, 147, '1970-01-01 00:00:00.147', '2025-04-06 13:04:06.000'),
+        (1, 148, '1970-01-01 00:00:00.148', '2025-04-06 13:04:06.000'),
+        (1, 149, '1970-01-01 00:00:00.149', '2025-04-06 13:04:06.000'),
+        (1, 150, '1970-01-01 00:00:00.150', '2025-04-06 13:04:06.000'),
+        (1, 151, '1970-01-01 00:00:00.151', '2025-04-06 13:04:06.000'),
+        (1, 152, '1970-01-01 00:00:00.152', '2025-04-06 13:04:06.000'),
+        (1, 153, '1970-01-01 00:00:00.153', '2025-04-06 13:04:06.000');
 
 
-
-
-
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '11', 'Facturas de exportación', '', '2025-03-23 21:41:46.762', '2025-03-23 21:41:46.762', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '14', 'Factura de sujeto excluido', '', '2025-03-23 21:41:46.773', '2025-03-23 21:41:46.773', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '15', 'Comprobante de donación', '', '2025-03-23 21:41:46.783', '2025-03-23 21:41:46.783', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-003', '1', 'Modelo Facturación previo', '', '2025-03-23 21:41:46.793', '2025-03-23 21:41:46.793', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-003', '2', 'Modelo Facturación diferido', '', '2025-03-23 21:41:46.803', '2025-03-23 21:41:46.803', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-004', '1', 'Transmisión normal', '', '2025-03-23 21:41:46.812', '2025-03-23 21:41:46.812', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-004', '2', 'Transmisión por contingencia', '', '2025-03-23 21:41:46.822', '2025-03-23 21:41:46.822', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-005', '1', 'No disponibilidad de sistema del MH', '', '2025-03-23 21:41:46.831', '2025-03-23 21:41:46.831', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-005', '2', 'No disponibilidad de sistema del emisor', '', '2025-03-23 21:41:46.842', '2025-03-23 21:41:46.842', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-005', '3', 'Falla en el suministro de servicio de Internet del Emisor', '', '2025-03-23 21:41:46.851', '2025-03-23 21:41:46.851', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-005', '4', 'Falla en el suministro de servicio de energía eléctrica del emisor que impida la transmisión de los DTE', '', '2025-03-23 21:41:46.862', '2025-03-23 21:41:46.862', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-005', '5', 'Otro (deberá digitar un máximo de 500 caracteres explicando el motivo)', '', '2025-03-23 21:41:46.874', '2025-03-23 21:41:46.874', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-006', '22', 'Retención IVA 1%', '', '2025-03-23 21:41:46.884', '2025-03-23 21:41:46.884', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-001', '00', 'Modo prueba', '', '2025-03-23 21:44:08.130', '2025-03-23 21:44:08.130', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-001', '01', 'Modo producción', '', '2025-03-23 21:44:08.145', '2025-03-23 21:44:08.145', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '01', 'Factura', '', '2025-03-23 21:44:08.157', '2025-03-23 21:44:08.157', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '03', 'Comprobante de crédito fiscal', '', '2025-03-23 21:44:08.168', '2025-03-23 21:44:08.168', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '04', 'Nota de remisión', '', '2025-03-23 21:44:08.179', '2025-03-23 21:44:08.179', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '05', 'Nota de crédito', '', '2025-03-23 21:44:08.189', '2025-03-23 21:44:08.189', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '06', 'Nota de débito', '', '2025-03-23 21:44:08.201', '2025-03-23 21:44:08.201', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '07', 'Comprobante de retención', '', '2025-03-23 21:44:08.214', '2025-03-23 21:44:08.214', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '08', 'Comprobante de liquidación', '', '2025-03-23 21:44:08.227', '2025-03-23 21:44:08.227', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-002', '09', 'Documento contable de liquidación', '', '2025-03-23 21:44:08.239', '2025-03-23 21:44:08.239', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-006', 'C4', 'Retención IVA 13%', '', '2025-03-23 21:44:08.420', '2025-03-23 21:44:08.420', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-006', 'C9', 'Otras retenciones IVA casos especiales', '', '2025-03-23 21:44:08.432', '2025-03-23 21:44:08.432', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AF', 'Afganistán', '', '2025-03-23 21:54:45.819', '2025-03-23 21:54:45.819', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AX', 'Aland', '', '2025-03-23 21:54:45.832', '2025-03-23 21:54:45.832', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AL', 'Albania', '', '2025-03-23 21:54:45.844', '2025-03-23 21:54:45.844', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'DE', 'Alemania', '', '2025-03-23 21:54:45.856', '2025-03-23 21:54:45.856', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AD', 'Andorra', '', '2025-03-23 21:54:45.866', '2025-03-23 21:54:45.866', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AO', 'Angola', '', '2025-03-23 21:54:45.875', '2025-03-23 21:54:45.875', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AI', 'Anguila', '', '2025-03-23 21:54:45.885', '2025-03-23 21:54:45.885', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AQ', 'Antártica', '', '2025-03-23 21:54:45.894', '2025-03-23 21:54:45.894', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AG', 'Antigua y Barbuda', '', '2025-03-23 21:54:45.904', '2025-03-23 21:54:45.904', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AW', 'Aruba', '', '2025-03-23 21:54:45.913', '2025-03-23 21:54:45.913', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'SA', 'Arabia Saudita', '', '2025-03-23 21:54:45.924', '2025-03-23 21:54:45.924', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'DZ', 'Argelia', '', '2025-03-23 21:54:45.935', '2025-03-23 21:54:45.935', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AR', 'Argentina', '', '2025-03-23 21:54:45.947', '2025-03-23 21:54:45.947', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AM', 'Armenia', '', '2025-03-23 21:54:45.956', '2025-03-23 21:54:45.956', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AU', 'Australia', '', '2025-03-23 21:54:45.964', '2025-03-23 21:54:45.964', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AT', 'Austria', '', '2025-03-23 21:54:45.974', '2025-03-23 21:54:45.974', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'AZ', 'Azerbaiyán', '', '2025-03-23 21:54:45.983', '2025-03-23 21:54:45.983', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BS', 'Bahamas', '', '2025-03-23 21:54:45.992', '2025-03-23 21:54:45.992', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BH', 'Bahrein', '', '2025-03-23 21:54:46.001', '2025-03-23 21:54:46.001', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BD', 'Bangladesh', '', '2025-03-23 21:54:46.010', '2025-03-23 21:54:46.010', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BB', 'Barbados', '', '2025-03-23 21:54:46.018', '2025-03-23 21:54:46.018', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BE', 'Bélgica', '', '2025-03-23 21:54:46.028', '2025-03-23 21:54:46.028', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ( 'CAT-020', 'BZ', 'Belice', '', '2025-03-23 21:54:46.036', '2025-03-23 21:54:46.036', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BJ', 'Benin', '', '2025-03-23 21:54:46.046', '2025-03-23 21:54:46.046', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BM', 'Bermudas', '', '2025-03-23 21:54:46.054', '2025-03-23 21:54:46.054', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BY', 'Bielorrusia', '', '2025-03-23 21:54:46.063', '2025-03-23 21:54:46.063', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BO', 'Bolivia', '', '2025-03-23 21:54:46.072', '2025-03-23 21:54:46.072', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BR', 'Brasil', '', '2025-03-23 21:54:46.085', '2025-03-23 21:54:46.085', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'BG', 'Bulgaria', '', '2025-03-23 21:54:46.094', '2025-03-23 21:54:46.094', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CA', 'Canadá', '', '2025-03-23 21:54:46.101', '2025-03-23 21:54:46.101', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CL', 'Chile', '', '2025-03-23 21:54:46.113', '2025-03-23 21:54:46.113', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CN', 'China', '', '2025-03-23 21:54:46.121', '2025-03-23 21:54:46.121', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CO', 'Colombia', '', '2025-03-23 21:54:46.129', '2025-03-23 21:54:46.129', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CR', 'Costa Rica', '', '2025-03-23 21:54:46.157', '2025-03-23 21:54:46.157', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'CU', 'Cuba', '', '2025-03-23 21:54:46.166', '2025-03-23 21:54:46.166', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'DK', 'Dinamarca', '', '2025-03-23 21:54:46.175', '2025-03-23 21:54:46.175', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'DO', 'República Dominicana', '', '2025-03-23 21:54:46.186', '2025-03-23 21:54:46.186', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'EC', 'Ecuador', '', '2025-03-23 21:54:46.196', '2025-03-23 21:54:46.196', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'EG', 'Egipto', '', '2025-03-23 21:54:46.204', '2025-03-23 21:54:46.204', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'SV', 'El Salvador', '', '2025-03-23 21:54:46.211', '2025-03-23 21:54:46.211', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'ES', 'España', '', '2025-03-23 21:54:46.219', '2025-03-23 21:54:46.219', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'US', 'Estados Unidos', '', '2025-03-23 21:54:46.226', '2025-03-23 21:54:46.226', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'FR', 'Francia', '', '2025-03-23 21:54:46.234', '2025-03-23 21:54:46.234', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'GR', 'Grecia', '', '2025-03-23 21:54:46.242', '2025-03-23 21:54:46.242', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'GT', 'Guatemala', '', '2025-03-23 21:54:46.251', '2025-03-23 21:54:46.251', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'HN', 'Honduras', '', '2025-03-23 21:54:46.259', '2025-03-23 21:54:46.259', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'IN', 'India', '', '2025-03-23 21:54:46.267', '2025-03-23 21:54:46.267', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'IT', 'Italia', '', '2025-03-23 21:54:46.275', '2025-03-23 21:54:46.275', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'JP', 'Japón', '', '2025-03-23 21:54:46.284', '2025-03-23 21:54:46.284', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'MX', 'México', '', '2025-03-23 21:54:46.291', '2025-03-23 21:54:46.291', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'NI', 'Nicaragua', '', '2025-03-23 21:54:46.299', '2025-03-23 21:54:46.299', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'PA', 'Panamá', '', '2025-03-23 21:54:46.307', '2025-03-23 21:54:46.307', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'PE', 'Perú', '', '2025-03-23 21:54:46.320', '2025-03-23 21:54:46.320', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'PT', 'Portugal', '', '2025-03-23 21:54:46.331', '2025-03-23 21:54:46.331', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'PY', 'Paraguay', '', '2025-03-23 21:54:46.340', '2025-03-23 21:54:46.340', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'UY', 'Uruguay', '', '2025-03-23 21:54:46.348', '2025-03-23 21:54:46.348', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-020', 'VE', 'Venezuela', '', '2025-03-23 21:54:46.355', '2025-03-23 21:54:46.355', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-021', '1', 'Emisor', '', '2025-03-23 21:54:46.364', '2025-03-23 21:54:46.364', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-021', '2', 'Receptor', '', '2025-03-23 21:54:46.372', '2025-03-23 21:54:46.372', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-021', '3', 'Médico (F-958)', '', '2025-03-23 21:54:46.380', '2025-03-23 21:54:46.380', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-021', '4', 'Transporte (Factura de exportación)', '', '2025-03-23 21:54:46.391', '2025-03-23 21:54:46.391', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-022', '36', 'NIT', '', '2025-03-23 21:54:46.398', '2025-03-23 21:54:46.398', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-022', '13', 'DUI', '', '2025-03-23 21:54:46.405', '2025-03-23 21:54:46.405', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-022', '37', 'Otro', '', '2025-03-23 21:54:46.413', '2025-03-23 21:54:46.413', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-022', '03', 'Pasaporte', '', '2025-03-23 21:54:46.421', '2025-03-23 21:54:46.421', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-022', '02', 'Carnet de Residente', '', '2025-03-23 21:54:46.428', '2025-03-23 21:54:46.428', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '01', 'Factura Electrónica', '', '2025-03-23 21:54:46.436', '2025-03-23 21:54:46.436', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '03', 'Comprobante de Crédito Fiscal Electrónico', '', '2025-03-23 21:54:46.444', '2025-03-23 21:54:46.444', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '04', 'Nota de Remisión Electrónica', '', '2025-03-23 21:54:46.452', '2025-03-23 21:54:46.452', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '05', 'Nota de Crédito Electrónica', '', '2025-03-23 21:54:46.464', '2025-03-23 21:54:46.464', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '06', 'Nota de Débito Electrónica', '', '2025-03-23 21:54:46.477', '2025-03-23 21:54:46.477', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '11', 'Factura de Exportación Electrónica', '', '2025-03-23 21:54:46.484', '2025-03-23 21:54:46.484', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-023', '14', 'Factura de Sujeto Excluido Electrónica', '', '2025-03-23 21:54:46.492', '2025-03-23 21:54:46.492', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-024', '1', 'Error en la Información del Documento Tributario Electrónico', '', '2025-03-23 21:54:46.498', '2025-03-23 21:54:46.498', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-024', '2', 'Rescindir de la operación realizada', '', '2025-03-23 21:54:46.505', '2025-03-23 21:54:46.505', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-024', '3', 'Otro', '', '2025-03-23 21:54:46.513', '2025-03-23 21:54:46.513', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-025', '01', 'Depósito', '', '2025-03-23 21:54:46.522', '2025-03-23 21:54:46.522', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-025', '02', 'Propiedad', '', '2025-03-23 21:54:46.533', '2025-03-23 21:54:46.533', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-025', '03', 'Consignación', '', '2025-03-23 21:54:46.541', '2025-03-23 21:54:46.541', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-025', '04', 'Traslado', '', '2025-03-23 21:54:46.553', '2025-03-23 21:54:46.553', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-025', '05', 'Otros', '', '2025-03-23 21:54:46.562', '2025-03-23 21:54:46.562', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-026', '1', 'Efectivo', '', '2025-03-23 21:54:46.570', '2025-03-23 21:54:46.570', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-026', '2', 'Bien', '', '2025-03-23 21:54:46.580', '2025-03-23 21:54:46.580', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-026', '3', 'Servicio', '', '2025-03-23 21:54:46.592', '2025-03-23 21:54:46.592', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '01', 'Terrestre San Bartolo', '', '2025-03-23 21:54:46.600', '2025-03-23 21:54:46.600', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '02', 'Marítima de Acajutla', '', '2025-03-23 21:54:46.629', '2025-03-23 21:54:46.629', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '03', 'Aérea De Comalapa', '', '2025-03-23 21:54:46.639', '2025-03-23 21:54:46.639', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '04', 'Terrestre Las Chinamas', '', '2025-03-23 21:54:46.649', '2025-03-23 21:54:46.649', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '05', 'Terrestre La Hachadura', '', '2025-03-23 21:54:46.658', '2025-03-23 21:54:46.658', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '06', 'Terrestre Santa Ana', '', '2025-03-23 21:54:46.667', '2025-03-23 21:54:46.667', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '07', 'Terrestre San Cristóbal', '', '2025-03-23 21:54:46.676', '2025-03-23 21:54:46.676', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '08', 'Terrestre Anguiatú', '', '2025-03-23 21:54:46.687', '2025-03-23 21:54:46.687', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '09', 'Terrestre El Amatillo', '', '2025-03-23 21:54:46.712', '2025-03-23 21:54:46.712', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '10', 'Marítima La Unión', '', '2025-03-23 21:54:46.721', '2025-03-23 21:54:46.721', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-027', '11', 'Terrestre El Poy', '', '2025-03-23 21:54:46.730', '2025-03-23 21:54:46.730', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-029', '1', 'Persona Natural', '', '2025-03-23 21:54:46.741', '2025-03-23 21:54:46.741', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-029', '2', 'Persona Jurídica', '', '2025-03-23 21:54:46.750', '2025-03-23 21:54:46.750', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '1', 'Terrestre', '', '2025-03-23 21:54:46.758', '2025-03-23 21:54:46.758', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '2', 'Aéreo', '', '2025-03-23 21:54:46.767', '2025-03-23 21:54:46.767', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '3', 'Marítimo', '', '2025-03-23 21:54:46.775', '2025-03-23 21:54:46.775', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '4', 'Ferroviario', '', '2025-03-23 21:54:46.784', '2025-03-23 21:54:46.784', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '5', 'Multimodal', '', '2025-03-23 21:54:46.793', '2025-03-23 21:54:46.793', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-030', '6', 'Correo', '', '2025-03-23 21:54:46.802', '2025-03-23 21:54:46.802', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '01', 'EXW-En fábrica', '', '2025-03-23 21:54:46.812', '2025-03-23 21:54:46.812', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '02', 'FCA-Libre transportista', '', '2025-03-23 21:54:46.822', '2025-03-23 21:54:46.822', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '03', 'CPT-Transporte pagado hasta', '', '2025-03-23 21:54:46.831', '2025-03-23 21:54:46.831', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '04', 'CIP-Transporte y seguro pagado hasta', '', '2025-03-23 21:54:46.840', '2025-03-23 21:54:46.840', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '05', 'DAP-Entrega en el lugar', '', '2025-03-23 21:54:46.849', '2025-03-23 21:54:46.849', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '06', 'DPU-Entregado en el lugar descargado', '', '2025-03-23 21:54:46.859', '2025-03-23 21:54:46.859', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-031', '07', 'DDP-Entrega con impuestos pagados', '', '2025-03-23 21:54:46.868', '2025-03-23 21:54:46.868', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-032', '1', 'Domiciliado', '', '2025-03-23 21:54:46.877', '2025-03-23 21:54:46.877', 'ACTIVO');
-INSERT INTO "Catalogo" ( "tipoCatalogo", codigo, valor, descripcion, "createdAt", "updatedAt", "estadoRt") VALUES ('CAT-032', '2', 'No Domiciliado', '', '2025-03-23 21:54:46.885', '2025-03-23 21:54:46.885', 'ACTIVO');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (3, '01', 'Factura Electrónica ', 'FE ', 'DE', 23, '2025-03-24 23:31:18.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (4, '03', 'CCFE ', 'Comprobante de crédito fiscal', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (5, '04', 'NRE', 'Nota de remisión ', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (6, '05', 'NCE', 'Nota de crédito ', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (7, '06', 'NDE', 'Nota de débito', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (8, '07', 'CRE', 'Comprobante de retención', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (9, '08', 'CLE', 'Comprobante de liquidación', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (10, '09', 'DCLE', 'Documento contable de liquidación', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (11, '11', 'FEXE', 'Facturas de exportación', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (12, '14', 'FSEE', 'Factura de sujeto excluido', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
-INSERT INTO "DocumentosDte" (id, codigo, abreviatura, valor, descripcion, "ambienteId", "createdAt", "updatedAt") VALUES (13, '15', 'CDE', 'Comprobante de donación', 'DE', 23, '2025-03-24 23:31:24.000', '2025-03-24 23:31:24.000');
+insert into facturalink."EmpresaActividadEconomica" ("empresaId", "actividadEconomicaId")
+values  (1, 646),
+        (1, 645),
+        (2, 428);

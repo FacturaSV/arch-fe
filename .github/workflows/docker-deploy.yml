@@ -48,7 +48,7 @@ jobs:
             echo "GH_USER: \$GH_USER"
             echo "REPO_URL: \$REPO_URL"
 
-            PROJECT_DIR="/root/app/facturasvAFE"
+            PROJECT_DIR="/root/app/arch-fe"
             if [ ! -d "\$PROJECT_DIR/.git" ]; then
               echo "Repositorio no válido o inexistente. Clonando de nuevo..."
               rm -rf "\$PROJECT_DIR"
@@ -65,7 +65,7 @@ jobs:
             }
 
             docker compose pull
-            docker compose up -d --force-recreate --build
+            docker compose up -d --force-recreate --build database postgres-backup firmador keycloak traefik portainer
 
             echo "===> Despliegue completado"
           EOF

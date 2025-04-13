@@ -18,11 +18,10 @@ services:
       - ./config/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
       - ./config/postgres/backups:/backups
-    # ports:
-      # - "5432:5432"
+    ports:
+      - "5432:5432"
     networks:
-      - internal_network
-      - FacturaSvNetwork
+      - factura_network
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 10s
@@ -40,7 +39,7 @@ services:
       POSTGRES_PASSWORD: 0d3lypwvHvY8ZA£2BG48
       POSTGRES_DB: main_database
     networks:
-      - FacturaSvNetwork
+      - factura_network
     volumes:
       - ./config/backups:/backups
     command: >
@@ -63,7 +62,7 @@ services:
     environment:
       JAVA_OPTS_APPEND: "-XX:UseSVE=0"
     networks:
-      - FacturaSvNetwork
+      - factura_network
     # ports:
     #   - "8113:8113"
     volumes:
@@ -92,7 +91,7 @@ services:
       KC_DB_SCHEMA: keycloak_schema
       KC_DB_USERNAME: keycloak_userL4RT
       KC_DB_PASSWORD: S6ZWqBr2eE4J64MtNOnwYb
-      KC_BOOTSTRAP_ADMIN_USERNAME: daamarroquin
+      KC_BOOTSTRAP_ADMIN_USERNAME: daamarroquinroot
       KC_BOOTSTRAP_ADMIN_PASSWORD: tpgZ9Q9yWVb52F8d6Nyc
       KC_HOSTNAME: keycloak.facturasv.online
       KC_HOSTNAME_URL: https://keycloak.facturasv.online
@@ -121,7 +120,7 @@ services:
     #   - "8080:8080"
     #   - "8443:8443"
     networks:
-      - FacturaSvNetwork
+      - factura_network
     restart: always
     volumes:
       - keycloak_data:/opt/keycloak/data
@@ -151,14 +150,16 @@ services:
       - "--certificatesresolvers.myresolver.acme.email=notificaciones@facturasv.online"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
       - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
-      - "--log.level=INFO" 
+      - "--log.level=INFO"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
     ports:
       - "80:80"
       - "443:443"
       # - "9090:8080" # Dashboard de Traefik
     networks:
-      - internal_network
-      - FacturaSvNetwork
+      - factura_network
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
       - ./config/traefik/dynamic:/etc/traefik/dynamic
@@ -176,9 +177,11 @@ services:
       - "traefik.http.routers.portainer.entrypoints=websecure"
       - "traefik.http.routers.portainer.tls.certresolver=myresolver"
       - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
     networks:
-      - internal_network
-      - FacturaSvNetwork
+      - factura_network
     # ports:
     # - "9000:9000"       # Interfaz web
     #   - "9443:9443"       # Interfaz web segura (HTTPS)
@@ -186,20 +189,92 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # Para administrar el host Docker
       - portainer_data:/data # Datos persistentes de Portainer
 
+  backend-fe:
+    build:
+      context: ../backend-fe
+      dockerfile: Dockerfile
+    container_name: backend-fe
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend-login.rule=Host(`api.facturasv.online`) && Path(`/auth/login`)"
+      - "traefik.http.routers.backend-login.entrypoints=websecure"
+      - "traefik.http.routers.backend-login.tls.certresolver=myresolver"
 
+      - "traefik.http.routers.backend-protected.rule=Host(`api.facturasv.online`) && PathPrefix(`/`)"
+      - "traefik.http.routers.backend-protected.entrypoints=websecure"
+      - "traefik.http.routers.backend-protected.tls.certresolver=myresolver"
+      - "traefik.http.routers.backend-protected.middlewares=jwt-auth@file,inject-token@file"
+
+      - "traefik.http.routers.backend-options.rule=Host(`api.facturasv.online`) && Method(`OPTIONS`)"
+      - "traefik.http.routers.backend-options.entrypoints=websecure"
+      - "traefik.http.services.backend.loadbalancer.server.port=3000"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
+    restart: always
+    networks:
+      - factura_network
+    # ports:
+    #   - "3000:3000"
+    env_file:
+      - ../backend-fe/.env
+
+  frontend-fe:
+    build:
+      context: ../frontend-fe
+      dockerfile: Dockerfile
+    container_name: frontend-fe
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`facturasv.online`)"
+      - "traefik.http.routers.frontend.entrypoints=websecure"
+      - "traefik.http.routers.frontend.tls.certresolver=myresolver"
+      - "traefik.http.services.frontend.loadbalancer.server.port=4200"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
+    restart: always
+    networks:
+      - factura_network
+    # ports:
+    #   - "4200:4200"
+    # volumes:
+    #   - frontend-build:/usr/share/nginx/html
+
+  pdfmaker-fe:
+    build:
+      context: ../pdfmaker-fe
+      dockerfile: Dockerfile
+    container_name: pdfmaker-fe
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pdfmaker.rule=Host(`pdfmaker.facturasv.online`)"
+      - "traefik.http.routers.pdfmaker.entrypoints=websecure"
+      - "traefik.http.routers.pdfmaker.tls.certresolver=myresolver"
+      - "traefik.http.services.pdfmaker.loadbalancer.server.port=3000"
+    environment:
+      TZ: America/El_Salvador
+      LC_TIME: en_US.UTF-8
+    restart: always
+    networks:
+      - factura_network
+    # ports:
+    #   - "3000:3000"
+    env_file:
+      - ../pdfmaker-fe/.env
+    volumes:
+      - ../pdfmaker-fe/logos:/app/logos # Para almacenar logos
+      - ../pdfmaker-fe/output:/app/output # Para almacenar PDFs generados
 
 volumes:
   portainer_data:
     name: portainer_pdata
   postgres_data:
     name: postgres_pdata
-    external: true
   keycloak_data:
     name: keycloak_pdata
-    external: true
 
 networks:
-  internal_network:
+  factura_network:
+    name: factura_network
     driver: bridge
-  FacturaSvNetwork:
-    external: true
