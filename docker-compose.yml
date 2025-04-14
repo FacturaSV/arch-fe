@@ -45,7 +45,7 @@ services:
     command: >
       sh -c "until pg_isready -h database -U $$POSTGRES_USER; do sleep 2; done &&
             export PGPASSWORD=$$POSTGRES_PASSWORD &&
-            pg_dump -U $$POSTGRES_USER -h postgres-db -d $$POSTGRES_DB > /backups/backup_$(date +%Y%m%d%H%M%S).sql &&
+            pg_dump -U $$POSTGRES_USER -h database -d $$POSTGRES_DB > /backups/backup_$(date +%Y%m%d%H%M%S).sql &&
             echo 'Backup completed successfully!'"
     restart: "no"
 
