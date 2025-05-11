@@ -277,16 +277,18 @@ services:
       TZ: America/El_Salvador
     labels:
     - "traefik.enable=true"
-    # Console web (MinIO UI)
+    # Console UI
     - "traefik.http.routers.minio-console.rule=Host(`cdn.facturasv.online`)"
     - "traefik.http.routers.minio-console.entrypoints=websecure"
     - "traefik.http.routers.minio-console.tls.certresolver=myresolver"
-    - "traefik.http.services.minio-console.loadbalancer.server.port=9001"
-    # S3 API (usado por backend)
+    - "traefik.http.routers.minio-console.service=minio-console-svc"
+    - "traefik.http.services.minio-console-svc.loadbalancer.server.port=9001"
+    # S3 API
     - "traefik.http.routers.minio-api.rule=Host(`s3.cdn.facturasv.online`)"
     - "traefik.http.routers.minio-api.entrypoints=websecure"
     - "traefik.http.routers.minio-api.tls.certresolver=myresolver"
-    - "traefik.http.services.minio-api.loadbalancer.server.port=9000"
+    - "traefik.http.routers.minio-api.service=minio-api-svc"
+    - "traefik.http.services.minio-api-svc.loadbalancer.server.port=9000"
     # ports:
     #   - "9000:9000"  # API S3-compatible
     #   - "9001:9001"  # Web UI
