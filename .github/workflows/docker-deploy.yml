@@ -65,7 +65,7 @@ jobs:
             }
 
             docker compose pull
-            docker compose up -d --force-recreate --build database postgres-backup firmador keycloak traefik portainer
+            docker compose up -d --force-recreate --build database postgres-backup firmador keycloak traefik portainer cdn-minio
 
             echo "===> Despliegue completado"
           EOF
