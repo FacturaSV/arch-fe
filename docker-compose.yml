@@ -58,7 +58,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: main_database
     networks:
-      - internal_network
+      - factura_network
     volumes:
       - ./config/backups:/backups # Asegúrate de que aquí esté el archivo .sql
     command: >
@@ -295,22 +295,22 @@ services:
       MINIO_ROOT_PASSWORD: YbRwfowigCGnVVF098wjnH2WSgYqd
       TZ: America/El_Salvador
     labels:
-    - "traefik.enable=true"
-    # Console UI
-    - "traefik.http.routers.minio-console.rule=Host(`cdn.facturasv.online`)"
-    - "traefik.http.routers.minio-console.entrypoints=websecure"
-    - "traefik.http.routers.minio-console.tls.certresolver=myresolver"
-    - "traefik.http.routers.minio-console.service=minio-console-svc"
-    - "traefik.http.services.minio-console-svc.loadbalancer.server.port=9001"
-    # S3 API
-    - "traefik.http.routers.minio-api.rule=Host(`s3.cdn.facturasv.online`)"
-    - "traefik.http.routers.minio-api.entrypoints=websecure"
-    - "traefik.http.routers.minio-api.tls.certresolver=myresolver"
-    - "traefik.http.routers.minio-api.service=minio-api-svc"
-    - "traefik.http.services.minio-api-svc.loadbalancer.server.port=9000"
-    # ports:
-    #   - "9000:9000"  # API S3-compatible
-    #   - "9001:9001"  # Web UI
+      - "traefik.enable=true"
+      # Console UI
+      - "traefik.http.routers.minio-console.rule=Host(`cdn.facturasv.online`)"
+      - "traefik.http.routers.minio-console.entrypoints=websecure"
+      - "traefik.http.routers.minio-console.tls.certresolver=myresolver"
+      - "traefik.http.routers.minio-console.service=minio-console-svc"
+      - "traefik.http.services.minio-console-svc.loadbalancer.server.port=9001"
+      # S3 API
+      - "traefik.http.routers.minio-api.rule=Host(`s3.cdn.facturasv.online`)"
+      - "traefik.http.routers.minio-api.entrypoints=websecure"
+      - "traefik.http.routers.minio-api.tls.certresolver=myresolver"
+      - "traefik.http.routers.minio-api.service=minio-api-svc"
+      - "traefik.http.services.minio-api-svc.loadbalancer.server.port=9000"
+      # ports:
+      #   - "9000:9000"  # API S3-compatible
+      #   - "9001:9001"  # Web UI
     volumes:
       - minio_data:/data
     networks:
