@@ -48,6 +48,25 @@ services:
             pg_dump -U $$POSTGRES_USER -h database -d $$POSTGRES_DB > /backups/backup_$(date +%Y%m%d%H%M%S).sql &&
             echo 'Backup completed successfully!'"
     restart: "no"
+  postgres-restore:
+    image: postgres:15
+    container_name: postgres-restore
+    depends_on:
+      - postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: main_database
+    networks:
+      - internal_network
+    volumes:
+      - ./config/backups:/backups # Asegúrate de que aquí esté el archivo .sql
+    command: >
+      sh -c "until pg_isready -h postgres-db -U $$POSTGRES_USER; do sleep 2; done &&
+             export PGPASSWORD=$$POSTGRES_PASSWORD &&
+             psql -U $$POSTGRES_USER -h postgres-db -d $$POSTGRES_DB -f /backups/backup_facturalink_restore.sql &&
+             echo 'Restore completed successfully!'"
+    restart: "no"
 
   firmador:
     image: svfe/svfe-api-firmador:v20250306
