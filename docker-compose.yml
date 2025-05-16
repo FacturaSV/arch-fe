@@ -52,7 +52,7 @@ services:
     image: postgres:15
     container_name: postgres-restore
     depends_on:
-      - postgres-db
+      - database
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
