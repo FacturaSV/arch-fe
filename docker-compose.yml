@@ -54,17 +54,17 @@ services:
     depends_on:
       - database
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: facturaSvYWYf
+      POSTGRES_PASSWORD: 0d3lypwvHvY8ZA£2BG48
       POSTGRES_DB: main_database
     networks:
       - factura_network
     volumes:
       - ./config/backups:/backups # Asegúrate de que aquí esté el archivo .sql
     command: >
-      sh -c "until pg_isready -h postgres-db -U $$POSTGRES_USER; do sleep 2; done &&
+      sh -c "until pg_isready -h database -U $$POSTGRES_USER; do sleep 2; done &&
              export PGPASSWORD=$$POSTGRES_PASSWORD &&
-             psql -U $$POSTGRES_USER -h postgres-db -d $$POSTGRES_DB -f /backups/backup_facturalink_restore.sql &&
+             psql -U $$POSTGRES_USER -h database -d $$POSTGRES_DB -f /backups/backup_facturalink_restore.sql &&
              echo 'Restore completed successfully!'"
     restart: "no"
 
